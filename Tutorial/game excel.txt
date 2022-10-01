@@ -1,0 +1,80 @@
+Option Explicit
+'Private Sub SpinButton1_Change() 'Adjusts the difficulty bar height
+'    wsMain.Shapes("difficulty").Height = 50000 / wsMain.SpinButton1.Value
+'End Sub
+
+Dim StopIt As Boolean
+
+Sub WasteTime(Finish As Integer) 'Delay function for mole movement
+    Dim Tick As Integer
+ 
+    For Tick = 1 To Finish
+        DoEvents
+    Next Tick
+End Sub
+
+Sub Main()
+    Dim i As Integer
+    Dim j As Integer
+    
+    wsMain.Shapes("grass").Locked = True
+    StopIt = False
+    wsMain.Range("A1").Value = "Started"
+    
+    'Run the VBScript that handles the movement of the hammer picture.
+    'That is, the VBScript that moves/attaches the hammer onto the mouse cursor
+    'Chr(34) is needed to address an error that pops when there are spaces in the file path
+    Shell "wscript " & Chr(34) & ActiveWorkbook.Path & "\hammer.vbs" & Chr(34), vbNormalFocus
+    
+    'Start a Do Loop that randomly hides a mole
+    Do While StopIt = False
+        wsMain.Shapes("mole1").Visible = False
+        wsMain.Shapes("mole2").Visible = False
+        wsMain.Shapes("mole3").Visible = False
+        wsMain.Shapes("mole4").Visible = False
+               
+        i = Int((4 - 1 + 1) * Rnd + 1) 'i = a random integer between 1 and 4
+        wsMain.Shapes("mole" & i).Visible = True
+        Call WasteTime(wsMain.SpinButton1.Value)
+    Loop
+End Sub
+
+Sub mole1_Click()
+    With wsMain.Range("M10")
+        .Value = .Value + 1
+    End With
+    Beep
+End Sub
+
+Sub mole2_Click()
+    With wsMain.Range("M10")
+        .Value = .Value + 1
+    End With
+    Beep
+End Sub
+
+Sub mole3_Click()
+    With wsMain.Range("M10")
+        .Value = .Value + 1
+    End With
+    Beep
+End Sub
+
+Sub mole4_Click()
+    With wsMain.Range("M10")
+        .Value = .Value + 1
+    End With
+    Beep
+End Sub
+
+Sub Reset() 'Resets the interface and stops the game
+    Dim i As Integer
+    
+    wsMain.Shapes("mole1").Visible = True
+    wsMain.Shapes("mole2").Visible = True
+    wsMain.Shapes("mole3").Visible = True
+    wsMain.Shapes("mole4").Visible = True
+    StopIt = True
+    wsMain.Range("M10").Value = 0
+    wsMain.Range("A1").Value = "Stopped"
+End Sub

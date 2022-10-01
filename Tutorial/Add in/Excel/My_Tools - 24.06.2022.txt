@@ -1,0 +1,608 @@
+Sub SDV_CONFIDENTIAL()
+    If Get_Actives Then
+        Call SDV_Killer
+        Call SDV_Security("SAMSUNG CONFIDENTIAL")
+    End If
+End Sub
+
+Sub SDV_SCRET()
+    If Get_Actives Then
+        Call SDV_Killer
+        Call SDV_Security("SAMSUNG SCRET")
+    End If
+End Sub
+
+Sub SDV_TOP_SCRET()
+    If Get_Actives Then
+        Call SDV_Killer
+        Call SDV_Security("SAMSUNG TOP SCRET")
+    End If
+End Sub
+
+Sub SDV_Security(txt As String)
+    If Get_Actives Then
+        Dim box_w As Integer
+        If InStr(1, txt, "CONFIDENTIAL") Then box_w = 200
+        If InStr(1, txt, "SCRET") Then box_w = 135
+        If InStr(1, txt, "TOP SCRET") Then box_w = 165
+        
+        For Each ws In Worksheets
+            If ws.ProtectContents = False Then
+                Set sh = ws.Shapes.AddShape(1, 5, 5, box_w, 24)
+                sh.TextFrame.Characters.text = txt
+                sh.TextFrame.Characters.Font.Bold = True
+                sh.TextFrame.Characters.Font.Color = RGB(255, 0, 0)
+                sh.TextFrame.Characters.Font.Size = 16
+                sh.TextFrame.Characters.Font.Name = "Calibri"
+                sh.Fill.Transparency = 1
+                sh.Line.ForeColor.RGB = RGB(255, 0, 0)
+                sh.Line.Weight = 2
+                sh.Name = txt
+            End If
+        Next ws
+    End If
+End Sub
+
+Sub SDV_Killer()
+    If Get_Actives Then
+        For Each ws In Worksheets
+            If ws.ProtectContents = False Then
+                For Each sh In ws.Shapes
+                    If InStr(1, sh.Name, "SAMSUNG") Or InStr(1, sh.Name, "Rectangle") Then
+                        With sh.TextFrame.Characters
+                            If .text = "SAMSUNG CONFIDENTIAL" Or _
+                            .text = "SAMSUNG SCRET" Or _
+                            .text = "SAMSUNG TOP SCRET" Then sh.Delete
+                        End With
+                    End If
+                Next sh
+            End If
+        Next ws
+    End If
+End Sub
+
+
+Sub Unhide_Multiple_Sheets()
+    If Get_Actives Then
+        Dim ws As Worksheet
+        For Each ws In ActiveWorkbook.Worksheets
+            ws.Visible = xlSheetVisible
+        Next ws
+    End If
+End Sub
+
+Sub Unhide_All_Rows_Columns()
+    If Get_Actives Then
+        Columns.EntireColumn.Hidden = False
+        Rows.EntireRow.Hidden = False
+    End If
+End Sub
+
+Sub Unhide_All_Rows_Columns_in_Workbook()
+    If Get_Actives Then
+        Dim ws As Worksheet
+        For Each ws In Worksheets
+            ws.Columns.EntireColumn.Hidden = False
+            ws.Rows.EntireRow.Hidden = False
+        Next ws
+    End If
+End Sub
+
+Public Sub Select_Object()
+    If Get_Actives Then
+        Dim myobject As String
+        myobject = InputBox("Select Object", "Object", "Picture")
+        If myobject <> "" Then
+            For Each tp In ActiveSheet.Shapes
+                If InStr(1, tp.Name, myobject) Then tp.Select False
+            Next
+        End If
+    End If
+End Sub
+
+Public Sub Killer_Filter()
+    If Get_Actives Then
+      If ActiveSheet.AutoFilterMode Then
+         ActiveSheet.AutoFilterMode = False
+         MsgBox "Delete Filter Successfuly!", , "Filter"
+      End If
+    End If
+End Sub
+
+Sub Killer_Validation()
+    If Get_Actives Then
+        ActiveSheet.Cells.Validation.Delete
+        MsgBox "Delete Data Validation Successfuly!", , "Data Validation"
+    End If
+End Sub
+
+Sub Killer_Validation_in_Workbook()
+    If Get_Actives Then
+      Dim wsh As Worksheet
+      For Each wsh In ActiveWorkbook.Worksheets
+        wsh.Cells.Validation.Delete
+      Next wsh
+      MsgBox "Delete Filter Successfuly!", , "Filter"
+    End If
+End Sub
+
+Sub Killer_Style()
+    If Get_Actives = True Then
+        Dim st As Style
+        On Error Resume Next
+        If my_msg(Application.ActiveWorkbook.Styles.Count, "Styles") = vbNo Then
+            For Each st In ActiveWorkbook.Styles
+              If Not st.BuiltIn Then
+                st.Delete
+              End If
+            Next
+            MsgBox "Delete Styles Successfuly!", , "Styles"
+        End If
+        On Error GoTo 0
+    End If
+End Sub
+
+Sub Killer_Defined_Names()
+    If Get_Actives = True Then
+        Dim dName As Name
+        If my_msg(Application.ActiveWorkbook.Names.Count, "Defined names") = vbYes Then
+            For Each dName In Application.ActiveWorkbook.Names
+                dName.Delete
+            Next
+            MsgBox "Delete Defined Names Successfuly!", vbInformation, "Defined names"
+        End If
+    End If
+End Sub
+
+Function my_msg(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to remove " & number & " " & title & "?", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Delete " & title & "!")
+    my_msg = get_value
+End Function
+
+
+Sub ResizePicture()
+    If Get_Actives = True Then
+    Dim p As Shape, C As Range
+    Dim total As Integer, s1 As Integer
+    total = 0
+'    MsgBox Get_Actives
+        For Each tp In ActiveSheet.Shapes
+            If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+        Next
+        If total > 0 Then s1 = msg_resize(total, "Picture")
+        If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+        If s1 = vbNo Then
+            Call MovePicture(s1, total)
+        ElseIf s1 = vbYes Then
+            Call MovePicture(s1, total)
+        End If
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer
+    Dim p As Shape, C As Range
+    If customs = vbYes Then
+        a1 = 0
+        s1 = Application.InputBox("Enter Number Picture", "Total Images Resize", "10", Type:=1)
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture And p.Rotation > 0 And a1 < s1 Then
+                p.Placement = xlMoveAndSize
+                p.LockAspectRatio = msoFalse
+                Set C = p.TopLeftCell
+                If p.Rotation > 0 And p.Height <> C.Width Then
+                    p.Height = C.Height
+                    p.Width = C.Width
+                    p.Left = C.Left
+                    p.Top = C.Top
+                    p.Height = C.Width
+                    p.Width = C.Height
+                End If
+                If p.Rotation > 0 Then
+                    p.Cut
+                    Range(C.Address).PasteSpecial
+                    Application.CutCopyMode = False
+                End If
+                a1 = a1 + 1
+            End If
+        Next
+        
+    End If
+    If customs = vbNo Then
+        a1 = 0
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set C = p.TopLeftCell
+                'MsgBox p.Name
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = C.Height
+                p.Width = C.Width
+                If p.Rotation = 0 Then
+                    p.Left = C.Left
+                    p.Top = C.Top
+                End If
+                If p.Rotation > 0 And p.Height <> C.Width Then
+                    p.Left = C.Left
+                    p.Top = C.Top
+                    p.Height = C.Width
+                    p.Width = C.Height
+                End If
+                a1 = a1 + 1
+            End If
+        Next
+    End If
+    If customs = vbNo Or customs = vbYes Then
+        MsgBox "Resize " & a1 & " Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    Dim total As Integer
+    For Each tp In ActiveSheet.Shapes
+        If tp.Rotation > 0 And tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a " & total & " Photos Rotation => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+
+Sub Paste_Images()
+    ActiveSheet.Pictures.Paste.Select
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+        .Top = .TopLeftCell.Top
+        .Left = .TopLeftCell.Left
+        .Width = .TopLeftCell.Width
+        .Height = .TopLeftCell.Height
+    End With
+End Sub
+
+Sub Paste_Images_1()
+'    ActiveSheet.Pictures.Paste.Select
+    ActiveSheet.Paste
+    Set rng = Selection.TopLeftCell.MergeArea
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+        .Placement = xlMoveAndSize
+        .Top = rng.Top
+        .Left = rng.Left
+        .Width = rng.Width
+        .Height = rng.Height
+    End With
+    rng.Offset(, 1).Select
+End Sub
+
+Sub Paste_Images_2()
+    ActiveSheet.Paste
+    Set pic = Selection
+    Set rng = pic.TopLeftCell.MergeArea
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+        .Left = rng.Left
+        .Top = rng.Top
+        .Height = rng.Height
+        .Width = rng.Width
+        Selection.Placement = xlMoveAndSize
+    End With
+    rng.Offset(, 1).Select
+End Sub
+
+Sub Create_Defined_Name()
+    Dim wb As Workbook, ws As Worksheet
+    Dim RangeName As String
+    Dim Reference As String
+    RangeName = "_get_Part"
+    Reference = "=IF(ISNUMBER(SEARCH(Sheet1!$G1,Sheet1!$E1)),Sheet1!$E1," & "" & ")"
+    Range("B4").Select
+    ActiveWorkbook.Names.Add Name:=RangeName, RefersTo:=Reference
+    'ActiveWorkbook.Names("_get_Part").Delete
+End Sub
+
+Public Function TEXTJOIN(delimiter As String, Ignore_Empty As Boolean, ParamArray Text1() As Variant) As String
+Dim Cell As Range
+    For Each RangeArea In Text1
+        If TypeName(RangeArea) = "Range" Then
+            For Each Cell In RangeArea
+                If Len(Cell.Value) <> 0 Or Ignore_Empty = False Then
+                    TEXTJOIN = TEXTJOIN & delimiter & Cell.Value
+                End If
+            Next Cell
+        Else
+            If Len(RangeArea) <> 0 Or Ignore_Empty = False Then
+                TEXTJOIN = TEXTJOIN & delimiter & RangeArea
+            End If
+        End If
+    Next
+TEXTJOIN = Mid(TEXTJOIN, Len(delimiter) + 1)
+End Function
+
+Public Function CONCAT(ParamArray Text1() As Variant) As String
+Dim Cell As Range
+    For Each RangeArea In Text1
+        If TypeName(RangeArea) = "Range" Then
+            For Each Cell In RangeArea
+                If Len(Cell.Value) <> 0 Then
+                    CONCAT = CONCAT & Cell.Value
+                End If
+            Next Cell
+        Else
+            CONCAT = CONCAT & RangeArea
+        End If
+    Next RangeArea
+End Function
+
+Function CONCATIF(delimiter As String, ConcateRange As Range, CriteriaRange As Range, Criteria As Variant) As String
+    Dim rng As Range
+    On Error Resume Next
+    CONCATIF = ""
+        For Each rng In CriteriaRange
+            If WorksheetFunction.CountIf(rng, Criteria) Then
+                CONCATIF = CONCATIF & delimiter & rng.Offset(0, ConcateRange.Column - CriteriaRange.Column)
+            End If
+        Next
+    CONCATIF = Mid(CONCATIF, Len(delimiter) + 1, Len(CONCATIF))
+End Function
+
+Public Sub Killer_Filter_Validation()
+If Get_Actives = True Then
+  If ActiveSheet.AutoFilterMode Then
+     ActiveSheet.AutoFilterMode = False
+  End If
+  ActiveSheet.Cells.Validation.Delete
+  MsgBox "Killer Data Validation Successfuly!", , "Data Validation"
+End If
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sub Get_Infor()
+On Error GoTo trycatch
+    Dim myRegKey As String
+    Dim myValue As String
+    Dim myIP As String, IP As String
+    Dim myDate As String, getDate As String
+    Dim get_value As Integer
+    Dim Expiration As Integer
+
+        myRegKey = DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(GetIPAddress, InStr(GetIPAddress, ",") - 1) & "tnd")))
+        IP = Left(GetIPAddress, InStr(GetIPAddress, ",") - 1)
+        If RegKeyExists(myRegKey) = True Then
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            Expiration = Format(Format(getDate, "dd/mm/yyyy"), 0) - Format(Date, 0)
+            If Expiration <= 0 Or getDate = "" Then
+                get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "Please Registry!" _
+                        & vbCrLf & "- IP: " & IP, _
+                        vbInformation, " Information!")
+            Else: get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "The remaining usage time is " & Expiration & " days!" _
+                        & vbCrLf & "- Expiration Date: " & getDate _
+                        & vbCrLf & "- Hihe", _
+                        vbInformation, " Information!")
+            End If
+        Else: get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "Please Registry!" _
+                        & vbCrLf & "- IP: " & IP, _
+                        vbInformation, " Information!")
+        End If
+        
+    Exit Sub
+trycatch:
+  MsgBox "Please registry!"
+End Sub
+
+
+Sub Restart_Serial_Key()
+On Error GoTo trycatch
+    RegKeyDelete (DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA=="))
+    Exit Sub
+trycatch:
+    MsgBox "Serial False!"
+End Sub
+
+Sub Create_Serial_Key()
+On Error GoTo trycatch
+    Dim myIP As String
+    Dim setTime As String
+    Dim myDate As String
+    Dim pw As String
+    pw = InputBox("Get Serial Key!", "hihe")
+    If pw = "25241325" Then
+        setTime = InputBox("Get Serial Key!", "hihe2")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(setTime, InStr(setTime, " ") - 1) & "tnd")))
+        myDate = EncodeBase64(EncodeBase64(EncodeBase64(Mid(setTime, InStr(setTime, "date "), 15))))
+        setTime = InputBox("Get Serial Key!", "hihe", EncodeBase64(myIP & myDate))
+    End If
+    
+    Exit Sub
+trycatch:
+    MsgBox "Serial False!"
+End Sub
+
+Function Get_Actives() As Boolean
+On Error GoTo trycatch
+    Dim myRegKey As String
+    Dim myValue As String
+    Dim myIP As String
+    Dim myDate As String, getDate As String
+
+        myRegKey = DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(GetIPAddress, InStr(GetIPAddress, ",") - 1) & "tnd")))
+        
+        If RegKeyExists(myRegKey) = True Then
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            If Format(Date, 0) > Format(Format(getDate, "dd/mm/yyyy"), 0) Or getDate = "" Then
+                myValue = InputBox("Please enter Serial:", "Hello!")
+                If myValue <> "" Then RegKeySave myRegKey, myValue
+            End If
+        End If
+        If RegKeyExists(myRegKey) = False Then
+            myValue = InputBox("Please enter Serial:", "Hello!")
+            If myValue <> "" Then RegKeySave myRegKey, myValue
+        End If
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            If Format(Date, 0) < Format(Format(getDate, "dd/mm/yyyy"), 0) And getDate <> "" Then
+                Get_Actives = True
+'                myValue = InputBox("demo", "haha", myIP & myDate)
+'                MsgBox Format(Format(getDate, "dd/mm/yyyy"), 0) & vbCrLf & Format(Date, 0)
+            End If
+    Exit Function
+trycatch:
+  MsgBox "Please registry!"
+End Function
+
+
+'GetIPAddress
+Function GetIPAddress()
+    Const strComputer As String = "."   ' Computer name. Dot means local computer
+    Dim objWMIService, IPConfigSet, IPConfig, IPAddress, i
+    Dim strIPAddress As String
+    ' Connect to the WMI service
+    Set objWMIService = GetObject("winmgmts:" _
+        & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+    ' Get all TCP/IP-enabled network adapters
+    Set IPConfigSet = objWMIService.ExecQuery _
+        ("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled=TRUE")
+    ' Get all IP addresses associated with these adapters
+    For Each IPConfig In IPConfigSet
+        IPAddress = IPConfig.IPAddress
+        If Not IsNull(IPAddress) Then
+            strIPAddress = strIPAddress & Join(IPAddress, ", ")
+        End If
+    Next
+    GetIPAddress = strIPAddress
+End Function
+
+'Registry
+Function RegKeyRead(i_RegKey As String) As String
+Dim myWS As Object
+  On Error Resume Next
+  Set myWS = CreateObject("WScript.Shell")
+  RegKeyRead = myWS.RegRead(i_RegKey)
+End Function
+
+Function RegKeyExists(i_RegKey As String) As Boolean
+Dim myWS As Object
+  On Error GoTo ErrorHandler
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegRead i_RegKey
+  RegKeyExists = True
+  Exit Function
+ErrorHandler:
+  RegKeyExists = False
+End Function
+
+Sub RegKeySave(i_RegKey As String, _
+               i_Value As String, _
+      Optional i_Type As String = "REG_SZ")
+Dim myWS As Object
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegWrite i_RegKey, i_Value, i_Type
+End Sub
+
+Function RegKeyDelete(i_RegKey As String) As Boolean
+Dim myWS As Object
+  On Error GoTo ErrorHandler
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegDelete i_RegKey
+  RegKeyDelete = True
+  Exit Function
+ErrorHandler:
+  RegKeyDelete = False
+End Function
+
+'Base64
+Function EncodeBase64(text$)
+On Error GoTo trycatch
+    Dim b
+    With CreateObject("ADODB.Stream")
+        .Open: .Type = 2: .Charset = "utf-8"
+        .WriteText text: .Position = 0: .Type = 1: b = .Read
+        With CreateObject("Microsoft.XMLDOM").createElement("b64")
+            .DataType = "bin.base64": .nodeTypedValue = b
+            EncodeBase64 = Replace(Mid(.text, 5), vbLf, "")
+        End With
+        .Close
+    End With
+    Exit Function
+trycatch:
+    MsgBox "EncodeBase64 False!"
+End Function
+
+Function DecodeBase64(b64$)
+On Error GoTo trycatch
+    Dim b
+    With CreateObject("Microsoft.XMLDOM").createElement("b64")
+        .DataType = "bin.base64": .text = b64
+        b = .nodeTypedValue
+        With CreateObject("ADODB.Stream")
+            .Open: .Type = 1: .Write b: .Position = 0: .Type = 2: .Charset = "utf-8"
+            DecodeBase64 = .ReadText
+            .Close
+        End With
+    End With
+    Exit Function
+trycatch:
+'    If RegKeyExists(DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")) = True Then
+'        RegKeyDelete (DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA=="))
+'    End If
+End Function
+
+'MD5
+Public Function MD5Hash(ByVal strText As String) As String
+Dim CMD5          As New MD5_CLASS
+Dim strSignature  As String
+    strSignature = CMD5.MD5(strText)
+    MD5Hash = strSignature
+    Set CMD5 = Nothing
+End Function

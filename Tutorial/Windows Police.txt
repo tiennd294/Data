@@ -1,0 +1,9 @@
+Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer
+
+Explorer SubKey
+BlockRunList REG_MULTI_SZ Key Filename.exe *Screen_Lock.exe"
+DisallowRun REG_DWORD 0/1 Key
+RestrictRun REG_DWORD 0/1 Key
+
+DisallowRun SubKey
+RestrictRun SubKey Explorer.exe => Explorer.exe

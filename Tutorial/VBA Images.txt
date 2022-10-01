@@ -1,0 +1,1070 @@
+Option Explicit
+
+Public Sub Select_All_Picture()
+Dim myobject As String
+    myobject = InputBox("Select Object", "Object", "Picture")
+    If myobject <> "" Then
+        For Each tp In ActiveSheet.Shapes
+            If InStr(1, tp.Name, myobject) Then tp.Select False
+        Next
+    End If
+End Sub
+
+Sub Paste_Images()
+    ActiveSheet.Pictures.Paste.Select
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+        .Top = .TopLeftCell.Top
+        .Left = .TopLeftCell.Left
+        .Width = .TopLeftCell.Width
+        .Height = .TopLeftCell.Height
+    End With
+End Sub
+
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+        For Each p In ActiveSheet.Shapes
+            Set c = p.TopLeftCell
+            p.LockAspectRatio = msoFalse
+            'resize to maximise size within cell
+            p.Height = c.Height:    If p.Width > c.Width Then p.Width = c.Width
+            'move
+            p.Left = c.Left:        p.Top = c.Top
+        Next
+End Sub
+
+
+Public Sub AutoOneFitPic()
+On Error GoTo NOT_SHAPE
+Dim PicWtoHRatio As Single
+Dim CellWtoHRatio As Single
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+        .Top = .TopLeftCell.Top
+        .Left = .TopLeftCell.Left
+    End With
+    With Selection
+        PicWtoHRatio = .Width / .Height
+    End With
+    With Selection.TopLeftCell
+        CellWtoHRatio = .Width / .RowHeight
+    End With
+    Select Case PicWtoHRatio / CellWtoHRatio
+        Case Is > 1
+        With Selection
+            .Width = .TopLeftCell.Width
+            .Height = .Width / PicWtoHRatio
+        End With
+        Case Else
+        With Selection
+            .Height = .TopLeftCell.RowHeight
+            .Width = .Height * PicWtoHRatio
+        End With
+    End Select
+Exit Sub
+NOT_SHAPE:
+MsgBox "Select a picture before running this macro."
+End Sub
+
+Public Sub FitMultipleSelectedPics()
+    Dim i As Long
+
+    For i = 1 To Selection.Count
+        FitIndividualPic Selection(i)
+    Next i
+End Sub
+
+Public Sub FitIndividualPic(pic As Object)
+    Dim PicWtoHRatio As Single
+    Dim CellWtoHRatio As Single
+    Dim Gap As Single
+    Gap = 3
+    With pic
+        PicWtoHRatio = (.Width / .Height)
+    End With
+
+    With pic.TopLeftCell
+        CellWtoHRatio = .Width / .RowHeight
+     End With
+
+    Select Case PicWtoHRatio / CellWtoHRatio
+        Case Is > 1
+            With pic
+                .Width = .TopLeftCell.Width - Gap
+                .Height = .Width / PicWtoHRatio - Gap
+            End With
+        Case Else
+
+            With pic
+                .Height = .TopLeftCell.RowHeight - Gap
+                .Width = .Height * PicWtoHRatio - Gap
+            End With
+    End Select
+
+    With pic
+        .Top = .TopLeftCell.Top + Gap
+        .Left = .TopLeftCell.Left + Gap
+    End With
+End Sub
+
+
+Sub ResizePictureCells()
+For Each Picture In ActiveSheet.DrawingObjects
+PictureTop = Picture.Top
+PictureLeft = Picture.Left
+PictureHeight = Picture.Height
+PictureWidth = Picture.Width
+For N = 2 To 256
+If Columns(N).Left > PictureLeft Then
+PictureColumn = N - 1
+Exit For
+End If
+Next N
+For N = 2 To 65536
+If Rows(N).Top > PictureTop Then
+PictureRow = N - 1
+Exit For
+End If
+Next N
+Rows(PictureRow).RowHeight = PictureHeight
+Columns(PictureColumn).ColumnWidth = PictureWidth * (54.29 / 288)
+Picture.Top = Cells(PictureRow, PictureColumn).Top
+Picture.Left = Cells(PictureRow, PictureColumn).Left
+Next Picture
+End Sub
+
+
+
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                p.Left = c.Left
+                p.Top = c.Top
+            End If
+        Next
+End Sub
+
+
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, a1 As Integer, b1 As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1
+    Next
+    s1 = msg_resize(total, "Picture")
+    If s1 = vbNo Then
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                p.Placement = xlMoveAndSize
+                p.LockAspectRatio = msoFalse
+                p.Height = c.Height
+                p.Width = c.Width
+                p.Left = c.Left
+                p.Top = c.Top
+            End If
+        Next p
+        MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+    ElseIf s1 = vbYes Then
+        For a1 = Application.InputBox("Enter begin number") To Application.InputBox("Enter end number")
+        If a1 <= total Then
+            With ActiveSheet.Shapes(a1)
+                If .Type = msoPicture Then
+                    Set c = .TopLeftCell
+                    .Placement = xlMoveAndSize
+                    .LockAspectRatio = msoFalse
+                    .Height = c.Height
+                    .Width = c.Width
+                    .Left = c.Left
+                    .Top = c.Top
+                End If
+            End With
+        End If
+        Next a1
+        MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+
+End Sub
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+Sub Paste_Images()
+    ActiveSheet.Pictures.Paste.Select
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+	  .Placement = xlMoveAndSize
+        .Top = .TopLeftCell.Top
+        .Left = .TopLeftCell.Left
+        .Width = .TopLeftCell.Width
+        .Height = .TopLeftCell.Height
+    End With
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+' fix customs begin end image
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, a1 As Integer, b1 As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1
+    Next
+    s1 = msg_resize(total, "Picture")
+    If s1 = vbNo Then
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                If p.Width <> c.Width Then
+                    p.LockAspectRatio = msoFalse
+                    p.Height = c.Height
+                    p.Width = c.Width
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+            End If
+        Next p
+        MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+    ElseIf s1 = vbYes Then
+        For a1 = Application.InputBox("Enter begin number") To Application.InputBox("Enter end number")
+            If a1 <= total Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        If .Width <> c.Width Then
+                            .Placement = xlMoveAndSize
+                            .LockAspectRatio = msoFalse
+                            .Height = c.Height
+                            .Width = c.Width
+                            .Left = c.Left
+                            .Top = c.Top
+                        End If
+                    End If
+                End With
+            End If
+        Next a1
+        MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+
+End Sub
+
+
+
+
+
+
+
+
+
+' toi gian function
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, a1 As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+    End If
+    If customs = vbNo Then s1 = 1: s2 = total
+    For a1 = s1 To s2
+        If a1 <= total And a1 > 0 Then
+            With ActiveSheet.Shapes(a1)
+                If .Type = msoPicture Then
+                    Set c = .TopLeftCell
+                    .Placement = xlMoveAndSize
+                    .LockAspectRatio = msoFalse
+                    .Height = c.Height
+                    .Width = c.Width
+                    .Left = c.Left
+                    .Top = c.Top
+                End If
+            End With
+        End If
+    Next a1
+    MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+Sub Paste_Images()
+    ActiveSheet.Pictures.Paste.Select
+    With Selection
+        .ShapeRange.LockAspectRatio = msoFalse
+        .Top = .TopLeftCell.Top
+        .Left = .TopLeftCell.Left
+        .Width = .TopLeftCell.Width
+        .Height = .TopLeftCell.Height
+    End With
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+Sub Create_Defined_Name()
+    Dim wb As Workbook, ws As Worksheet
+    Dim RangeName As String
+    Dim Reference As String
+    RangeName = "_get_Part"
+    Reference = "=IF(ISNUMBER(SEARCH(Sheet1!$G1,Sheet1!$E1)),Sheet1!$E1," & "" & ")"
+    Range("B4").Select
+    ActiveWorkbook.Names.Add Name:=RangeName, RefersTo:=Reference
+    'ActiveWorkbook.Names("_get_Part").Delete
+End Sub
+
+
+
+
+
+
+
+
+
+
+__________________Begin Resize V1______________________________
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, a1 As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+        For a1 = s1 To s2
+            If a1 <= total And a1 > 0 Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        .Placement = xlMoveAndSize
+                        .LockAspectRatio = msoFalse
+                        .Height = c.Height
+                        .Width = c.Width
+                        .Left = c.Left
+                        .Top = c.Top
+                    End If
+                End With
+            End If
+        Next a1
+    End If
+    If customs = vbNo Then
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                p.Left = c.Left
+                p.Top = c.Top
+            End If
+        Next
+    End If
+    MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+__________________End Resize V1______________________________
+
+
+__________________Begin Resize V1.1______________________________
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, a1 As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer
+    Dim mw As Double, mh As Double
+
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+        For a1 = s1 To s2
+            If a1 <= total And a1 > 0 Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        .Placement = xlMoveAndSize
+                        .LockAspectRatio = msoFalse
+                        .Height = c.Height
+                        .Width = c.Width
+                        .Left = c.Left
+                        .Top = c.Top
+                    End If
+                End With
+            End If
+        Next a1
+    End If
+    If customs = vbNo Then
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+'                MsgBox p.Name & vbCrLf & _
+'                "Picture Height: " & Application.Round(p.Height / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & _
+'                "Picture Width: " & Application.Round(p.Width / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & _
+'                "Picture Left: " & Application.Round(p.Left / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & _
+'                "Picture Top: " & Application.Round(p.Top / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & vbCrLf & _
+'                "Cell Address: " & c.Address & vbCrLf & _
+'                "Cell Height: " & Application.Round(c.Height / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & _
+'                "Cell Width: " & Application.Round(c.Width / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & _
+'                "Cell Left: " & Application.Round(c.Left / Application.CentimetersToPoints(1), 1) & " cm" & vbCrLf & _
+'                "Cell Top: " & Application.Round(c.Top / Application.CentimetersToPoints(1), 1) & " cm"
+'                MsgBox p.Rotation
+                mw = c.Width
+                mh = c.Height
+                    p.Height = c.Height
+                    p.Width = c.Width
+                If p.Rotation = 0 Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+                If p.Rotation > 0 And p.Height <> c.Width Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                    p.Cut
+                    Range(c.Address).PasteSpecial
+                End If
+            End If
+        Next
+    End If
+    MsgBox "Resize Picture Successfuly!", vbInformation, "Resize Picture"
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+__________________End Resize V1.1______________________________
+
+
+
+__________________Begin Resize V1.2______________________________
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, a1 As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+        For a1 = s1 To s2
+            If a1 <= total And a1 > 0 Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        .Placement = xlMoveAndSize
+                        .LockAspectRatio = msoFalse
+                        .Height = c.Height
+                        .Width = c.Width
+                        If .Rotation = 0 Then
+                            .Left = c.Left
+                            .Top = c.Top
+                        End If
+                        If .Rotation > 0 And .Height <> c.Width Then
+                            .Left = c.Left
+                            .Top = c.Top
+                            .Height = c.Width
+                            .Width = c.Height
+                            .Cut
+                            Range(c.Address).PasteSpecial
+                        End If
+                    End If
+                End With
+            End If
+        Next a1
+    End If
+    If customs = vbNo Then
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                If p.Rotation = 0 Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+                If p.Rotation > 0 And p.Height <> c.Width Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                    p.Cut
+                    Range(c.Address).PasteSpecial
+                End If
+            End If
+        Next
+    End If
+    MsgBox "Resize " & total & " Picture Successfuly!", vbInformation, "Resize Picture"
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+__________________End Resize V1.2______________________________
+
+
+
+
+
+__________________Begin Resize V1.3______________________________
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+        For a1 = s1 To s2
+            If a1 <= total And a1 > 0 Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        .Placement = xlMoveAndSize
+                        .LockAspectRatio = msoFalse
+                        .Height = c.Height
+                        .Width = c.Width
+                        If .Rotation = 0 Then
+                            .Left = c.Left
+                            .Top = c.Top
+                        End If
+                        If .Rotation > 0 And .Height <> c.Width Then
+                            .Left = c.Left
+                            .Top = c.Top
+                            .Height = c.Width
+                            .Width = c.Height
+                            .Cut
+                            Range(c.Address).PasteSpecial
+                        End If
+                    End If
+                End With
+            End If
+        Next a1
+    End If
+    If customs = vbNo Then
+        a1 = msg_rotation("Picture")
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                If p.Rotation = 0 Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+                If p.Rotation > 0 And p.Height <> c.Width And a1 = vbYes Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                    p.Cut
+                    Range(c.Address).PasteSpecial
+                End If
+            End If
+        Next
+    End If
+    If customs = vbNo Or customs = vbYes Then
+        MsgBox "Resize " & total & " Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+Function msg_rotation(title As String)
+    Dim total As Integer
+    Dim get_value As Integer
+    For Each tp In ActiveSheet.Shapes
+        If tp.Rotation > 0 Then total = total + 1 'get Total Picture
+    Next
+    
+    get_value = MsgBox(total & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to Resize " & total & " " & title & " Rotation?" _
+            & vbCrLf & "- If you want to resize a Photos Rotation => Click No" _
+            & vbCrLf & "- If you want to resize images basic => Click Yes", _
+            vbQuestion + vbYesNo + vbDefaultButton2, "Resize " & title & "!")
+    msg_rotation = get_value
+End Function
+
+__________________End Resize V1.3______________________________
+
+
+
+__________________Begin Resize V1.4______________________________
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+        For a1 = s1 To s2
+            If a1 <= total And a1 > 0 Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        .Placement = xlMoveAndSize
+                        .LockAspectRatio = msoFalse
+                        .Height = c.Height
+                        .Width = c.Width
+                        If .Rotation = 0 Then
+                            .Left = c.Left
+                            .Top = c.Top
+                        End If
+                        If .Rotation > 0 And .Height <> c.Width Then
+                            .Left = c.Left
+                            .Top = c.Top
+                            .Height = c.Width
+                            .Width = c.Height
+                        End If
+                    End If
+                End With
+            End If
+        Next a1
+    End If
+    If customs = vbNo Then
+        a1 = msg_rotation("Picture")
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                'MsgBox p.Name
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                If p.Rotation = 0 Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+                If p.Rotation > 0 And p.Height <> c.Width Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                End If
+                If a1 = vbYes And p.Rotation > 0 Then
+                    p.Cut
+                    Range(c.Address).PasteSpecial
+                    Application.CutCopyMode = False
+                End If
+            End If
+        Next
+    End If
+    If customs = vbNo Or customs = vbYes Then
+        MsgBox "Resize " & total & " Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+Function msg_rotation(title As String)
+    Dim total As Integer
+    Dim get_value As Integer
+    For Each tp In ActiveSheet.Shapes
+        If tp.Rotation > 0 Then total = total + 1 'get Total Picture
+    Next
+    
+    get_value = MsgBox(total & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to Resize " & total & " " & title & " Rotation?" _
+            & vbCrLf & "- If you want to resize a Photos Rotation => Click Yes" _
+            & vbCrLf & "- If you want to resize images basic => Click No", _
+            vbQuestion + vbYesNo + vbDefaultButton2, "Resize " & title & "!")
+    msg_rotation = get_value
+End Function
+
+__________________End Resize V1.4______________________________
+
+
+__________________Resize V1.5______________________________
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer, s2 As Integer, a2 As Integer
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        s1 = Application.InputBox("Enter begin number", "Begin Images", "1", Type:=1)
+        s2 = Application.InputBox("Enter end number", "End Images", "100", Type:=1)
+'        a2 = msg_rotation("Picture")
+        For a1 = s1 To s2
+            If a1 <= total And a1 > 0 Then
+                With ActiveSheet.Shapes(a1)
+                    If .Type = msoPicture Then
+                        Set c = .TopLeftCell
+                        .Placement = xlMoveAndSize
+                        .LockAspectRatio = msoFalse
+                        .Height = c.Height
+                        .Width = c.Width
+                        If .Rotation = 0 Then
+                            .Left = c.Left
+                            .Top = c.Top
+                        End If
+                        If .Rotation > 0 And .Height <> c.Width Then
+                            .Left = c.Left
+                            .Top = c.Top
+                            .Height = c.Width
+                            .Width = c.Height
+                        End If
+                        If a2 = vbYes And .Rotation > 0 Then
+                            .Cut
+                            Range(c.Address).PasteSpecial
+                            Application.CutCopyMode = False
+                        End If
+                    End If
+                End With
+            End If
+        Next a1
+    End If
+    If customs = vbNo Then
+'        a1 = msg_rotation("Picture")
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                'MsgBox p.Name
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                If p.Rotation = 0 Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+                If p.Rotation > 0 And p.Height <> c.Width Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                End If
+                If a1 = vbYes And p.Rotation > 0 Then
+                    p.Cut
+                    Range(c.Address).PasteSpecial
+                    Application.CutCopyMode = False
+                End If
+            End If
+        Next
+    End If
+    If customs = vbNo Or customs = vbYes Then
+        MsgBox "Resize " & total & " Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a certain number of photos => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+Function msg_rotation(title As String)
+    Dim total As Integer
+    Dim get_value As Integer
+    For Each tp In ActiveSheet.Shapes
+        If tp.Rotation > 0 Then total = total + 1 'get Total Picture
+    Next
+    
+    get_value = MsgBox(total & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to Resize " & total & " " & title & " Rotation?" _
+            & vbCrLf & "- If you want to resize a Photos Rotation => Click Yes" _
+            & vbCrLf & "- If you want to resize images basic => Click No", _
+            vbQuestion + vbYesNo + vbDefaultButton2, "Resize " & title & "!")
+    msg_rotation = get_value
+End Function
+
+__________________Resize V1.5______________________________
+
+
+
+
+__________________Resize V1.6______________________________
+
+
+Sub ResizePicture()
+    Dim p As Shape, c As Range
+    Dim total As Integer, s1 As Integer
+    total = 0
+    For Each tp In ActiveSheet.Shapes
+        If tp.Type = msoPicture Then total = total + 1 'get Total Picture
+    Next
+    If total > 0 Then s1 = msg_resize(total, "Picture")
+    If total <= 0 Then MsgBox "No Pictures!", vbInformation, "Resize Picture False!"
+    If s1 = vbNo Then
+        Call MovePicture(s1, total)
+    ElseIf s1 = vbYes Then
+        Call MovePicture(s1, total)
+    End If
+End Sub
+
+Function MovePicture(customs As Integer, total As Integer)
+    Dim a1 As Integer, s1 As Integer
+    Dim p As Shape, c As Range
+    If customs = vbYes Then
+        a1 = 0
+        s1 = Application.InputBox("Enter Number Picture", "Total Images Resize", "30", Type:=1)
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture And p.Rotation > 0 And a1 < s1 Then
+		    p.Placement = xlMoveAndSize
+                p.LockAspectRatio = msoFalse
+                Set c = p.TopLeftCell
+                If p.Rotation > 0 And p.Height <> c.Width Then
+                    p.Height = c.Height
+                    p.Width = c.Width
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                End If
+                If p.Rotation > 0 Then
+                    p.Cut
+                    Range(c.Address).PasteSpecial
+                    Application.CutCopyMode = False
+                End If
+                a1 = a1 + 1
+            End If
+        Next
+        
+    End If
+    If customs = vbNo Then
+        a1 = 0
+        For Each p In ActiveSheet.Shapes
+            If p.Type = msoPicture Then
+                Set c = p.TopLeftCell
+                'MsgBox p.Name
+                p.LockAspectRatio = msoFalse
+                p.Placement = xlMoveAndSize
+                p.Height = c.Height
+                p.Width = c.Width
+                If p.Rotation = 0 Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                End If
+                If p.Rotation > 0 And p.Height <> c.Width Then
+                    p.Left = c.Left
+                    p.Top = c.Top
+                    p.Height = c.Width
+                    p.Width = c.Height
+                End If
+                a1 = a1 + 1
+            End If
+        Next
+    End If
+    If customs = vbNo Or customs = vbYes Then
+        MsgBox "Resize " & a1 & " Picture Successfuly!", vbInformation, "Resize Picture"
+    End If
+End Function
+
+Function msg_resize(number As Integer, title As String)
+    Dim get_value As Integer
+    Dim total As Integer
+    For Each tp In ActiveSheet.Shapes
+        If tp.Rotation > 0 Then total = total + 1 'get Total Picture
+    Next
+    get_value = MsgBox(number & " " & title & "!" & vbCrLf & vbCrLf & _
+            "Do you want to custom Resize " & number & " " & title & "?" _
+            & vbCrLf & "- If you want to resize a " & total & " Photos Rotation => Click Yes" _
+            & vbCrLf & "- If you want to resize all images => Click No" _
+            & vbCrLf & "- If you don't want to resize the image => Click Cancel", _
+            vbQuestion + vbYesNoCancel + vbDefaultButton2, "Resize " & title & "!")
+    msg_resize = get_value
+End Function
+
+
+__________________Resize V1.6______________________________

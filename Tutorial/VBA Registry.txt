@@ -1,0 +1,437 @@
+VBA cung cấp các chức năng GetSetting, SaveSetting, GetAllSettings và 
+DeleteSetting để đọc và ghi Windows Registry. (Để biết thông tin chi tiết, 
+hãy xem phần trợ giúp VBA của Microsoft cho các chức năng này hoặc xem MSDN)
+
+Nhưng tiếc là bạn không thể truy cập toàn bộ sổ đăng ký, chỉ có đường dẫn 
+HKEY_CURRENT_USER \ Software \ VB và VBA Program Settings \. 
+Vì vậy, bạn có thể tạo, lưu và đọc cài đặt người dùng cho ứng dụng 
+Visual Basic của riêng mình, nhưng bạn không thể truy cập cài đặt cho 
+bất kỳ ứng dụng nào khác (ví dụ: thư mục tải xuống mặc định cho 
+Internet Explorer, btw, là 
+HKEY_CURRENT_USER \ Software \ Microsoft \ Internet Explorer \ Tải xuống Thư mục)
+
+May mắn thay, khi lập trình với VBA, bạn không bị giới hạn chức năng mà VBA cung cấp. 
+Bằng cách sử dụng các tính năng của Windows Scripting, bạn có thể truy cập toàn bộ 
+Window Registry khá dễ dàng.
+
+Đọc từ Registry:
+'Reading from the Registry:
+
+'reads the value for the registry key i_RegKey
+'if the key cannot be found, the return value is ""
+Function RegKeyRead(i_RegKey As String) As String
+Dim myWS As Object
+
+  On Error Resume Next
+  'access Windows scripting
+  Set myWS = CreateObject("WScript.Shell")
+  'read key from registry
+  RegKeyRead = myWS.RegRead(i_RegKey)
+End Function
+
+'Checking if a Registry key exists:
+
+'returns True if the registry key i_RegKey was found
+'and False if not
+Function RegKeyExists(i_RegKey As String) As Boolean
+Dim myWS As Object
+
+  On Error GoTo ErrorHandler
+  'access Windows scripting
+  Set myWS = CreateObject("WScript.Shell")
+  'try to read the registry key
+  myWS.RegRead i_RegKey
+  'key was found
+  RegKeyExists = True
+  Exit Function
+  
+ErrorHandler:
+  'key was not found
+  RegKeyExists = False
+End Function
+
+'Saving a Registry key:
+
+'sets the registry key i_RegKey to the
+'value i_Value with type i_Type
+'if i_Type is omitted, the value will be saved as string
+'if i_RegKey wasn't found, a new registry key will be created
+Sub RegKeySave(i_RegKey As String, _
+               i_Value As String, _
+      Optional i_Type As String = "REG_SZ")
+Dim myWS As Object
+
+  'access Windows scripting
+  Set myWS = CreateObject("WScript.Shell")
+  'write registry key
+  myWS.RegWrite i_RegKey, i_Value, i_Type
+
+End Sub
+
+'Deleting a key from the Registry:
+
+'deletes i_RegKey from the registry
+'returns True if the deletion was successful,
+'and False if not (the key couldn't be found)
+Function RegKeyDelete(i_RegKey As String) As Boolean
+Dim myWS As Object
+
+  On Error GoTo ErrorHandler
+  'access Windows scripting
+  Set myWS = CreateObject("WScript.Shell")
+  'delete registry key
+  myWS.RegDelete i_RegKey
+  'deletion was successful
+  RegKeyDelete = True
+  Exit Function
+
+ErrorHandler:
+  'deletion wasn't successful
+  RegKeyDelete = False
+End Function
+
+
+
+Các hàm này cần khóa Registry với đường dẫn đầy đủ của nó, vì vậy i_RegKey phải luôn bắt đầu bằng một trong các giá trị sau:
+HKCU hoặc HKEY_CURRENT_USER
+HKLM hoặc HKEY_LOCAL_MACHINE
+HKCR hoặc HKEY_CLASSES_ROOT
+HKEY_USERS
+HKEY_CURRENT_CONFIG
+và kết thúc bằng tên của khóa ...
+
+RegKeySave cũng có một tham số đầu vào cho loại giá trị khóa đăng ký. Được hỗ trợ là các loại sau:
+REG_SZ - Một chuỗi. Nếu loại không được chỉ định, loại này sẽ được sử dụng làm Mặc định.
+REG_DWORD - Một số 32 bit.
+REG_EXPAND_SZ - Một chuỗi chứa các tham chiếu không được mở rộng đến các biến môi trường.
+REG_BINARY - Dữ liệu nhị phân dưới mọi hình thức. Bạn thực sự không nên chạm vào các mục như vậy.
+Bạn có thể tìm thêm thông tin về các loại giá trị sổ đăng ký trong MSDN.
+
+
+Cuối cùng, đây là một chương trình nhỏ để kiểm tra các chức năng trên:
+
+
+
+Sub TestRegistry()
+Dim myRegKey As String
+Dim myValue As String
+Dim myAnswer As Integer
+
+  'get registry key to work with
+
+  myRegKey = "HKEY_CURRENT_USER\Software\ExcelTools\" & InputBox("Which registry key do you want to read?", _
+             "Get Registry Key")
+  If myRegKey = "" Then Exit Sub
+  'check if key exists
+  If RegKeyExists(myRegKey) = True Then
+    'key exists, read it
+    myValue = RegKeyRead(myRegKey)
+    'display result and ask if it should be changed
+    myAnswer = MsgBox("The registry value for the key """ & _
+               myRegKey & """" & vbCr & "is """ & myValue & _
+               """" & vbCr & vbCr & _
+               "Do you want to change it?", vbYesNo)
+  Else
+    'key doesn't exist, ask if it should be created
+    myAnswer = MsgBox("The registry key """ & myRegKey & _
+               """ could not be found." & vbCr & vbCr & _
+               "Do you want to create it?", vbYesNo)
+  End If
+  If myAnswer = vbYes Then
+    'ask for new registry key value
+    myValue = InputBox("Please enter new value:", _
+              myRegKey, myValue)
+    If myValue <> "" Then
+      'save/create registry key with new value
+      RegKeySave myRegKey, myValue
+      MsgBox "Registry key saved."
+    End If
+  End If
+  
+  'ask if key should be deleted from registry
+  myAnswer = MsgBox("Do you want to delete the registry key """ & _
+             myRegKey & """?", vbYesNo)
+  If myAnswer = vbYes Then
+    'delete registry key
+    If RegKeyDelete(myRegKey) = True Then
+      'deletion was successful
+      MsgBox "Registry key """ & myRegKey & """ deleted."
+    Else
+      'deletion wasn't successful
+      MsgBox "Registry key """ & myRegKey & _
+             """ could not be deleted."
+    End If
+  End If
+End Sub
+
+
+
+Tất nhiên, các cảnh báo thông thường được áp dụng:
+Đừng lộn xộn với Registry nếu bạn không biết mình đang làm gì, 
+nếu không nó có thể gây ra hậu quả nghiêm trọng! Nếu bạn thay đổi các mục nhập
+ mà bạn không quá chắc chắn, hãy sao lưu sổ đăng ký trước! Đừng xóa các mục nhập,
+ tốt hơn là nên đổi tên chúng, vì vậy bạn có thể dễ dàng lấy lại chúng nếu thay đổi
+ của bạn không như bạn muốn! Chỉ xóa chúng khi bạn hoàn toàn chắc chắn rằng bạn 
+(và cả Windows cũng như bất kỳ ứng dụng nào) không cần chúng nữa! Bạn tự chịu rủi
+ ro khi thay đổi Registry!
+
+
+'Base64
+Function EncodeBase64(text$)
+    Dim b
+    With CreateObject("ADODB.Stream")
+        .Open: .Type = 2: .Charset = "utf-8"
+        .WriteText text: .Position = 0: .Type = 1: b = .Read
+        With CreateObject("Microsoft.XMLDOM").createElement("b64")
+            .DataType = "bin.base64": .nodeTypedValue = b
+            EncodeBase64 = Replace(Mid(.text, 5), vbLf, "")
+        End With
+        .Close
+    End With
+End Function
+
+Function DecodeBase64(b64$)
+    Dim b
+    With CreateObject("Microsoft.XMLDOM").createElement("b64")
+        .DataType = "bin.base64": .text = b64
+        b = .nodeTypedValue
+        With CreateObject("ADODB.Stream")
+            .Open: .Type = 1: .Write b: .Position = 0: .Type = 2: .Charset = "utf-8"
+            DecodeBase64 = .ReadText
+            .Close
+        End With
+    End With
+End Function
+
+Public Sub Main()
+    Dim strData As String
+    strData = EncodeBase64(StrConv("1_107.125.135.102 ", vbFromUnicode))
+    MsgBox strData
+    MsgBox StrConv(DecodeBase64(strData), vbUnicode)
+End Sub
+
+
+'HAM BAM MD5 & SHA256
+' 2005-11-21. Cactus Data ApS, CPH.
+Option Explicit
+'-----------------------------------------------------------------------------
+'Tao ma md5 mot chuoi ky tu
+Public Function MD5Hash(ByVal strText As String) As String
+' Create and return MD5 signature from strText.
+' Signature has a length of 32 characters.
+Dim CMD5          As New MD5_CLASS
+Dim strSignature  As String
+    ' Calculate MD5 hash.
+    strSignature = CMD5.MD5(strText)
+    ' Return MD5 signature.
+    MD5Hash = strSignature
+    Set CMD5 = Nothing
+End Function
+'-----------------------------------------------------------------------------
+'kiem tra 1 chuoi voi 1 md5 co phai la dung
+Public Function IsMD5(ByVal strText As String, ByVal strMD5 As String) As Boolean
+' Checks if strMD5 is the MD5 signature of strText.
+' Returns True if they match.
+' Note: strText is case sensitive while strMD5 is not.
+Dim booMatch  As Boolean
+    booMatch = (StrComp(strMD5, MD5Hash(strText), vbTextCompare) = 0)
+    IsMD5 = booMatch
+End Function
+'-----------------------------------------------------------------------------
+'HAM BAM SHA 256
+Public Function Sha256Hash(ByVal S As String) As String
+Dim Result As String
+Dim CSHA256 As New SHA256_CLASS
+    Result = CSHA256.SHA256(S)
+    Sha256Hash = Result
+    Set CSHA256 = Nothing
+End Function
+'-----------------------------------------------------------------------------
+
+
+
+
+'GetIPAddress
+Function GetIPAddress()
+    Const strComputer As String = "."   ' Computer name. Dot means local computer
+    Dim objWMIService, IPConfigSet, IPConfig, IPAddress, i
+    Dim strIPAddress As String
+
+    ' Connect to the WMI service
+    Set objWMIService = GetObject("winmgmts:" _
+        & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+
+    ' Get all TCP/IP-enabled network adapters
+    Set IPConfigSet = objWMIService.ExecQuery _
+        ("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled=TRUE")
+
+    ' Get all IP addresses associated with these adapters
+    For Each IPConfig In IPConfigSet
+        IPAddress = IPConfig.IPAddress
+        If Not IsNull(IPAddress) Then
+            strIPAddress = strIPAddress & Join(IPAddress, ", ")
+        End If
+    Next
+
+    GetIPAddress = strIPAddress
+End Function
+
+
+TmpJd1kyRXlNbUU0TW1NNE0yUTNZemxrTkdJMllqVTBaalk1WVRRNVpHUT0=V2tkR01GcFRRWHBOUXpoM1RrTTRlVTFFU1hrPQ==
+
+192.168.1.29 date 30/04/2022
+
+Sub Create_Serial_Key()
+On Error GoTo trycatch
+    Dim myIP As String
+    Dim setTime As String
+    Dim myDate As String
+    Dim pw As String
+    pw = InputBox("Get Serial Key!", "hihe")
+    If pw = "0945200893" Then
+        setTime = InputBox("Get Serial Key!", "hihe2")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(setTime, InStr(setTime, " ") - 1) & "tnd")))
+        myDate = EncodeBase64(EncodeBase64(EncodeBase64(Mid(setTime, InStr(setTime, "date "), 15))))
+        setTime = InputBox("Get Serial Key!", "hihe", EncodeBase64(myIP & myDate))
+    End If
+    
+    Exit Sub
+trycatch:
+    MsgBox "Serial False!"
+End Sub
+
+Sub Unhide_Multiple_Sheets()
+If Get_Actives = True Then
+    Dim ws As Worksheet
+    For Each ws In ActiveWorkbook.Worksheets
+        ws.Visible = xlSheetVisible
+    Next ws
+End If
+End Sub
+
+Function Get_Actives() As Boolean
+On Error GoTo trycatch
+    Dim myRegKey As String
+    Dim myValue As String
+    Dim myIP As String
+    Dim myDate As String, getDate As String
+
+        myRegKey = DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(GetIPAddress, InStr(GetIPAddress, ",") - 1) & "tnd")))
+        
+        If RegKeyExists(myRegKey) = True Then
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            If Format(Date, 0) > Format(Format(getDate, "dd/mm/yyyy"), 0) Or getDate = "" Then
+                myValue = InputBox("Please enter Serial:", "Hello!")
+                If myValue <> "" Then RegKeySave myRegKey, myValue
+            End If
+        End If
+        If RegKeyExists(myRegKey) = False Then
+            myValue = InputBox("Please enter Serial:", "Hello!")
+            If myValue <> "" Then RegKeySave myRegKey, myValue
+        End If
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            If Format(Date, 0) < Format(Format(getDate, "dd/mm/yyyy"), 0) And getDate <> "" Then
+                Get_Actives = True
+'                myValue = InputBox("demo", "haha", myIP & myDate)
+'                MsgBox Format(Format(getDate, "dd/mm/yyyy"), 0) & vbCrLf & Format(Date, 0)
+            End If
+    Exit Function
+trycatch:
+  MsgBox "Please registry!"
+End Function
+
+
+'GetIPAddress
+Function GetIPAddress()
+    Const strComputer As String = "."   ' Computer name. Dot means local computer
+    Dim objWMIService, IPConfigSet, IPConfig, IPAddress, i
+    Dim strIPAddress As String
+    ' Connect to the WMI service
+    Set objWMIService = GetObject("winmgmts:" _
+        & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+    ' Get all TCP/IP-enabled network adapters
+    Set IPConfigSet = objWMIService.ExecQuery _
+        ("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled=TRUE")
+    ' Get all IP addresses associated with these adapters
+    For Each IPConfig In IPConfigSet
+        IPAddress = IPConfig.IPAddress
+        If Not IsNull(IPAddress) Then
+            strIPAddress = strIPAddress & Join(IPAddress, ", ")
+        End If
+    Next
+    GetIPAddress = strIPAddress
+End Function
+
+'Registry
+Function RegKeyRead(i_RegKey As String) As String
+Dim myWS As Object
+  On Error Resume Next
+  Set myWS = CreateObject("WScript.Shell")
+  RegKeyRead = myWS.RegRead(i_RegKey)
+End Function
+
+Function RegKeyExists(i_RegKey As String) As Boolean
+Dim myWS As Object
+  On Error GoTo ErrorHandler
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegRead i_RegKey
+  RegKeyExists = True
+  Exit Function
+ErrorHandler:
+  RegKeyExists = False
+End Function
+
+Sub RegKeySave(i_RegKey As String, _
+               i_Value As String, _
+      Optional i_Type As String = "REG_SZ")
+Dim myWS As Object
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegWrite i_RegKey, i_Value, i_Type
+End Sub
+
+'Base64
+Function EncodeBase64(text$)
+On Error GoTo trycatch
+    Dim b
+    With CreateObject("ADODB.Stream")
+        .Open: .Type = 2: .Charset = "utf-8"
+        .WriteText text: .Position = 0: .Type = 1: b = .Read
+        With CreateObject("Microsoft.XMLDOM").createElement("b64")
+            .DataType = "bin.base64": .nodeTypedValue = b
+            EncodeBase64 = Replace(Mid(.text, 5), vbLf, "")
+        End With
+        .Close
+    End With
+trycatch:
+    'haha
+End Function
+
+Function DecodeBase64(b64$)
+On Error GoTo trycatch
+    Dim b
+    With CreateObject("Microsoft.XMLDOM").createElement("b64")
+        .DataType = "bin.base64": .text = b64
+        b = .nodeTypedValue
+        With CreateObject("ADODB.Stream")
+            .Open: .Type = 1: .Write b: .Position = 0: .Type = 2: .Charset = "utf-8"
+            DecodeBase64 = .ReadText
+            .Close
+        End With
+    End With
+trycatch:
+    'haha
+End Function
+
+'MD5
+Public Function MD5Hash(ByVal strText As String) As String
+Dim CMD5          As New MD5_CLASS
+Dim strSignature  As String
+    strSignature = CMD5.MD5(strText)
+    MD5Hash = strSignature
+    Set CMD5 = Nothing
+End Function

@@ -1,0 +1,26 @@
+tasklist /fi "ImageName eq MyApp.exe" /fo csv 2>NUL | find /I "myapp.exe">NUL
+if "%ERRORLEVEL%"=="0" echo Program is running
+
+REM /fi "" defines a filter of apps to find, in our case it's the *.exe name
+REM /fo csv defines the output format, csv is required because by default the name of the executable may be truncated if it is too long and thus wouldn't be matched by find later.
+REM find /I means case-insensitive matching and may be omitted
+
+
+Ex:
+ECHO OFF
+cls
+REM start "Screen" "C:\Users\NguyenTien\Desktop\Screen_Lock.exe"
+
+tasklist /fi "ImageName eq Screen_Lock.exe" /fo csv 2>NUL | find /I "Screen_Lock.exe">NUL
+if "%ERRORLEVEL%"=="1" (start "Screen" "C:\Users\NguyenTien\Desktop\Screen_Lock.exe") else (echo Program is running)
+PAUSE
+
+
+
+ECHO OFF
+cls
+REM start "Screen" "C:\Users\NguyenTien\Desktop\Screen_Lock.exe"
+tasklist /fi "ImageName eq Screen_Lock.exe" /fo csv 2>NUL | find /I "Screen_Lock.exe">NUL
+REM if "%ERRORLEVEL%"=="1" (echo Program is not running) else (echo Program is running)
+REM if "%ERRORLEVEL%"=="1" start "Screen" "C:\Users\NguyenTien\Desktop\Screen_Lock.exe"
+if "%ERRORLEVEL%"=="1" start "Screen" "%~dp0\Screen_Lock.exe"

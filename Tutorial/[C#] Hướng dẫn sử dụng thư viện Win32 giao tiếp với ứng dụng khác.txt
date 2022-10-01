@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Spy_App
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+        public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+        [DllImport("user32.dll")]
+        public static extern bool SetForegroundWindow(IntPtr hWnd);
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int wMsg, IntPtr wParam, IntPtr lParam);
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr FindWindowEx(IntPtr parentHandle, IntPtr childAfter, string className, string windowTitle);
+        const int BM_CLICK = 0x00F5;
+        private const int BN_CLICKED = 245;
+        private void btn_send_Click(object sender, EventArgs e)
+        {
+            IntPtr WindowHandle = FindWindow(textBox2.Text, textBox1.Text);
+            if(WindowHandle == IntPtr.Zero)
+            {
+                //MessageBox.Show(textBox1.Text + " Ứng dụng không tồn tại");
+                //return;
+                var process = Process.Start("calc.exe");
+                Thread.Sleep(1000);
+                WindowHandle = FindWindow(textBox2.Text, textBox1.Text);
+            }           
+            SetForegroundWindow(WindowHandle);
+
+            SendKeys.SendWait("50");
+            SendKeys.SendWait("*");
+            SendKeys.SendWait("10");
+            SendKeys.SendWait("=");
+            SendKeys.SendWait("{ENTER}");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IntPtr WindowHandle = FindWindow(textBox2.Text, textBox1.Text);
+            if (WindowHandle == IntPtr.Zero)
+            {
+                MessageBox.Show(textBox1.Text + " Ứng dụng không tồn tại");
+                return;
+            }
+            SetForegroundWindow(WindowHandle);
+
+            SendKeys.SendWait("Spy App https://laptrinhvb.net
+");           
+            SendKeys.SendWait("{ENTER}");
+        }
+    }
+}

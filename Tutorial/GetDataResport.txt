@@ -1,0 +1,64 @@
+Option Explicit
+Sub Refresh_Data()
+    Const Accent = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    Dim x As Integer, nbegin As Integer, nend As Integer, TotalVCol As Integer, TotalSCol As Integer, MaxC As Integer, nRange As String
+    Dim RaVMonth As String, RaVWeek As String, RaVModule As String, RaVFloor As String, RaVPart As String, RaVError As String
+    Dim RaSMonth As String, RaSWeek As String, RaSModule As String, RaSFloor As String, RaSPart As String, RaSError As String
+    Dim GetVMonth As String, GetVWeek As String, GetVModule As String, GetVFloor As String, GetVPart As String, GetVError As String
+
+    RaVPart = "K"
+    RaSPart = "E"
+    TotalSCol = 0
+    TotalVCol = 0
+    On Error Resume Next
+        For x = 1 To Len(Accent)
+            nRange = Mid(Accent, x, 1) & ":" & Mid(Accent, x, 1)
+            MaxC = ActiveSheet.Range(nRange).Cells.SpecialCells(xlCellTypeConstants).Count
+            If x < 8 Then
+                If TotalSCol < MaxC Then TotalSCol = MaxC
+            Else
+                If TotalVCol < MaxC Then TotalVCol = MaxC
+            End If
+        Next
+        nbegin = 0
+        nend = TotalVCol - TotalSCol
+'        TotalSCol = 1
+        TotalSCol = TotalSCol + 5
+        TotalVCol = TotalVCol + 5
+        If TotalSCol < TotalVCol Then
+            For x = TotalSCol To TotalVCol
+                nbegin = nbegin + 1
+                If x < TotalVCol Then
+                    GetVPart = getPart(ActiveSheet.Range(RaVPart & x).Value)
+                    If GetVPart <> "" Then
+                        ActiveSheet.Range(RaSPart & x).Value = GetVPart
+                    End If
+                    'MsgBox "Begin: " & nbegin & vbCrLf & "End: " & nend
+                End If
+            Next
+            MsgBox "Refresh Data Sucessfuly!", vbInformation, "Get Data"
+        Else: MsgBox "No Data Refresh!", vbExclamation, "Get Data"
+        End If
+    On Error GoTo 0
+End Sub
+
+Function getPart(sPart As String) As String
+On Error Resume Next
+    Dim vPart As String
+    vPart = "Inspection "
+    If InStr(1, sPart, "1A") Then vPart = vPart & "1A"
+    If InStr(1, sPart, "1C") Then vPart = vPart & "1C"
+    If InStr(1, sPart, "1D") Then vPart = vPart & "1D"
+    If InStr(1, sPart, "2A") Then vPart = vPart & "2A"
+    If InStr(1, sPart, "2B") Then vPart = vPart & "2B"
+    If InStr(1, sPart, "2C") Then vPart = vPart & "2C"
+    If InStr(1, sPart, "2D") Then vPart = vPart & "2D"
+    If InStr(1, sPart, "MANA") Then vPart = vPart & "Management"
+    If InStr(1, sPart, "FAB") Then vPart = vPart & "FAB"
+    If InStr(1, sPart, "INNO") Then vPart = vPart & "Innovation"
+    If InStr(1, sPart, "PAK") Then vPart = vPart & "Packing"
+    vPart = vPart & " Part"
+    If Len(vPart) = 16 Then vPart = "Part Error!"
+    getPart = vPart
+On Error GoTo 0
+End Function

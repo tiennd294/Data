@@ -1,0 +1,164 @@
+Option Explicit
+
+Sub FontChange()
+
+Dim sld As Slide
+Dim shp As Shape
+
+For Each sld In ActivePresentation.Slides
+    For Each shp In sld.Shapes
+    If shp.HasTextFrame Then
+    If shp.TextFrame.HasText Then
+        With shp.TextFrame.TextRange.Font
+            .Name = "Times New Roman"
+        End With
+    End If
+    End If
+    Next shp
+Next sld
+End Sub
+
+Sub FontChange2()
+
+ Dim oSl As Slide
+ Dim oSh As Shape
+ Dim oTbl As Table
+' Dim oSmt As SmartArt
+' Dim oNode As SmartArtNode
+
+ Dim lRow As Long
+ Dim lCol As Long
+ Dim X As Long
+ Dim sFontName As String
+
+ sFontName = "Times New Roman"
+
+
+ 'Text Boxes
+ With ActivePresentation
+     For Each oSl In .Slides
+         For Each oSh In oSl.Shapes
+             With oSh
+                 If .HasTextFrame Then
+                     If .TextFrame.HasText Then
+                         .TextFrame.TextRange.Font.Name = sFontName
+                     End If
+                 End If
+             End With
+         Next
+     Next
+ End With
+
+ 'Grouped Objects
+ For Each oSl In ActivePresentation.Slides
+     For Each oSh In oSl.Shapes
+         With oSh
+             Select Case .Type
+             Case Is = msoGroup
+                 For X = 1 To .GroupItems.Count
+                     If .GroupItems(X).HasTextFrame Then
+                         If .GroupItems(X).TextFrame.HasText Then
+                              .GroupItems(X).TextFrame.TextRange.Font.Name = sFontName
+                         End If
+                     End If
+                 Next X
+             End Select
+         End With ' oSh
+     Next oSh
+ Next oSl
+
+ 'Smart Arts
+ For Each oSl In ActivePresentation.Slides
+     For Each oSh In oSl.Shapes
+         If oSh.HasTable Then
+             Set oTbl = oSh.Table
+             For lRow = 1 To oTbl.Rows.Count
+                 For lCol = 1 To oTbl.Columns.Count
+                     With oTbl.Cell(lRow, lCol).Shape.TextFrame.TextRange
+                         .Font.Name = sFontName
+                     End With
+                 Next
+             Next
+'         ElseIf oSh.HasSmartArt Then
+'             For Each oNode In oSh.SmartArt.AllNodes
+'                 oNode.TextFrame2.TextRange.Font.Name = sFontName
+'             Next
+         End If
+     Next
+ Next oSl
+
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+Sub FontChange()
+
+ Dim oSl As Slide
+ Dim oSh As Shape
+ Dim oTbl As Table
+
+ Dim lRow As Long
+ Dim lCol As Long
+ Dim X As Long
+ Dim sFontName As String
+ 
+    sFontName = InputBox("Set Font Name", "Font Change", "Times New Roman")
+ 'Text Boxes
+ With ActivePresentation
+     For Each oSl In .Slides
+         For Each oSh In oSl.Shapes
+             With oSh
+                 If .HasTextFrame Then
+                     If .TextFrame.HasText Then
+                         .TextFrame.TextRange.Font.Name = sFontName
+                     End If
+                 End If
+             End With
+         Next
+     Next
+ End With
+
+ 'Grouped Objects
+ For Each oSl In ActivePresentation.Slides
+     For Each oSh In oSl.Shapes
+         With oSh
+             Select Case .Type
+             Case Is = msoGroup
+                 For X = 1 To .GroupItems.Count
+                     If .GroupItems(X).HasTextFrame Then
+                         If .GroupItems(X).TextFrame.HasText Then
+                              .GroupItems(X).TextFrame.TextRange.Font.Name = sFontName
+                         End If
+                     End If
+                 Next X
+             End Select
+         End With ' oSh
+     Next oSh
+ Next oSl
+
+ 'Smart Arts
+ For Each oSl In ActivePresentation.Slides
+     For Each oSh In oSl.Shapes
+         If oSh.HasTable Then
+             Set oTbl = oSh.Table
+             For lRow = 1 To oTbl.Rows.Count
+                 For lCol = 1 To oTbl.Columns.Count
+                     With oTbl.Cell(lRow, lCol).Shape.TextFrame.TextRange
+                         .Font.Name = sFontName
+                     End With
+                 Next
+             Next
+         End If
+     Next
+ Next oSl
+
+End Sub

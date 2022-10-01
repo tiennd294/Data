@@ -1,0 +1,476 @@
+Sub SDV_CONFIDENTIAL()
+    If Get_Actives Then
+        Call SDV_Security("SAMSUNG CONFIDENTIAL")
+    End If
+End Sub
+
+Sub SDV_SECRET()
+    If Get_Actives Then
+        Call SDV_Security("SAMSUNG SECRET")
+    End If
+End Sub
+
+Sub SDV_TOP_SECRET()
+    If Get_Actives Then
+        Call SDV_Security("SAMSUNG TOP SECRET")
+    End If
+End Sub
+
+Sub SDV_DELETE()
+    If Get_Actives Then
+        Call SDV_Killer
+    End If
+End Sub
+
+Function SDV_Security(txt As String)
+    Dim shp As Shape
+    Dim lr As String
+    Dim i As Integer, mgleft As Integer, mgtop As Integer, boxwidth As Integer, boxheight As Integer, fsize As Integer
+    Dim mg_left_right As Integer
+    
+    'seting
+    lr = "Right"
+    mgtop = 5
+    mg_left_right = 5
+    boxwidth = 200
+    boxheight = 29
+    fsize = 16
+
+    If InStr(1, txt, "CONFIDENTIAL") Then boxwidth = 200
+    If InStr(1, txt, "SECRET") Then boxwidth = 145
+    If InStr(1, txt, "TOP SECRET") Then boxwidth = 175
+    
+    With ActivePresentation.PageSetup
+        If lr = "Right" Then mgleft = .SlideWidth - boxwidth - mg_left_right
+        If lr = "Left" Then mgleft = mg_left_right
+    End With
+    'end seting
+    
+    Call SDV_Killer
+    
+    For ids = 1 To ActivePresentation.Designs.Count
+        For ism = 1 To ActivePresentation.Designs(ids).SlideMaster.CustomLayouts.Count
+            Set shp = ActivePresentation.Designs(ids).SlideMaster.CustomLayouts(ism).Shapes.AddShape(1, mgleft, mgtop, boxwidth, boxheight)
+            shp.TextFrame.TextRange.Characters.text = txt
+            shp.TextFrame.TextRange.Characters.Font.Color = RGB(255, 0, 0)
+            shp.TextFrame.TextRange.Characters.Font.Size = fsize
+            shp.TextFrame.TextRange.Characters.Font.Name = "Calibri"
+            shp.TextFrame.TextRange.Characters.Font.Bold = True
+            shp.TextFrame.TextRange.ParagraphFormat.Alignment = ppAlignCenter
+            shp.Fill.Transparency = 1
+            shp.Line.ForeColor.RGB = RGB(255, 0, 0)
+            shp.Line.Weight = 2
+            shp.Name = txt
+        Next
+    Next
+    
+End Function
+
+Function SDV_Killer()
+    On Error GoTo trycatch
+    For ids = 1 To ActivePresentation.Designs.Count
+        For ism = 1 To ActivePresentation.Designs(ids).SlideMaster.CustomLayouts.Count
+            For Each shp In ActivePresentation.Designs(ids).SlideMaster.CustomLayouts(ism).Shapes
+                If InStr(1, shp.Name, "SAMSUNG") Or InStr(1, shp.Name, "Rectangle") Then
+                    With shp.TextFrame.TextRange.Characters
+                        If .Text = "SAMSUNG CONFIDENTIAL" Or _
+                            .Text = "SAMSUNG SECRET" Or _
+                            .Text = "SAMSUNG TOP SECRET" Then shp.Delete
+                    End With
+                End If
+            Next shp
+        Next
+    Next
+    Exit Function
+trycatch:
+  get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "Can't remove shapes!" _
+                        & vbCrLf, _
+                        vbInformation, " Error!")
+End Function
+
+
+
+'Sub SDV_CONFIDENTIAL()
+'    If Get_Actives Then
+'        Call SDV_Security("SAMSUNG CONFIDENTIAL")
+'    End If
+'End Sub
+'
+'Sub SDV_SECRET()
+'    If Get_Actives Then
+'        Call SDV_Security("SAMSUNG SECRET")
+'    End If
+'End Sub
+'
+'Sub SDV_TOP_SECRET()
+'    If Get_Actives Then
+'        Call SDV_Security("SAMSUNG TOP SECRET")
+'    End If
+'End Sub
+'
+'Sub SDV_DELETE()
+'    If Get_Actives Then
+'        Call SDV_Killer
+'    End If
+'End Sub
+'
+'Function SDV_Security(txt As String)
+'    Dim shp As Shape
+'    Dim lr As String
+'    Dim i As Integer, mgleft As Integer, mgtop As Integer, boxwidth As Integer, boxheight As Integer, fsize As Integer
+'    Dim mg_left_right As Integer
+'
+'    'seting
+'    lr = "Right"
+'    mgtop = 5
+'    mg_left_right = 5
+'    boxwidth = 200
+'    boxheight = 29
+'    fsize = 16
+'    'end seting
+'
+'    If InStr(1, txt, "CONFIDENTIAL") Then boxwidth = 200
+'    If InStr(1, txt, "SECRET") Then boxwidth = 145
+'    If InStr(1, txt, "TOP SECRET") Then boxwidth = 175
+'    Call SDV_Killer
+'
+'    For i = 1 To ActivePresentation.Slides.Count
+'        With ActivePresentation.PageSetup
+'            If lr = "Right" Then mgleft = .SlideWidth - boxwidth - mg_left_right
+'            If lr = "Left" Then mgleft = mg_left_right
+'        End With
+'        Set shp = ActivePresentation.Slides(i).Shapes.AddShape(1, mgleft, mgtop, boxwidth, boxheight)
+'        shp.TextFrame.TextRange.Characters.Text = txt
+'        shp.TextFrame.TextRange.Characters.Font.Color = RGB(255, 0, 0)
+'        shp.TextFrame.TextRange.Characters.Font.Size = fsize
+'        shp.TextFrame.TextRange.Characters.Font.Name = "Calibri"
+'        shp.TextFrame.TextRange.Characters.Font.Bold = True
+'        shp.TextFrame.TextRange.ParagraphFormat.Alignment = ppAlignCenter
+'        shp.Fill.Transparency = 1
+'        shp.Line.ForeColor.RGB = RGB(255, 0, 0)
+'        shp.Line.Weight = 2
+'        shp.Name = txt
+'    Next
+'
+'End Function
+'
+'Function SDV_Killer()
+'    On Error GoTo trycatch
+'    For i = 1 To ActivePresentation.Slides.Count
+'        For Each shp In ActivePresentation.Slides(i).Shapes
+'            If InStr(1, shp.Name, "SAMSUNG") Or InStr(1, shp.Name, "Rectangle") Then
+'                With shp.TextFrame.TextRange.Characters
+'                    If .Text = "SAMSUNG CONFIDENTIAL" Or _
+'                        .Text = "SAMSUNG SECRET" Or _
+'                        .Text = "SAMSUNG TOP SECRET" Then shp.Delete
+'                End With
+'            End If
+'        Next shp
+'    Next
+'    Exit Function
+'trycatch:
+'  get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+'                        "Can't remove shapes!" _
+'                        & vbCrLf, _
+'                        vbInformation, " Error!")
+'End Function
+
+Sub Font_Change()
+    If Get_Actives Then
+        Dim oSl As Slide
+        Dim oSh As Shape
+        Dim oTbl As Table
+        
+        Dim lRow As Long
+        Dim lCol As Long
+        Dim X As Long
+        Dim sFontName As String
+        
+        sFontName = InputBox("Set Font Name", "Font Change", "Times New Roman")
+        If sFontName <> "" Then
+            'Text Boxes
+            With ActivePresentation
+                For Each oSl In .Slides
+                    For Each oSh In oSl.Shapes
+                        With oSh
+                            If .HasTextFrame Then
+                                If .TextFrame.HasText Then
+                                    .TextFrame.TextRange.Font.Name = sFontName
+                                End If
+                            End If
+                        End With
+                    Next
+                Next
+            End With
+            
+            'Grouped Objects
+            For Each oSl In ActivePresentation.Slides
+                For Each oSh In oSl.Shapes
+                    With oSh
+                        Select Case .Type
+                        Case Is = msoGroup
+                            For X = 1 To .GroupItems.Count
+                                If .GroupItems(X).HasTextFrame Then
+                                    If .GroupItems(X).TextFrame.HasText Then
+                                         .GroupItems(X).TextFrame.TextRange.Font.Name = sFontName
+                                    End If
+                                End If
+                            Next X
+                        End Select
+                    End With ' oSh
+                Next oSh
+            Next oSl
+            
+            'Smart Arts
+            For Each oSl In ActivePresentation.Slides
+                For Each oSh In oSl.Shapes
+                    If oSh.HasTable Then
+                        Set oTbl = oSh.Table
+                        For lRow = 1 To oTbl.Rows.Count
+                            For lCol = 1 To oTbl.Columns.Count
+                                With oTbl.Cell(lRow, lCol).Shape.TextFrame.TextRange
+                                    .Font.Name = sFontName
+                                End With
+                            Next
+                        Next
+                    End If
+                Next
+            Next oSl
+            MsgBox "Font Change Successfuly!", vbInformation, "Font Change"
+        End If
+    End If
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sub Get_Infor()
+On Error GoTo trycatch
+    Dim myRegKey As String
+    Dim myValue As String
+    Dim myIP As String, IP As String
+    Dim myDate As String, getDate As String
+    Dim get_value As Integer
+    Dim Expiration As Integer
+
+        myRegKey = DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(GetIPAddress, InStr(GetIPAddress, ",") - 1) & "tnd")))
+        IP = Left(GetIPAddress, InStr(GetIPAddress, ",") - 1)
+        If RegKeyExists(myRegKey) = True Then
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            Expiration = Format(Format(getDate, "dd/mm/yyyy"), 0) - Format(Date, 0)
+            If Expiration <= 0 Or getDate = "" Then
+                get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "Please Registry!" _
+                        & vbCrLf & "- IP: " & IP, _
+                        vbInformation, " Information!")
+            Else: get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "The remaining usage time is " & Expiration & " days!" _
+                        & vbCrLf & "- Expiration Date: " & getDate _
+                        & vbCrLf & "- Hihe", _
+                        vbInformation, " Information!")
+            End If
+        Else: get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "Please Registry!" _
+                        & vbCrLf & "- IP: " & IP, _
+                        vbInformation, " Information!")
+        End If
+        
+    Exit Sub
+trycatch:
+  get_value = MsgBox("Love_Novel" & vbCrLf & vbCrLf & _
+                        "Please Registry!" _
+                        & vbCrLf & "- IP: " & IP, _
+                        vbInformation, " Information!")
+End Sub
+
+
+Sub Restart_Serial_Key()
+On Error GoTo trycatch
+    RegKeyDelete (DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA=="))
+    Exit Sub
+trycatch:
+    MsgBox "Serial False!"
+End Sub
+
+Sub Create_Serial_Key()
+On Error GoTo trycatch
+    Dim myIP As String
+    Dim setTime As String
+    Dim myDate As String
+    Dim pw As String
+    pw = InputBox("Get Serial Key!", "hihe")
+    If pw = "25241325" Then
+        setTime = InputBox("Get Serial Key!", "hihe2")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(setTime, InStr(setTime, " ") - 1) & "tnd")))
+        myDate = EncodeBase64(EncodeBase64(EncodeBase64(Mid(setTime, InStr(setTime, "date "), 15))))
+        setTime = InputBox("Get Serial Key!", "hihe", EncodeBase64(myIP & myDate))
+    End If
+    
+    Exit Sub
+trycatch:
+    MsgBox "Serial False!"
+End Sub
+
+Function Get_Actives() As Boolean
+On Error GoTo trycatch
+    Dim myRegKey As String
+    Dim myValue As String
+    Dim myIP As String
+    Dim myDate As String, getDate As String
+
+        myRegKey = DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")
+        myIP = EncodeBase64(EncodeBase64(MD5Hash(Left(GetIPAddress, InStr(GetIPAddress, ",") - 1) & "tnd")))
+        
+        If RegKeyExists(myRegKey) = True Then
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            If Format(Date, 0) > Format(Format(getDate, "dd/mm/yyyy"), 0) Or getDate = "" Then
+                myValue = InputBox("Please enter Serial:", "Please Registry!")
+                If myValue <> "" Then RegKeySave myRegKey, myValue
+            End If
+        End If
+        If RegKeyExists(myRegKey) = False Then
+            myValue = InputBox("Please enter Serial:", "Please Registry!")
+            If myValue <> "" Then RegKeySave myRegKey, myValue
+        End If
+            myValue = DecodeBase64(RegKeyRead(myRegKey))
+            myDate = DecodeBase64(DecodeBase64(DecodeBase64(Replace(myValue, myIP, ""))))
+            getDate = Mid(myDate, InStr(myDate, "e ") + 2, 10)
+            If Format(Date, 0) < Format(Format(getDate, "dd/mm/yyyy"), 0) And getDate <> "" Then
+                Get_Actives = True
+'                myValue = InputBox("demo", "haha", myIP & myDate)
+'                MsgBox Format(Format(getDate, "dd/mm/yyyy"), 0) & vbCrLf & Format(Date, 0)
+            End If
+    Exit Function
+trycatch:
+  MsgBox "Please registry!"
+End Function
+
+
+'GetIPAddress
+Function GetIPAddress()
+    Const strComputer As String = "."   ' Computer name. Dot means local computer
+    Dim objWMIService, IPConfigSet, IPConfig, IPAddress, i
+    Dim strIPAddress As String
+    ' Connect to the WMI service
+    Set objWMIService = GetObject("winmgmts:" _
+        & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+    ' Get all TCP/IP-enabled network adapters
+    Set IPConfigSet = objWMIService.ExecQuery _
+        ("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled=TRUE")
+    ' Get all IP addresses associated with these adapters
+    For Each IPConfig In IPConfigSet
+        IPAddress = IPConfig.IPAddress
+        If Not IsNull(IPAddress) Then
+            strIPAddress = strIPAddress & Join(IPAddress, ", ")
+        End If
+    Next
+    GetIPAddress = strIPAddress
+End Function
+
+'Registry
+Function RegKeyRead(i_RegKey As String) As String
+Dim myWS As Object
+  On Error Resume Next
+  Set myWS = CreateObject("WScript.Shell")
+  RegKeyRead = myWS.RegRead(i_RegKey)
+End Function
+
+Function RegKeyExists(i_RegKey As String) As Boolean
+Dim myWS As Object
+  On Error GoTo ErrorHandler
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegRead i_RegKey
+  RegKeyExists = True
+  Exit Function
+ErrorHandler:
+  RegKeyExists = False
+End Function
+
+Sub RegKeySave(i_RegKey As String, _
+               i_Value As String, _
+      Optional i_Type As String = "REG_SZ")
+Dim myWS As Object
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegWrite i_RegKey, i_Value, i_Type
+End Sub
+
+Function RegKeyDelete(i_RegKey As String) As Boolean
+Dim myWS As Object
+  On Error GoTo ErrorHandler
+  Set myWS = CreateObject("WScript.Shell")
+  myWS.RegDelete i_RegKey
+  RegKeyDelete = True
+  Exit Function
+ErrorHandler:
+  RegKeyDelete = False
+End Function
+
+'Base64
+Function EncodeBase64(text$)
+On Error GoTo trycatch
+    Dim b
+    With CreateObject("ADODB.Stream")
+        .Open: .Type = 2: .Charset = "utf-8"
+        .WriteText text: .Position = 0: .Type = 1: b = .Read
+        With CreateObject("Microsoft.XMLDOM").createElement("b64")
+            .DataType = "bin.base64": .nodeTypedValue = b
+            EncodeBase64 = Replace(Mid(.text, 5), vbLf, "")
+        End With
+        .Close
+    End With
+    Exit Function
+trycatch:
+    MsgBox "EncodeBase64 False!"
+End Function
+
+Function DecodeBase64(b64$)
+On Error GoTo trycatch
+    Dim b
+    With CreateObject("Microsoft.XMLDOM").createElement("b64")
+        .DataType = "bin.base64": .text = b64
+        b = .nodeTypedValue
+        With CreateObject("ADODB.Stream")
+            .Open: .Type = 1: .Write b: .Position = 0: .Type = 2: .Charset = "utf-8"
+            DecodeBase64 = .ReadText
+            .Close
+        End With
+    End With
+    Exit Function
+trycatch:
+'    If RegKeyExists(DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA==")) = True Then
+'        RegKeyDelete (DecodeBase64("SEtDVVxTb2Z0d2FyZVxFeGNlbFRvb2xzXFNlcmlhbA=="))
+'    End If
+End Function
+
+'MD5
+Public Function MD5Hash(ByVal strText As String) As String
+Dim CMD5          As New MD5_CLASS
+Dim strSignature  As String
+    strSignature = CMD5.MD5(strText)
+    MD5Hash = strSignature
+    Set CMD5 = Nothing
+End Function

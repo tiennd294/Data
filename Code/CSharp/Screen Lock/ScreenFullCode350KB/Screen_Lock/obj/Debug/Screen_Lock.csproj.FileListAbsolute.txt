@@ -1,0 +1,33 @@
+G:\Screen_Lock\Screen_Lock\bin\Debug\Screen_Lock.exe.config
+G:\Screen_Lock\Screen_Lock\bin\Debug\Screen_Lock.exe
+G:\Screen_Lock\Screen_Lock\bin\Debug\Screen_Lock.pdb
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.csprojResolveAssemblyReference.cache
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.Properties.Resources.resources
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.csproj.GenerateResource.Cache
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.exe
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.pdb
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.ScreenLock.resources
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.My_Screen.resources
+G:\Screen_Lock\Screen_Lock\obj\Debug\Screen_Lock.Confirm.resources
+G:\Screen_Lock (5) fix time login false\Screen_Lock\bin\Debug\Screen_Lock.exe.config
+G:\Screen_Lock (5) fix time login false\Screen_Lock\bin\Debug\Screen_Lock.exe
+G:\Screen_Lock (5) fix time login false\Screen_Lock\bin\Debug\Screen_Lock.pdb
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.csprojResolveAssemblyReference.cache
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.Confirm.resources
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.My_Screen.resources
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.Properties.Resources.resources
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.ScreenLock.resources
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.csproj.GenerateResource.Cache
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.exe
+G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.pdb
+G:\DontSleepFullCode350KB\Screen_Lock\bin\Debug\Screen_Lock.exe.config
+G:\DontSleepFullCode350KB\Screen_Lock\bin\Debug\Screen_Lock.exe
+G:\DontSleepFullCode350KB\Screen_Lock\bin\Debug\Screen_Lock.pdb
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.csprojResolveAssemblyReference.cache
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.Confirm.resources
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.My_Screen.resources
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.Properties.Resources.resources
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.ScreenLock.resources
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.csproj.GenerateResource.Cache
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.exe
+G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.pdb

@@ -1,0 +1,9 @@
+G:\Customer\Customer\bin\Debug\Customer.exe.config
+G:\Customer\Customer\bin\Debug\Customer.exe
+G:\Customer\Customer\bin\Debug\Customer.pdb
+G:\Customer\Customer\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+G:\Customer\Customer\obj\Debug\Customer.Properties.Resources.resources
+G:\Customer\Customer\obj\Debug\Customer.csproj.GenerateResource.Cache
+G:\Customer\Customer\obj\Debug\Customer.exe
+G:\Customer\Customer\obj\Debug\Customer.pdb
+G:\Customer\Customer\obj\Debug\Customer.Customer.resources

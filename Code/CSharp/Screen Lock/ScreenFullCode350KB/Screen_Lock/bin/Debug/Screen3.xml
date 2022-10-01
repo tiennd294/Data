@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Screen>
+  <History Id="1">
+    <Status>Login</Status>
+    <DateTime>11/08/2022 10:11:25</DateTime>
+    <Content>Successfuly</Content>
+  </History>
+  <History Id="2">
+    <Status>Login</Status>
+    <DateTime>11/08/2022 10:12:28</DateTime>
+    <Content>Successfuly</Content>
+  </History>
+  <Log Id="1">
+    <Status>PassClose</Status>
+    <DateTime>22/08/2022 20:12:43</DateTime>
+    <Content>Successfuly</Content>
+  </Log>
+  <History Id="3">
+    <Status>Login</Status>
+    <DateTime>22/08/2022 20:53:36</DateTime>
+    <Content>Successfuly</Content>
+  </History>
+  <History Id="4">
+    <Status>Login</Status>
+    <DateTime>11/08/2022 10:14:00</DateTime>
+    <Content>Successfuly</Content>
+  </History>
+  <History Id="5">
+    <Status>Login</Status>
+    <DateTime>11/08/2022 23:24:23</DateTime>
+    <Content>Successfuly</Content>
+  </History>
+  <History Id="6">
+    <Status>Login</Status>
+    <DateTime>22/07/2022 21:23:39</DateTime>
+    <Content>Successfuly</Content>
+  </History>
+  <Log Id="2">
+    <Status>PassClose</Status>
+    <DateTime>11/08/2022 10:19:12</DateTime>
+    <Content>Successfuly</Content>
+  </Log>
+  <Log Id="3">
+    <Status>PassClose</Status>
+    <DateTime>11/08/2022 10:19:39</DateTime>
+    <Content>Successfuly</Content>
+  </Log>
+  <Log Id="4">
+    <Status>Logo</Status>
+    <DateTime>11/08/2022 10:19:53</DateTime>
+    <Content>Lg: Team 3D5S Inspection</Content>
+  </Log>
+</Screen>

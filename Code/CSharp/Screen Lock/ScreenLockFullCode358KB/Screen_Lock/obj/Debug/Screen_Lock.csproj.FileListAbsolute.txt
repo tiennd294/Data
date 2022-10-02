@@ -23,7 +23,6 @@ G:\Screen_Lock (5) fix time login false\Screen_Lock\obj\Debug\Screen_Lock.pdb
 G:\DontSleepFullCode350KB\Screen_Lock\bin\Debug\Screen_Lock.exe.config
 G:\DontSleepFullCode350KB\Screen_Lock\bin\Debug\Screen_Lock.exe
 G:\DontSleepFullCode350KB\Screen_Lock\bin\Debug\Screen_Lock.pdb
-G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.csprojResolveAssemblyReference.cache
 G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.Confirm.resources
 G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.My_Screen.resources
 G:\DontSleepFullCode350KB\Screen_Lock\obj\Debug\Screen_Lock.Properties.Resources.resources

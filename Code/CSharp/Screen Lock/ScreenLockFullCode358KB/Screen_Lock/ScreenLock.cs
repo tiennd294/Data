@@ -90,11 +90,7 @@ namespace Screen_Lock
 
         private void ScreenLock_Load(object sender, EventArgs e)
         {
-            if (My_Class.EndTask == "True")
-            {
-                My_Class.SetValue("AutoLock", My_Class.Base64Encoding("True"));
-                My_Class.Autolock = My_Class.Base64Decoding(My_Class.GetValue("AutoLock"));
-            }
+            EndTask();
             if (My_Class.Autostart == "True")
             {
                 My_Class.autostartup();
@@ -103,15 +99,37 @@ namespace Screen_Lock
             if (My_Class.Autolock == "True")
             {
                 cb_autolock.Checked = true;
-                My_Class.Lockf = "My_Screen";
-                My_Screen ms = new My_Screen();
-                ms.Show();
+                if (My_Class.Lockf.IndexOf("My_Screen") < 0)
+                {
+                    My_Class.Lockf = "My_Screen";
+                    My_Screen ms = new My_Screen();
+                    ms.Show();
+                }
             };
             cbb_locktime.SelectedItem = My_Class.Time_lock;
             cbb_unlocktime.SelectedItem = My_Class.Time_unlock;
             load_ad();
             load_log();
             load_log("Log"); _form = true;
+        }
+
+        private void EndTask()
+        {
+            if (My_Class.EndTask == "True")
+            {
+                My_Class.SetValue("AutoLock", My_Class.Base64Encoding("True"));
+                My_Class.Autolock = My_Class.Base64Decoding(My_Class.GetValue("AutoLock"));
+                if (My_Class.Autolock == "True")
+                {
+                    if (My_Class.Lockf.IndexOf("My_Screen") < 0)
+                    {
+                        My_Class.Lockf = "My_Screen"; //MessageBox.Show("OK nhes");
+                        cb_autolock.Checked = true;
+                        My_Screen ms = new My_Screen();
+                        ms.Show();
+                    }
+                };
+            }
         }
 
         private void ScreenLock_Resize(object sender, EventArgs e)
@@ -411,27 +429,27 @@ namespace Screen_Lock
         {
             try
             {
-                My_Class.get_data();
+                
                 if (_form)
                 {
                     _form = false;
                     this.Hide();
                 }
 
-                if (!My_Class.Check_SubKey("Screen") || My_Class.Autostart == "True" && (!My_Class.Check_Key("Screen", @"Software\Microsoft\Windows\CurrentVersion\Run") || (My_Class.GetValue("Screen", @"Software\Microsoft\Windows\CurrentVersion\Run") == "")))
-                {
-                    My_Class.add_data("Killer apps", DateTime.Now.ToString(), "Killer Registry!", "Log");
-                    if (My_Class.Lockf.IndexOf("My_Screen") < 0)
-                    {
-                        My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
-                        My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
-                        My_Class.get_data();
-                        My_Screen ms = new My_Screen();
-                        ms.Show();
-                    }
-                };
-
-                
+                //if (!My_Class.Check_SubKey("Screen") || My_Class.Autostart == "True" && (!My_Class.Check_Key("Screen", @"Software\Microsoft\Windows\CurrentVersion\Run") || (My_Class.GetValue("Screen", @"Software\Microsoft\Windows\CurrentVersion\Run") == "")))
+                //{
+                //    My_Class.add_data("Killer apps", DateTime.Now.ToString(), "Killer Registry!", "Log");
+                //    if (My_Class.Lockf.IndexOf("My_Screen") < 0)
+                //    {
+                //        My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
+                //        My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
+                //        My_Class.get_data();
+                //        My_Screen ms = new My_Screen();
+                //        ms.Show();
+                //    }
+                //};
+                My_Class.get_data();
+                EndTask();
 
                 if (!CheckApps("Customer") && My_Class.ClTask == "False")
                 {

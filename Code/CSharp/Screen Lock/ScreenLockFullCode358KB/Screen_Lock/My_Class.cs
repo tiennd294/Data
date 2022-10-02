@@ -277,6 +277,7 @@ namespace Screen_Lock
 
                 if (!My_Class.Check_Key("AutoStart")) My_Class.SetValue("AutoStart", My_Class.Base64Encoding("False"));
                 My_Class.Autostart = My_Class.Base64Decoding(My_Class.GetValue("AutoStart"));
+                if (My_Class.Autostart == "True") My_Class.autostartup();
 
                 if (!My_Class.Check_Key("AutoLock")) My_Class.SetValue("AutoLock", My_Class.Base64Encoding("False"));
                 My_Class.Autolock = My_Class.Base64Decoding(My_Class.GetValue("AutoLock"));
@@ -339,7 +340,7 @@ namespace Screen_Lock
             //string _data = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "//Screen.xml";
             if (getPath().Substring(0, 1).ToUpper() != "C")
             {
-                if (!File.Exists(_path_data))
+                if (!File.Exists(getPath()))
                 {
                     My_Class.CreateXML(_status, _datetime, _content, _table);
                 }
@@ -364,19 +365,22 @@ namespace Screen_Lock
 
         public static void AddXElement(string _status = "", string _datetime = "", string _content = "", string _table = "History")
         {
-            XDocument doc = XDocument.Load(getPath());
-            int i = 0;
-            foreach (XElement p in doc.Descendants(_table))
+            if (!File.Exists(getPath()))
             {
-                i++;
+                XDocument doc = XDocument.Load(getPath());
+                int i = 0;
+                foreach (XElement p in doc.Descendants(_table))
+                {
+                    i++;
+                }
+                XDocument xmlDoc = XDocument.Load(getPath());
+                xmlDoc.Element("Screen").Add(new XElement(_table, new XAttribute("Id", (i + 1).ToString()),
+                                                                       new XElement("Status", _status),
+                                                                       new XElement("DateTime", _datetime),
+                                                                       new XElement("Content", _content)));
+                xmlDoc.Save(getPath());
             }
-            XDocument xmlDoc = XDocument.Load(getPath());
-            xmlDoc.Element("Screen").Add(new XElement(_table, new XAttribute("Id", (i + 1).ToString()),
-                                                                   new XElement("Status", _status),
-                                                                   new XElement("DateTime", _datetime),
-                                                                   new XElement("Content", _content)));
-            xmlDoc.Save(getPath());
-
+            
         }
 
         private static XDocument LoadXmlDocument(string url)

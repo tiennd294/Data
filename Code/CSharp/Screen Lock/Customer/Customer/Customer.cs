@@ -47,37 +47,72 @@ namespace Customer
 
         private void TChecker_Tick(object sender, EventArgs e)
         {
-            if (_form)
+            try
             {
-                _form = false;
-                this.Hide();
-            }
-            My_Class.get_data();
-            if (!CheckApps("Screen_Lock") && My_Class.ClTask == "False")
-            {
-                My_Class.add_data("Killer apps", DateTime.Now.ToString(), "Killer Screen!", "Log");
-                My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
-                My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
+                if (_form)
+                {
+                    _form = false;
+                    this.Hide();
+                }
+                if (!My_Class.Check_SubKey("Screen"))
+                {
+                    My_Class.get_data();
+                    if (My_Class.Check_SubKey("Screen"))
+                    {
+                        My_Class.add_data("Killer apps", DateTime.Now.ToString(), "Killer Registry!", "Log");
+                        My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
+                        My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
+                    }
+                };
+                //else
+                //{
+                //    if (My_Class.Autostart == "True")
+                //    {
+                //        if (!My_Class.Check_Key("Screen", @"Software\Microsoft\Windows\CurrentVersion\Run"))
+                //        {
+                //            My_Class.autostartup(); MessageBox.Show("OK");
+                //            My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
+                //            My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
+                //        }
+                //        else
+                //        {
+                //            if(My_Class.GetValue("Screen", @"Software\Microsoft\Windows\CurrentVersion\Run") == ""){
+                //                My_Class.autostartup();
+                //                My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
+                //                My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
+                //            }
+                //        }
+                //    }
+                //}
 
-                if (My_Class.PaScreen != "")
+                My_Class.get_data();
+                if (!CheckApps("Screen_Lock") && My_Class.ClTask == "False")
                 {
-                    if (File.Exists(My_Class.PaScreen))
+                    My_Class.add_data("Killer apps", DateTime.Now.ToString(), "Killer Screen!", "Log");
+                    My_Class.SetValue("Time_wait", My_Class.Base64Encoding("15"));
+                    My_Class.SetValue("EndTask", My_Class.Base64Encoding("True"));
+
+                    if (My_Class.PaScreen != "")
                     {
-                        Process.Start(My_Class.PaScreen);
+                        if (File.Exists(My_Class.PaScreen))
+                        {
+                            Process.Start(My_Class.PaScreen);
+                        }
+                    }
+                    else
+                    {
+                        if (File.Exists(_path_sc))
+                        {
+                            Process.Start(_path_sc);
+                        }
                     }
                 }
-                else
+                if (My_Class.ClTask == "True")
                 {
-                    if (File.Exists(_path_sc))
-                    {
-                        Process.Start(_path_sc);
-                    }
+                    this.Close();
                 }
             }
-            if (My_Class.ClTask == "True")
-            {
-                this.Close();
-            }
+            catch (Exception ex) { /*MessageBox.Show(ex.ToString());*/ }
         }
     }
 }

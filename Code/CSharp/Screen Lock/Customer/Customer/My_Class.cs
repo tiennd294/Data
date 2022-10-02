@@ -72,13 +72,6 @@ namespace Customer
             get { return My_Class._getpassclose; }
             set { My_Class._getpassclose = value; }
         }
-        private static string _gettime;
-
-        public static string Gettime
-        {
-            get { return My_Class._gettime; }
-            set { My_Class._gettime = value; }
-        }
 
         //Timer
         private static string _time_lock;
@@ -207,12 +200,17 @@ namespace Customer
 
         public static void SetValue(string _keyname = "keyname", string _keyvalue = "subkeyvalue", string _path = @"Software\Screen")
         {
-            //Adding/Editing a value
-            //Before doing this, you have to set the path to the key where you want to add that value. You can use the code below for adding or editing values.
+            //try
+            //{
             RegistryKey key = Registry.CurrentUser.OpenSubKey(_path, true);
             //adding/editing a value 
             key.SetValue(_keyname, _keyvalue); //sets 'someData' in 'someValue' 
             key.Close();
+            //}
+            //catch { }
+            //Adding/Editing a value
+            //Before doing this, you have to set the path to the key where you want to add that value. You can use the code below for adding or editing values.
+
         }
 
         public static void DeleteValue(string __keyname = "_keyname", string _path = @"Software\Screen")
@@ -279,6 +277,7 @@ namespace Customer
 
                 if (!My_Class.Check_Key("AutoStart")) My_Class.SetValue("AutoStart", My_Class.Base64Encoding("False"));
                 My_Class.Autostart = My_Class.Base64Decoding(My_Class.GetValue("AutoStart"));
+                if (My_Class.Autostart == "True") My_Class.autostartup();
 
                 if (!My_Class.Check_Key("AutoLock")) My_Class.SetValue("AutoLock", My_Class.Base64Encoding("False"));
                 My_Class.Autolock = My_Class.Base64Decoding(My_Class.GetValue("AutoLock"));
@@ -310,11 +309,11 @@ namespace Customer
             }
         }
 
-        public static string _convert_time(int _time = 1)
+        public static string _convert_time(long _time = 1)
         {
             string _data = "";
             string __day, __hour, __minute, __seconds;
-            int _day, _hour, _minute, _seconds;
+            long _day, _hour, _minute, _seconds;
             _seconds = _time % 60;
             _minute = (_time / 60) % 60;
             _hour = ((_time / 60) / 60) % 24;
@@ -341,7 +340,7 @@ namespace Customer
             //string _data = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "//Screen.xml";
             if (getPath().Substring(0, 1).ToUpper() != "C")
             {
-                if (!File.Exists(_path_data))
+                if (!File.Exists(getPath()))
                 {
                     My_Class.CreateXML(_status, _datetime, _content, _table);
                 }
@@ -366,18 +365,21 @@ namespace Customer
 
         public static void AddXElement(string _status = "", string _datetime = "", string _content = "", string _table = "History")
         {
-            XDocument doc = XDocument.Load(getPath());
-            int i = 0;
-            foreach (XElement p in doc.Descendants(_table))
+            if (!File.Exists(getPath()))
             {
-                i++;
+                XDocument doc = XDocument.Load(getPath());
+                int i = 0;
+                foreach (XElement p in doc.Descendants(_table))
+                {
+                    i++;
+                }
+                XDocument xmlDoc = XDocument.Load(getPath());
+                xmlDoc.Element("Screen").Add(new XElement(_table, new XAttribute("Id", (i + 1).ToString()),
+                                                                       new XElement("Status", _status),
+                                                                       new XElement("DateTime", _datetime),
+                                                                       new XElement("Content", _content)));
+                xmlDoc.Save(getPath());
             }
-            XDocument xmlDoc = XDocument.Load(getPath());
-            xmlDoc.Element("Screen").Add(new XElement(_table, new XAttribute("Id", (i + 1).ToString()),
-                                                                   new XElement("Status", _status),
-                                                                   new XElement("DateTime", _datetime),
-                                                                   new XElement("Content", _content)));
-            xmlDoc.Save(getPath());
 
         }
 

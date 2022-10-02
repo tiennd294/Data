@@ -30,6 +30,8 @@ namespace Screen_Lock
             this.BringToFront();
             lbl_killer.ForeColor = Color.White;
             lbl_killer.BackColor = Color.Red;
+            My_Class.Lockf = "My_Screen";
+            My_Class.get_data();
         }
 
         protected override bool ProcessDialogKey(System.Windows.Forms.Keys keyData)
@@ -70,8 +72,7 @@ namespace Screen_Lock
             try
             {
                 _time = 0;
-                My_Class.get_data();
-                My_Class.Lockf = "My_Screen";
+                
                 if (My_Class.Mylogo != "") lblinfor.Text = My_Class.Mylogo;
                 My_Class.add_data("Logout", DateTime.Now.ToString(), "Success");
                 tries = int.Parse(My_Class.Time_wait);
@@ -150,34 +151,37 @@ namespace Screen_Lock
                         else
                         {
                             My_Class.add_data("Login", DateTime.Now.ToString(), "Killer");
-                            txtPassword.Text = string.Empty;
+                            FormatPasswordFalse();
                         }
                     }
                     else
                     {
-                        txtPassword.Text = string.Empty;
                         My_Class.add_data("Login Waring", DateTime.Now.ToString(), txtPassword.Text);
-                        tries++;
-                        My_Class.SetValue("Time_wait", My_Class.Base64Encoding(tries.ToString()));
-                        My_Class.Time_wait = My_Class.Base64Decoding(My_Class.GetValue("Time_wait"));
-                        tries = int.Parse(My_Class.Time_wait);
-                        if (tries >= 5)
-                        {
-                            txtPassword.Enabled = false;
-                            txtPassword.Visible = false;
-                            lbltime.Enabled = true;
-                            lbltime.Visible = true;
-                        }
-                        Time_wait = getLongTime(tries);
-                        lbltime.Text = My_Class._convert_time(Time_wait);
-                        lbltime.Left = (int)(this.Width / 2) - (int)(lbltime.Width / 2);
+                        FormatPasswordFalse();
                     }
                 }
             }
             catch { }
         }
 
-        
+        private void FormatPasswordFalse()
+        {
+            txtPassword.Text = string.Empty;
+            tries++;
+            My_Class.SetValue("Time_wait", My_Class.Base64Encoding(tries.ToString()));
+            My_Class.Time_wait = My_Class.Base64Decoding(My_Class.GetValue("Time_wait"));
+            tries = int.Parse(My_Class.Time_wait);
+            if (tries >= 5)
+            {
+                txtPassword.Enabled = false;
+                txtPassword.Visible = false;
+                lbltime.Enabled = true;
+                lbltime.Visible = true;
+            }
+            Time_wait = getLongTime(tries);
+            lbltime.Text = My_Class._convert_time(Time_wait);
+            lbltime.Left = (int)(this.Width / 2) - (int)(lbltime.Width / 2);
+        }
 
         private void My_Screen_FormClosed(object sender, FormClosedEventArgs e)
         {

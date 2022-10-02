@@ -2,4 +2,4 @@ Update
 Delay Timer OK
 Cant end task
 Cant delete resgitry
-Add keys Ctrl Alt F7 to end task
+Add keys Ctrl Alt F7 to Remove lock end task

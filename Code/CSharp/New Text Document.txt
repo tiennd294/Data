@@ -1,0 +1,110 @@
+/*
+	
+
+    Bài này d? l?i c?a Ngôi Sao Bang pot lâu r?i.Hôm nay t? làm d? các b?n ôn t?p cho d?
+
+    Vi?t l?p co s? Khohang g?m:
+    - 3 thu?c tính: tên Khohang(string), kh? nang ch?a(float), t?n kho(float), giá thuê ngày(float)
+    - Hàm t?o: Khohang(string ten, float kng, float ton, float giathuengay)) d? gán các thu?c tính cho Khohang. Phuong th?c Void Nhapkho(float klg). G?i N là kh? nang ch?a thêm c?a kho. Tính N. Hãy c?p lu?ng hàng t?n kho theo 2 TH:
+    + N?u kh?i lu?ng hang nh?p klg >=N : kho ch?a d?y(h?t kh? nang). Lúc này T?n kho = kh? nang ch?a.
+    + Ngu?c l?i, kho s? nh?p vào h?t kh?i lu?ng h?t kh?i lu?ng hang. Lúc này t?n kho là bao nhiêu?
+    - Phuong th?c da hình: float Tinhtien (int songaythue) d? tính ti?n thuê kho hàng = gia thuê ngày*s? ngày thuê.
+    - Vi?t 2 l?p kho SP( s?n ph?m) và kho NL (nguyên li?u) d?n xu?t t? l?p kho hang có them:
+    + Thu?c tính: heso(float)
+    + Phuong th?c da hình: float Tinhtien (int songaythue) b?ng ti?n thuê kho hang tính theo l?p co s? h? s? c?a kho hang.
+    - vi?t l?p m?i có tên Ktra. Trong l?p này vi?t hàm Main () t?o m?t m?ng g?m 3 d?i tu?ng Kho hang:
+    Ph?n t? 1 tên là: “H?i Châu”, kh? nang ch?a 500 t?n. T?n kho=200 t?n, giá thuê 40$/ngày.
+    Ph?n t? 2 thu?c kho NL tên là: “ Liên Chi?u”, kh? nang ch?a 800 t?n. T?n kho=250 t?n, giá thuê 45$/, hê s?: 0.9
+    Ph?n t? 3 thu?c kho SP tên: “C?m L?”, kh? nang ch?a 600 t?n, t?n kho = 150 t?n, giá thuê 42$/ngày, h? s?: 0.,85. Nh?p kh?i lu?ng hàng c?n nh?p vào m?i kho. S? ngày dã thuê và g?i phuong th?c Tính ti?n d? bi?t ph?i tr? bao nhiêu ti?n d? thuê các kho hang trên. 
+
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lop_va_doi_tuong
+{
+   
+   public class KhoHang
+    {
+        public string ten;
+        public float klg;
+        public float ton;
+        public float gia;
+        public KhoHang(string tenkhohang, float khanangchua, float tonkho, float giathuengay)
+        {
+            ten = tenkhohang;
+            klg = khanangchua;
+            ton = tonkho;
+            gia = giathuengay;
+        }
+        public void nhap(float soluongnhap)
+        {
+            float N = klg-ton;
+            if (soluongnhap >= N)
+            {
+                Console.WriteLine(" Kho chua hien khong du kha nang nhap {0} Kg ",soluongnhap);
+                ton = klg;
+                Console.WriteLine(" Chi co the nhap vao {0} Kg ",N);
+                Console.WriteLine(" Kho hang {0} con ton kho {1}Kg ", ten, ton);
+            }
+            else
+            {
+                Console.WriteLine(" Da nhap vao kho {0} Kg ", soluongnhap);
+                ton += soluongnhap;
+                Console.WriteLine( " Kho hang {0} con ton kho {1} ",ten,ton);
+            }
+        }
+        public virtual float tinhtien(int songaythue)
+        {
+            return songaythue * gia;
+        }
+    }
+    class KhoSP : KhoHang
+    {
+        float heso;
+        public  KhoSP(string tenkhohang, float khanangchua, float tonkho, float giathuengay,float hs):base(tenkhohang,khanangchua,tonkho,giathuengay)
+        {
+            heso = hs;
+        }
+        public override  float tinhtien(int songaythue)
+        {
+            return songaythue * gia * heso;
+        }
+    }
+    class KhoNL : KhoHang
+    {
+        float heso;
+        public KhoNL(string tenkhohang, float khanangchua, float tonkho, float giathuengay, float hs):base(tenkhohang,khanangchua,tonkho,giathuengay)
+        {
+            heso = hs;
+        }
+        public override  float tinhtien(int songaythue)
+        {
+            return songaythue * gia * heso;
+        }
+    }
+    class kiemtra
+    {
+  static void Main()
+        {
+            KhoHang [] mangKH = new KhoHang[3];
+            mangKH[0] = new KhoHang("TenLua", 500, 200, 40);
+            mangKH[1] = new KhoNL("Bom", 800, 250, 45,float.Parse("0.9"));
+            mangKH[2] = new KhoSP("Nguoi chet", 600, 150, 42, float.Parse("0.85"));
+            for (int i = 0; i < 3; i++)
+            {
+                float soluongnhap;
+                Console.WriteLine("nhap so {0} vao kho",mangKH[i].ten);
+                soluongnhap = float.Parse(Console.ReadLine());
+                int songaythue;
+                Console.WriteLine("can chua {0} {1} trong may ngay",soluongnhap,mangKH[i].ten);
+              songaythue = Convert.ToInt32(Console.ReadLine());
+                mangKH[i].nhap(soluongnhap);
+                Console.WriteLine(" Thue ca cho nay can co {0} $ neu khong thi bom dan vo tinh",mangKH[i].tinhtien(songaythue));
+            }
+            Console.ReadLine();
+        }
+    }
+}

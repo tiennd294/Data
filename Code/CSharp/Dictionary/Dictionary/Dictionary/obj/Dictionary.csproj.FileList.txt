@@ -1,0 +1,13 @@
+bin\Debug\Dictionary.exe
+bin\Debug\Dictionary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Dictionary.Form1.resources
+obj\Debug\Dictionary.Properties.Resources.resources
+obj\Debug\Dictionary.csproj.GenerateResource.Cache
+obj\Debug\Dictionary.exe
+obj\Debug\Dictionary.pdb
+obj\Debug\Interop.SpeechLib.dll
+obj\Debug\Dictionary.csproj.ResolveComReference.cache
+bin\Debug\Interop.SpeechLib.dll
+obj\Debug\Dictionary.AboutBox1.resources
+obj\Debug\Dictionary.Config.resources

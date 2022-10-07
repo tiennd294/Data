@@ -1,0 +1,7 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\bin\Debug\ThuocTinhContainer.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\bin\Debug\ThuocTinhContainer.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\obj\x86\Debug\ThuocTinhContainer.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\obj\x86\Debug\ThuocTinhContainer.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\obj\x86\Debug\ThuocTinhContainer.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\obj\x86\Debug\ThuocTinhContainer.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\ThuocTinhContainer\obj\x86\Debug\ThuocTinhContainer.pdb

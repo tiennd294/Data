@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product id="1">XElement+XAttribute
+    <ProductName>Ổ cứng Samsung</ProductName>XElement
+    <ProductPrice>1000000</ProductPrice>XElement
+  </product>
+  <product id="2">
+    <ProductName>Bàn phím</ProductName>
+    <ProductPrice>100000</ProductPrice>
+  </product>
+  <product id="3">
+    <ProductName>Chuột Misumi</ProductName>
+    <ProductPrice>100000</ProductPrice>
+  </product>
+</products>
+XDocument xmlDoc = XDocument.Load("data.xml");
+
+    xmlDoc.Element("products").Add(new XElement("product", new XAttribute("id", txtID.Text),
+														   new XElement("ProductName", txtProductName.Text),
+														   new XElement("ProductPrice", txtPrice.Text)));
+
+                        xmlDoc.Save("data.xml");

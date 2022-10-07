@@ -1,0 +1,5 @@
+E:\Bai_tap\C#\thunghiemsercong\thunghiemsercong\bin\thunghiemsercong.dll
+E:\Bai_tap\C#\thunghiemsercong\thunghiemsercong\bin\thunghiemsercong.pdb
+E:\Bai_tap\C#\thunghiemsercong\thunghiemsercong\obj\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\thunghiemsercong\thunghiemsercong\obj\Debug\thunghiemsercong.dll
+E:\Bai_tap\C#\thunghiemsercong\thunghiemsercong\obj\Debug\thunghiemsercong.pdb

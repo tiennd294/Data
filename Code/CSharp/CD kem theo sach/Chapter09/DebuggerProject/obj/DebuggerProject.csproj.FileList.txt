@@ -1,0 +1,5 @@
+obj\Release\ResolveAssemblyReference.cache
+bin\Release\DebuggerProject.exe
+bin\Release\DebuggerProject.pdb
+obj\Release\DebuggerProject.exe
+obj\Release\DebuggerProject.pdb

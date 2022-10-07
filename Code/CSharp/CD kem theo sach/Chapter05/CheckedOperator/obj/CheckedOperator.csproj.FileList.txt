@@ -1,0 +1,5 @@
+bin\Debug\CheckedOperator.exe
+bin\Debug\CheckedOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CheckedOperator.exe
+obj\Debug\CheckedOperator.pdb

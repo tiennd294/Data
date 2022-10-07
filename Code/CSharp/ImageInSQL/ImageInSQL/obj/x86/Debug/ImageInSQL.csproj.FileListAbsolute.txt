@@ -1,0 +1,37 @@
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.Form1.resources
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.Properties.Resources.resources
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ResGen.read.1.tlog
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ResGen.write.1.tlog
+E:\My Code\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageData.mdf
+E:\My Code\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageData_log.ldf
+E:\My Code\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageInSQL.exe
+E:\My Code\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageInSQL.pdb
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.exe
+E:\My Code\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.pdb
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.exe
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.pdb
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\bin\Debug\ImageData.mdf
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\bin\Debug\ImageData_log.ldf
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\bin\Debug\ImageInSQL.exe
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\bin\Debug\ImageInSQL.pdb
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.Form1.resources
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.Properties.Resources.resources
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ResGen.read.1.tlog
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\NguyenTien\My Documents\Downloads\Compressed\ImageInSQL\ImageInSQL\ImageInSQL\obj\x86\Debug\ResGen.write.1.tlog
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.exe
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.pdb
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageData.mdf
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageData_log.ldf
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageInSQL.exe
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\bin\Debug\ImageInSQL.pdb
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.Form1.resources
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ImageInSQL.Properties.Resources.resources
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ResGen.read.1.tlog
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Bai_tap\C#\ImageInSQL\ImageInSQL\obj\x86\Debug\ResGen.write.1.tlog

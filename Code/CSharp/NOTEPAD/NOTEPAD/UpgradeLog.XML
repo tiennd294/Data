@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NOTEPAD">
+</Property><Property Name="Solution File" Value="F:\Bai_tap\C#\NOTEPAD\NOTEPAD\NOTEPAD.sln">
+</Property><Property Name="User Options File" Value="F:\Bai_tap\C#\NOTEPAD\NOTEPAD\NOTEPAD.suo">
+</Property><Property Name="Date" Value="Monday, January 07, 2013">
+</Property><Property Name="Time" Value="14:43 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="NOTEPAD.sln" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\NOTEPAD.sln">
+</Event><Event ErrorLevel="0" Project="" Source="NOTEPAD.suo" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\NOTEPAD.suo">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="NOTEPAD.csproj" Description="Project file successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\NOTEPAD.csproj">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="NOTEPAD.csproj.user" Description="Project user file successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\NOTEPAD.csproj.user">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="AssemblyInfo.cs" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="Find.cs" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\Find.cs">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="Form1.cs" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="App.ico" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="Find.resx" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\Find.resx">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="Form1.resx" Description="File successfully backed up as F:\Bai_tap\C#\NOTEPAD\NOTEPAD\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="NOTEPAD.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NOTEPAD" Source="NOTEPAD.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="NOTEPAD.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NOTEPAD.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NOTEPAD" Source="NOTEPAD.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

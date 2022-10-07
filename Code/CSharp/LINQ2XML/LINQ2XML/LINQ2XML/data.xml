@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product id="1">
+      <ProductName>Ổ cứng Samsung</ProductName>
+      <ProductPrice>1000000</ProductPrice>
+  </product>
+  <product id="2">
+      <ProductName>Bàn phím</ProductName>
+      <ProductPrice>100000</ProductPrice>
+  </product>
+</products>

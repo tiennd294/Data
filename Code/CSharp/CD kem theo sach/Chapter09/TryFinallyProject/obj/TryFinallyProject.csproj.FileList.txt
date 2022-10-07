@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\TryFinallyProject.exe
+bin\Debug\TryFinallyProject.pdb
+obj\Debug\TryFinallyProject.exe
+obj\Debug\TryFinallyProject.pdb
+bin\Release\TryFinallyProject.exe
+bin\Release\TryFinallyProject.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\TryFinallyProject.exe
+obj\Release\TryFinallyProject.pdb

@@ -1,0 +1,5 @@
+bin\Release\myClassLibrary.dll
+bin\Release\myClassLibrary.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\myClassLibrary.dll
+obj\Release\myClassLibrary.pdb

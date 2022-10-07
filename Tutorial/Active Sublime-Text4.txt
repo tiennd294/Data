@@ -1,0 +1,91 @@
+Bước 1: Truy cập linkweb: hexed.it
+Bước 2: Chọn Open File, mở filce sumblime_text.exe
+(Thư mục mặc định: C:\Program Files\Sublime Text\sublime_text.exe)
+
+
+Bước 3: Nhấn tổ hợp phím ctrl + F tìm: 4157415656575553B828210000 
+Bước 4: Copy và dán thay thế mã trên bằng:  33C0FEC0C3575553B828210000
+(Trước khi replace bạn chú ý chọn: Overwirte the bytes … Position + Hexadecimal values của [InterPreted])
+
+Bước 5: Ctrl + F, tìm: 6C6963656E73652E7375626C696D6568712E636F6D và thay thể bằng 7375626C696D6568712E6C6F63616C686F73740000.
+(Chọn các option giống bước 4)
+
+Bước 6: Chon Save As và lưu vào thư mục gốc cài đặt đề lên file cũ.
+Bước 7: Mở ứng dụng truy cập  Help → Enter License nhập key License
+— BEGIN LICENSE —
+X-Force Team
+Unlimited User License
+EA7E-636345
+1A489C2C 2C495B1B B166804C B670A74C
+8C696988 2ED7FC3C C60934A0 57E474A2
+25EDA06A B8DFD1BA 112DDDE5 64D9D3E7
+A7D7D8C9 F527C399 9E898F3B F9A7BAFF
+1EC91F37 DD657824 31619399 3F67229C
+3989B20C 3B4A53A3 E8496CC0 23259755
+4C214927 1B368C9B A8B8A859 52A8EDF8
+B43E2B6A 261A5247 69F25976 B94DC8A8
+— END LICENSE —
+Bước 8: Tắt tính năng tự động update & sử dụng bình thường.
+Kết luận
+Đây là một phần mềm trình soạn thảo ngôn ngữ lập trình vô cùng tốt. Tuyệt vời hơn chúng ta sẽ sử dụng Full tính năng bản quyền sublime text thông qua bài viết này.
+
+
+Hướng dẫn crack phần mềm:
+0. Thêm dòng sau vào file host (C:\Windows\System32\drivers\etc):
+
+127.0.0.1 license.sublimehq.com
+
+1. Giải nén và cài đặt phần mềm.
+2. Chạy File Keygen với quyền "Run as admin" và tạo License Key.
+3. Mở phần mềm → vào Help → Enter License và nhập hết key vừa tạo vào.
+4. Tắt kiểm tra cập nhật tự động: "Preferences → Settings" thêm dòng sau:
+"update_check": false,
+Sau đó Lưu và khởi động lại phần mềm.
+5. Hoàn thành.
+
+
+
+
+[BV.NET]
+Xin chào các bạn, bài viết hôm nay mình sẽ hướng dẫn các bạn cách Actived Sublimet Text 4, phiên bản hiện tại mình đang sử dụng là 4107.
+
+[SOFTWARE] Actived Sublime Text 4 4107
+Dưới đây là giao diện mình đã actived thành công.
+
+sublime_text4_install
+
+Đầu tiên, các bạn truy cập vào website sau:
+
+https://hexed.it/
+
+Sau đó, các bạn chọn open file đến file Sublime_text.exe ở trong thư mục program files cài đặt của các bạn
+
+Sau đó các bạn chỉnh lại tìm và chỉnh lại thông số như sau:
+
+80 38 00 => FE 00 90
+
+Như hình dưới đây:
+
+sublime_text_actived
+
+Các save file này vào thư mục Program files.
+
+Tiếp đến các bạn điền key vào như sau:
+
+----- BEGIN LICENSE ----- 
+TwitterInc 
+200 User License 
+EA7E-890007 
+1D77F72E 390CDD93 4DCBA022 FAF60790 
+61AA12C0 A37081C5 D0316412 4584D136 
+94D7F7D4 95BC8C1C 527DA828 560BB037 
+D1EDDD8C AE7B379F 50C9D69D B35179EF 
+2FE898C4 8E4277A8 555CE714 E1FB0E43 
+D5D52613 C3D12E98 BC49967F 7652EED2 
+9D2D2E61 67610860 6D338B72 5CF95C69 
+E36B85CC 84991F19 7575D828 470A92AB 
+------ END LICENSE ------
+C#
+Vậy là xong, chúc các bạn thành công.
+
+Thanks for watching!

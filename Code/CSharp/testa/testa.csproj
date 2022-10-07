@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB915EED-A0FA-47FA-A069-C3CF05518FE0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testa</RootNamespace>
+    <AssemblyName>testa</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Control\Footer.ascx" />
+    <Content Include="Control\Header.ascx" />
+    <Content Include="Control\Menu.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\29982274.jpg" />
+    <Content Include="Images\a1.jpg" />
+    <Content Include="Images\am-nhac-03.swf" />
+    <Content Include="Images\banner-1.jpg" />
+    <Content Include="Images\banner.html" />
+    <Content Include="Images\banner.swf" />
+    <Content Include="Images\banner2.swf" />
+    <Content Include="Images\bookmark.png" />
+    <Content Include="Images\chuong-led.swf" />
+    <Content Include="Images\click-chuot.swf" />
+    <Content Include="Images\di-chuot-02.swf" />
+    <Content Include="Images\di-chuot-10.swf" />
+    <Content Include="Images\di-chuot-11.swf" />
+    <Content Include="Images\dom-dom.swf" />
+    <Content Include="Images\hoa-roi-01.swf" />
+    <Content Include="Images\Image\09319d6de4ddb7dc2970159b3034c69e.jpg" />
+    <Content Include="Images\Image\0a34c2fda1777513d6c8bb6775cbb249.jpg" />
+    <Content Include="Images\Image\0e332f5bfea5ff63207497bd8a281f1f.jpg" />
+    <Content Include="Images\Image\15f8494310b5494b1b56673658c9367d.jpg" />
+    <Content Include="Images\Image\16-member-add.png" />
+    <Content Include="Images\Image\2584a8872f525c69ab736eb28663a11f.jpg" />
+    <Content Include="Images\Image\288b6fa26f444dffb854e04a7be9a14b.jpg" />
+    <Content Include="Images\Image\29982274.jpg" />
+    <Content Include="Images\Image\2d87e8866d10761fcdc2d3203be409f9.jpg" />
+    <Content Include="Images\Image\3260d5b35ae879d5cfb99dd09b7da6fa.jpg" />
+    <Content Include="Images\Image\3ace760da83989e8cd0ae55271e39fb6.jpg" />
+    <Content Include="Images\Image\448afdb7935f0456440309b50c4a64f2.jpg" />
+    <Content Include="Images\Image\480f1679901f65f3f76efa482c830b2a.jpg" />
+    <Content Include="Images\Image\484113da2c248863024c0935192aedb9.jpg" />
+    <Content Include="Images\Image\49478753c1988d4fdb431bd9dc127db5.jpg" />
+    <Content Include="Images\Image\5815e7a5325e2dbec1b3d5ad11076c1e.jpg" />
+    <Content Include="Images\Image\5e82fc60568fa139cd34fff342377ada.jpg" />
+    <Content Include="Images\Image\618a7f2c9fb403dbb771b9868b3eb674.jpg" />
+    <Content Include="Images\Image\63ff8d93386ea9ef67a00139899132b7.jpg" />
+    <Content Include="Images\Image\6499d882bd5669e178587a9ac81ff9be.jpg" />
+    <Content Include="Images\Image\78c39df24adb1018be4d546007bb3af3.jpg" />
+    <Content Include="Images\Image\87f0643c7cc6e40a2cf61951eae0f8ad.jpg" />
+    <Content Include="Images\Image\88090f1d78905e474ddbe73fa6436801.jpg" />
+    <Content Include="Images\Image\945874c1ebab41f29f80c0f96f6c961d.jpg" />
+    <Content Include="Images\Image\99564e510e6389bed2083310b64e5f21.jpg" />
+    <Content Include="Images\Image\9b640711a17f567dff1b9797b4cee989.jpg" />
+    <Content Include="Images\Image\a0821cea924e23f549ff5fb7a12c0db2.jpg" />
+    <Content Include="Images\Image\a1.jpg" />
+    <Content Include="Images\Image\actived.gif" />
+    <Content Include="Images\Image\add.png" />
+    <Content Include="Images\Image\admin1.png" />
+    <Content Include="Images\Image\admin2.png" />
+    <Content Include="Images\Image\admin3.png" />
+    <Content Include="Images\Image\ag_1.gif" />
+    <Content Include="Images\Image\ag_2.gif" />
+    <Content Include="Images\Image\ag_3.gif" />
+    <Content Include="Images\Image\ag_4.gif" />
+    <Content Include="Images\Image\ajax-loader.gif" />
+    <Content Include="Images\Image\amarok.ico" />
+    <Content Include="Images\Image\arrow-hover.gif" />
+    <Content Include="Images\Image\arrow-red.gif" />
+    <Content Include="Images\Image\arrow-red2.gif" />
+    <Content Include="Images\Image\arrow.gif" />
+    <Content Include="Images\Image\arrows-ffffff.png" />
+    <Content Include="Images\Image\arrow_left_orange.png" />
+    <Content Include="Images\Image\arr_red.png" />
+    <Content Include="Images\Image\bacground.gif" />
+    <Content Include="Images\Image\backcolor.gif" />
+    <Content Include="Images\Image\backcolor_on.gif" />
+    <Content Include="Images\Image\background.png" />
+    <Content Include="Images\Image\background_silver.jpg" />
+    <Content Include="Images\Image\banner.swf" />
+    <Content Include="Images\Image\banner88x31.png" />
+    <Content Include="Images\Image\banner_nukeviet_88x15.jpg" />
+    <Content Include="Images\Image\bb9203039832d760e6e52cd3c46c173a.jpg" />
+    <Content Include="Images\Image\bg-banner.png" />
+    <Content Include="Images\Image\bg-menu.jpg" />
+    <Content Include="Images\Image\bg.png" />
+    <Content Include="Images\Image\bg_menu.jpg" />
+    <Content Include="Images\Image\blank.gif" />
+    <Content Include="Images\Image\block-header-g1.png" />
+    <Content Include="Images\Image\blockdevice%281%29.ico" />
+    <Content Include="Images\Image\blockdevice%282%29.ico" />
+    <Content Include="Images\Image\blockdevice%283%29.ico" />
+    <Content Include="Images\Image\blockdevice.ico" />
+    <Content Include="Images\Image\bold.gif" />
+    <Content Include="Images\Image\bold_on.gif" />
+    <Content Include="Images\Image\book.png" />
+    <Content Include="Images\Image\bookmark_add.ico" />
+    <Content Include="Images\Image\bottom-quote.gif" />
+    <Content Include="Images\Image\bottom_bg.gif" />
+    <Content Include="Images\Image\bullet-list.gif" />
+    <Content Include="Images\Image\bullet-list2.gif" />
+    <Content Include="Images\Image\bullet-orange.png" />
+    <Content Include="Images\Image\button-bg.png" />
+    <Content Include="Images\Image\button01_l.png" />
+    <Content Include="Images\Image\button01_r.png" />
+    <Content Include="Images\Image\button_bg.gif" />
+    <Content Include="Images\Image\c0320f285ea4c960f736768fdb497668.png" />
+    <Content Include="Images\Image\c1430d3df5eda150a06195f398496c91.jpg" />
+    <Content Include="Images\Image\c3ac224748f5d5070fbe38f1fca8bc67.jpg" />
+    <Content Include="Images\Image\calendar.gif" />
+    <Content Include="Images\Image\calendar.jpg" />
+    <Content Include="Images\Image\calendarbg.gif" />
+    <Content Include="Images\Image\cat-header-bg.png" />
+    <Content Include="Images\Image\cfa58544aa41d4df780b1237375c2dcc.jpg" />
+    <Content Include="Images\Image\closed.gif" />
+    <Content Include="Images\Image\collapse-all.gif" />
+    <Content Include="Images\Image\com.png" />
+    <Content Include="Images\Image\copy.gif" />
+    <Content Include="Images\Image\copy_on.gif" />
+    <Content Include="Images\Image\css.png" />
+    <Content Include="Images\Image\cut.gif" />
+    <Content Include="Images\Image\cut_on.gif" />
+    <Content Include="Images\Image\dd-v2.png" />
+    <Content Include="Images\Image\del.gif" />
+    <Content Include="Images\Image\delete.gif" />
+    <Content Include="Images\Image\delete.png" />
+    <Content Include="Images\Image\delete_on.gif" />
+    <Content Include="Images\Image\doc.gif" />
+    <Content Include="Images\Image\dot.gif" />
+    <Content Include="Images\Image\dot.png" />
+    <Content Include="Images\Image\down.gif" />
+    <Content Include="Images\Image\e4dc4d775a644e50096cdb3c938d426d.jpg" />
+    <Content Include="Images\Image\edit.gif" />
+    <Content Include="Images\Image\edit.png" />
+    <Content Include="Images\Image\email.png" />
+    <Content Include="Images\Image\error.png" />
+    <Content Include="Images\Image\f123c3c8de676728340785356023b87e.png" />
+    <Content Include="Images\Image\f38ca66c3c7d3b9b079ae31d4b56321d.jpg" />
+    <Content Include="Images\Image\f9fc322a9d52aa2b6b3e50ed93228763.jpg" />
+    <Content Include="Images\Image\feef9163a8391233af853595219b6fc4.jpg" />
+    <Content Include="Images\Image\file.gif" />
+    <Content Include="Images\Image\flash.gif" />
+    <Content Include="Images\Image\fonts.ico" />
+    <Content Include="Images\Image\footer-bg.gif" />
+    <Content Include="Images\Image\footer_bg.jpg" />
+    <Content Include="Images\Image\forecolor.gif" />
+    <Content Include="Images\Image\forecolor_on.gif" />
+    <Content Include="Images\Image\h3.header.jpg" />
+    <Content Include="Images\Image\header.jpg" />
+    <Content Include="Images\Image\help.gif" />
+    <Content Include="Images\Image\help_on.gif" />
+    <Content Include="Images\Image\hot-news-g.png" />
+    <Content Include="Images\Image\hot-news-shadow.png" />
+    <Content Include="Images\Image\icon.png" />
+    <Content Include="Images\Image\ico_gif.gif" />
+    <Content Include="Images\Image\ico_jpg.gif" />
+    <Content Include="Images\Image\ico_png.gif" />
+    <Content Include="Images\Image\ico_swf.gif" />
+    <Content Include="Images\Image\inactived.gif" />
+    <Content Include="Images\Image\indentbg.gif" />
+    <Content Include="Images\Image\indentbg2.gif" />
+    <Content Include="Images\Image\indent_left.gif" />
+    <Content Include="Images\Image\indent_left_on.gif" />
+    <Content Include="Images\Image\indent_right.gif" />
+    <Content Include="Images\Image\indent_right_on.gif" />
+    <Content Include="Images\Image\index.html" />
+    <Content Include="Images\Image\insert_hyperlink.gif" />
+    <Content Include="Images\Image\insert_hyperlink_on.gif" />
+    <Content Include="Images\Image\insert_picture.gif" />
+    <Content Include="Images\Image\insert_picture_on.gif" />
+    <Content Include="Images\Image\insert_table.gif" />
+    <Content Include="Images\Image\insert_table_on.gif" />
+    <Content Include="Images\Image\italics.gif" />
+    <Content Include="Images\Image\italics_on.gif" />
+    <Content Include="Images\Image\justify_center.gif" />
+    <Content Include="Images\Image\justify_center_on.gif" />
+    <Content Include="Images\Image\justify_justify.gif" />
+    <Content Include="Images\Image\justify_justify_on.gif" />
+    <Content Include="Images\Image\justify_left.gif" />
+    <Content Include="Images\Image\justify_left_on.gif" />
+    <Content Include="Images\Image\justify_right.gif" />
+    <Content Include="Images\Image\justify_right_on.gif" />
+    <Content Include="Images\Image\kong_title.ico" />
+    <Content Include="Images\Image\ksirtet.ico" />
+    <Content Include="Images\Image\leftcol-bg.gif" />
+    <Content Include="Images\Image\list.gif" />
+    <Content Include="Images\Image\list.png" />
+    <Content Include="Images\Image\list_ordered.gif" />
+    <Content Include="Images\Image\list_ordered_on.gif" />
+    <Content Include="Images\Image\list_unordered.gif" />
+    <Content Include="Images\Image\list_unordered_on.gif" />
+    <Content Include="Images\Image\ln_1.gif" />
+    <Content Include="Images\Image\ln_2.gif" />
+    <Content Include="Images\Image\ln_3.gif" />
+    <Content Include="Images\Image\ln_4.gif" />
+    <Content Include="Images\Image\load.gif" />
+    <Content Include="Images\Image\load_bar.gif" />
+    <Content Include="Images\Image\logo.gif" />
+    <Content Include="Images\Image\logo.png" />
+    <Content Include="Images\Image\logout.png" />
+    <Content Include="Images\Image\logo_login.png" />
+    <Content Include="Images\Image\logo_small.png" />
+    <Content Include="Images\Image\mail_new.gif" />
+    <Content Include="Images\Image\mail_old.gif" />
+    <Content Include="Images\Image\mail_reply.gif" />
+    <Content Include="Images\Image\main_bg_bottom.gif" />
+    <Content Include="Images\Image\main_bg_mid.gif" />
+    <Content Include="Images\Image\main_bg_top.gif" />
+    <Content Include="Images\Image\maximize.gif" />
+    <Content Include="Images\Image\maximize_on.gif" />
+    <Content Include="Images\Image\menu_bg.gif" />
+    <Content Include="Images\Image\menu_bg_footer.gif" />
+    <Content Include="Images\Image\menu_bg_top.gif" />
+    <Content Include="Images\Image\menu_services_title_right.gif" />
+    <Content Include="Images\Image\menu_title_bg.gif" />
+    <Content Include="Images\Image\message-bar.gif" />
+    <Content Include="Images\Image\message_bg.jpg" />
+    <Content Include="Images\Image\message_search.jpg" />
+    <Content Include="Images\Image\message_time_bg_l.jpg" />
+    <Content Include="Images\Image\message_time_bg_r.jpg" />
+    <Content Include="Images\Image\middle_outer_clr.jpg" />
+    <Content Include="Images\Image\middle_outer_cr.jpg" />
+    <Content Include="Images\Image\middle_outer_lc.jpg" />
+    <Content Include="Images\Image\middle_outer_lcr.jpg" />
+    <Content Include="Images\Image\middle_outer_lrc.jpg" />
+    <Content Include="Images\Image\mnews-g1.png" />
+    <Content Include="Images\Image\mnews-g2.png" />
+    <Content Include="Images\Image\navmenu-v_hover.jpg" />
+    <Content Include="Images\Image\nav_bg.jpg" />
+    <Content Include="Images\Image\nav_current_l.jpg" />
+    <Content Include="Images\Image\nav_current_l.png" />
+    <Content Include="Images\Image\nav_current_r.jpg" />
+    <Content Include="Images\Image\nav_current_r.png" />
+    <Content Include="Images\Image\nav_home_l.jpg" />
+    <Content Include="Images\Image\nav_home_r.jpg" />
+    <Content Include="Images\Image\nav_hover_r.jpg" />
+    <Content Include="Images\Image\nav_l.jpg" />
+    <Content Include="Images\Image\nav_r.jpg" />
+    <Content Include="Images\Image\nav_sub_a.jpg" />
+    <Content Include="Images\Image\new.gif" />
+    <Content Include="Images\Image\news_arrow_down.png" />
+    <Content Include="Images\Image\news_cat_header.png" />
+    <Content Include="Images\Image\news_cat_l.png" />
+    <Content Include="Images\Image\news_cat_r.png" />
+    <Content Include="Images\Image\next.png" />
+    <Content Include="Images\Image\no_image.gif" />
+    <Content Include="Images\Image\nukeviet.png" />
+    <Content Include="Images\Image\ok.png" />
+    <Content Include="Images\Image\open.gif" />
+    <Content Include="Images\Image\outgroup.png" />
+    <Content Include="Images\Image\paste.gif" />
+    <Content Include="Images\Image\paste_on.gif" />
+    <Content Include="Images\Image\pix.gif" />
+    <Content Include="Images\Image\pixel.gif" />
+    <Content Include="Images\Image\preferences_desktop_font.ico" />
+    <Content Include="Images\Image\prev.png" />
+    <Content Include="Images\Image\preview.gif" />
+    <Content Include="Images\Image\preview_on.gif" />
+    <Content Include="Images\Image\print.gif" />
+    <Content Include="Images\Image\print.png" />
+    <Content Include="Images\Image\print_on.gif" />
+    <Content Include="Images\Image\rating.png" />
+    <Content Include="Images\Image\redo.gif" />
+    <Content Include="Images\Image\redo_on.gif" />
+    <Content Include="Images\Image\refresh.png" />
+    <Content Include="Images\Image\remove_format.gif" />
+    <Content Include="Images\Image\remove_format_on.gif" />
+    <Content Include="Images\Image\return.gif" />
+    <Content Include="Images\Image\return_on.gif" />
+    <Content Include="Images\Image\rss.png" />
+    <Content Include="Images\Image\rss2.png" />
+    <Content Include="Images\Image\rss_button.jpg" />
+    <Content Include="Images\Image\save.gif" />
+    <Content Include="Images\Image\save.png" />
+    <Content Include="Images\Image\save_on.gif" />
+    <Content Include="Images\Image\search-icon.png" />
+    <Content Include="Images\Image\sel.gif" />
+    <Content Include="Images\Image\select_font.gif" />
+    <Content Include="Images\Image\select_font_on.gif" />
+    <Content Include="Images\Image\select_heading.gif" />
+    <Content Include="Images\Image\select_heading_on.gif" />
+    <Content Include="Images\Image\select_size.gif" />
+    <Content Include="Images\Image\select_size_on.gif" />
+    <Content Include="Images\Image\seperator.gif" />
+    <Content Include="Images\Image\seperator2.gif" />
+    <Content Include="Images\Image\settings.gif" />
+    <Content Include="Images\Image\shadow.png" />
+    <Content Include="Images\Image\share.png" />
+    <Content Include="Images\Image\shutdown.ico" />
+    <Content Include="Images\Image\sign_in.gif" />
+    <Content Include="Images\Image\SinhVienIT.Net---1410195-header3copy.jpg" />
+    <Content Include="Images\Image\spector1.png" />
+    <Content Include="Images\Image\squared-blue.png" />
+    <Content Include="Images\Image\star-hot.png" />
+    <Content Include="Images\Image\stat1.png" />
+    <Content Include="Images\Image\stat2.png" />
+    <Content Include="Images\Image\strikethrough.gif" />
+    <Content Include="Images\Image\strikethrough_on.gif" />
+    <Content Include="Images\Image\submenu_title_bg.gif" />
+    <Content Include="Images\Image\subscript.gif" />
+    <Content Include="Images\Image\subscript_on.gif" />
+    <Content Include="Images\Image\superscript.gif" />
+    <Content Include="Images\Image\superscript_on.gif" />
+    <Content Include="Images\Image\tab-g-current.png" />
+    <Content Include="Images\Image\tab-g.png" />
+    <Content Include="Images\Image\tabs_arrow_down.jpg" />
+    <Content Include="Images\Image\tabs_l.png" />
+    <Content Include="Images\Image\tabs_r.png" />
+    <Content Include="Images\Image\tag.png" />
+    <Content Include="Images\Image\tall-down-arrow.gif" />
+    <Content Include="Images\Image\top-quote.gif" />
+    <Content Include="Images\Image\topmenu_current_l.jpg" />
+    <Content Include="Images\Image\topmenu_current_r.jpg" />
+    <Content Include="Images\Image\topmenu_hover_l.jpg" />
+    <Content Include="Images\Image\top_bg.png" />
+    <Content Include="Images\Image\top_menu_bg.jpg" />
+    <Content Include="Images\Image\top_message_bg.jpg" />
+    <Content Include="Images\Image\transparent.png" />
+    <Content Include="Images\Image\underline.gif" />
+    <Content Include="Images\Image\underline_on.gif" />
+    <Content Include="Images\Image\undo.gif" />
+    <Content Include="Images\Image\undo_on.gif" />
+    <Content Include="Images\Image\up.gif" />
+    <Content Include="Images\Image\upload.gif" />
+    <Content Include="Images\Image\v-seperator.gif" />
+    <Content Include="Images\Image\vertical_menu_bg.jpg" />
+    <Content Include="Images\Image\view_source.gif" />
+    <Content Include="Images\Image\view_source_on.gif" />
+    <Content Include="Images\Image\view_text.gif" />
+    <Content Include="Images\Image\view_text_on.gif" />
+    <Content Include="Images\Image\wizard%281%29.ico" />
+    <Content Include="Images\Image\wizard.ico" />
+    <Content Include="Images\Image\xhtml.png" />
+    <Content Include="Images\Image\zip.gif" />
+    <Content Include="Images\Image\_blank.gif" />
+    <Content Include="Images\img19.jpg" />
+    <Content Include="Images\la-bay.swf" />
+    <Content Include="Images\Mylov.jpeg" />
+    <Content Include="Images\nav_hover_l.gif" />
+    <Content Include="Images\nav_l.jpg" />
+    <Content Include="Images\nghich-robot-03.swf" />
+    <Content Include="Images\nguoi-tuyet-01.swf" />
+    <Content Include="Images\rainbow_tornado_by_willasss-d4wm2h7.swf" />
+    <Content Include="Images\random-star.swf" />
+    <Content Include="Images\SinhVienIT.Net---1410195-header3copy.jpg" />
+    <Content Include="Images\student2.gif" />
+    <Content Include="Images\trai-tim-12.swf" />
+    <Content Include="Images\trai-tim.swf" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Trangchu.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trangchu.aspx.cs">
+      <DependentUpon>Trangchu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\demo-webservice-aspnet.flv" />
+    <None Include="Images\Image\bg-banner.psd" />
+    <None Include="Images\Image\Thumbs.db" />
+    <None Include="Images\Thumbs.db" />
+    <Content Include="MasterPage.master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2801</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

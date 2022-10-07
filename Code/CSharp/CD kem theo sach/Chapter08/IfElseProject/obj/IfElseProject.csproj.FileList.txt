@@ -1,0 +1,8 @@
+bin\Debug\IfElseProject.exe
+bin\Debug\IfElseProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IfElseProject.Form1.resources
+obj\Debug\IfElseProject.Properties.Resources.resources
+obj\Debug\IfElseProject.csproj.GenerateResource.Cache
+obj\Debug\IfElseProject.exe
+obj\Debug\IfElseProject.pdb

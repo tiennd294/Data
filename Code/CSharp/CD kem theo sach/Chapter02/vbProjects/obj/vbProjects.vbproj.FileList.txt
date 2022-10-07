@@ -1,0 +1,9 @@
+bin\Debug\vbProjects.exe
+bin\Debug\vbProjects.pdb
+bin\Debug\vbProjects.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\vbProjects.Resources.resources
+obj\Debug\vbProjects.vbproj.GenerateResource.Cache
+obj\Debug\vbProjects.exe
+obj\Debug\vbProjects.xml
+obj\Debug\vbProjects.pdb

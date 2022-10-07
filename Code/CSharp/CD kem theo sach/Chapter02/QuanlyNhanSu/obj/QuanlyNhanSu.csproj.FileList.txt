@@ -1,0 +1,7 @@
+bin\Debug\QuanlyNhanSu.exe
+bin\Debug\QuanlyNhanSu.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\QuanlyNhanSu.Properties.Resources.resources
+obj\Debug\QuanlyNhanSu.csproj.GenerateResource.Cache
+obj\Debug\QuanlyNhanSu.exe
+obj\Debug\QuanlyNhanSu.pdb

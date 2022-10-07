@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\LogicOperator.exe
+bin\Debug\LogicOperator.pdb
+obj\Debug\LogicOperator.exe
+obj\Debug\LogicOperator.pdb

@@ -1,0 +1,8 @@
+bin\Debug\UsingStatement.exe
+bin\Debug\UsingStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\UsingStatement.Form1.resources
+obj\Debug\UsingStatement.Properties.Resources.resources
+obj\Debug\UsingStatement.csproj.GenerateResource.Cache
+obj\Debug\UsingStatement.exe
+obj\Debug\UsingStatement.pdb

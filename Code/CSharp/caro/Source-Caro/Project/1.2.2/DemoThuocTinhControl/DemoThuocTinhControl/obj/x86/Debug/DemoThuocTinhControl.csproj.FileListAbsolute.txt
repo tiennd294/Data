@@ -1,0 +1,16 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\bin\Debug\DemoThuocTinhControl.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\bin\Debug\DemoThuocTinhControl.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.pdb
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.exe
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.pdb
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.Form1.resources
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.Properties.Resources.resources
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.csproj.GenerateResource.Cache
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\bin\Debug\DemoThuocTinhControl.exe
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\bin\Debug\DemoThuocTinhControl.pdb
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.csprojResolveAssemblyReference.cache
+D:\MyClass\C# Caro\Project\1.2.2\DemoThuocTinhControl\DemoThuocTinhControl\obj\x86\Debug\DemoThuocTinhControl.UserControl1.resources

@@ -1,0 +1,8 @@
+bin\Debug\IsOperator.exe
+bin\Debug\IsOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IsOperator.Form1.resources
+obj\Debug\IsOperator.Properties.Resources.resources
+obj\Debug\IsOperator.csproj.GenerateResource.Cache
+obj\Debug\IsOperator.exe
+obj\Debug\IsOperator.pdb

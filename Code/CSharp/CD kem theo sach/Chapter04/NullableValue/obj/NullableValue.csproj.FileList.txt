@@ -1,0 +1,5 @@
+bin\Debug\NullableValue.exe
+bin\Debug\NullableValue.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\NullableValue.exe
+obj\Debug\NullableValue.pdb

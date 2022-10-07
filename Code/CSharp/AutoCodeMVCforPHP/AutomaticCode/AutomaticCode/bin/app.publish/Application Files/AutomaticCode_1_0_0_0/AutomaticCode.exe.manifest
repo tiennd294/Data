@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AutomaticCode.exe" version="1.0.0.0" publicKeyToken="b320a0c3e104b342" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="wizard.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AutomaticCode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AutomaticCode.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutomaticCode.exe" size="161280">
+      <assemblyIdentity name="AutomaticCode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NJolbDQKWKMgud4Qa9+1SvbtkVt6V3rj5ZIRBs08rYU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="439808">
+      <assemblyIdentity name="MySql.Data" version="6.8.3.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hQ+mKpTWQZwdn25/kj6wpi7Mw0oUhFZtVLQWvXkDIVM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AutomaticCode.exe.config" size="77">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sRXPO8NcIiuVI4ajMrs7gnxty0j6ChK7OorE6bM0xfQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wizard.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nAdiv0EDJYJigSBRvyT64uGD8LjpaBOrN645SGA28vc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-0EIC3Q7\NGUYEN_TIEN" issuerKeyHash="cf3ef3c7bb5759505f2f5693852ea80c85b0fbf8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>AuGnT7l45lryjESLpI93ewfHqhMbj+0rTDdX9MA3mXw=</DigestValue></Reference></SignedInfo><SignatureValue>R8SQL8MVTi6hyvqNT1LIngzg5Qg6kiAhDKZz9CSEPGpZP7ir8Uhbc9GY44/v1MsNzGNRBXS8ITlteZqgNehc+9ZVZzha6N6f1Vu3gsI/6/E1DTStOHU7ClG8nMs7mGw2WvBwiuGShUz28ETcTxvEYyzvcdkBYt/rsCqKrsIyTzA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3WkggytRGeezfzDNy3ZHYDpqEuwOXgUOaUlZ7SrYQsi4rM5GHH20MgrcURE5RC0Ao26uN8TLXfmqdcWtDFgivxQ0Ujpky9MX6z/SO+atdT0g4IZjUquf8Mga4XOjEKvlE/VLF7LOiRerO1Zdtq9GgfTEfRgmQx8d82JC2XOWTAc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7c9937c0f457374c2bed8f1b13aac7077b778fa48b448cf25ae678b94fa7e102" Description="" Url=""><as:assemblyIdentity name="AutomaticCode.exe" version="1.0.0.0" publicKeyToken="b320a0c3e104b342" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-0EIC3Q7\NGUYEN_TIEN</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Z8OnuUISdu4jwozWDVi5HT6/q6Wv2xAY6SODPf+5Sx0=</DigestValue></Reference></SignedInfo><SignatureValue>zXmcOhKAfjhRA3xDfAPOu+XHXScKuHyO5NlJZ2cWM1NHJmSbKmxi4XwGVjKvD2dEOEscRfpzZUtN5s5HmbB5Mez5Xcj2i8MtKZFkumqSqpL1d5+jn0naZKZPnJ1vhXg60Fd70C1UHjCGD6RYVSqwfPGo6bwQWM5uekMruHFL5V4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3WkggytRGeezfzDNy3ZHYDpqEuwOXgUOaUlZ7SrYQsi4rM5GHH20MgrcURE5RC0Ao26uN8TLXfmqdcWtDFgivxQ0Ujpky9MX6z/SO+atdT0g4IZjUquf8Mga4XOjEKvlE/VLF7LOiRerO1Zdtq9GgfTEfRgmQx8d82JC2XOWTAc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICBTCCAW6gAwIBAgIQJ4zy34/q8KVN/baYgEgxwTANBgkqhkiG9w0BAQsFADBBMT8wPQYDVQQDHjYARABFAFMASwBUAE8AUAAtADAARQBJAEMAMwBRADcAXABOAEcAVQBZAEUATgBfAFQASQBFAE4wHhcNMTYwNjE3MDgyMjA5WhcNMTcwNjE3MTQyMjA5WjBBMT8wPQYDVQQDHjYARABFAFMASwBUAE8AUAAtADAARQBJAEMAMwBRADcAXABOAEcAVQBZAEUATgBfAFQASQBFAE4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAN1pIIMrURnns38wzct2R2A6ahLsDl4FDmlJWe0q2ELIuKzORhx9tDIK3FEROUQtAKNurjfEy135qnXFrQxYIr8UNFI6ZMvTF+s/0jvmrXU9IOCGY1Krn/DIGuFzoxCr5RP1SxeyzokXqztWXbavRoH0xH0YJkMfHfNiQtlzlkwHAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAd7g60xPtYrFs/cm8pZj5xU5md306kGfAyNx/3dxBhHOlf9z4ZmHJb+gv69xoqNY4vGSDEA5qb6mI/kkFIsfTlmSk8wjpnXV6ovPQfH2JSOK4XM7NXIkNBpMAi9RceJ5d141bm2ztWBURlt4VlnpplOGLIyaxJlLTuDqkoZZjm/w=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

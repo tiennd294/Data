@@ -1,0 +1,11 @@
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.Form1.resources
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.Properties.Resources.resources
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.csproj.GenerateResource.Cache
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\bin\Debug\xmlconghaiso.exe
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\bin\Debug\xmlconghaiso.pdb
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.exe
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.pdb
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\bin\Debug\xmlconghaiso.exe.manifest
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\bin\Debug\xmlconghaiso.application
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.exe.manifest
+D:\vs2012\xmlconghaiso\xmlconghaiso\xmlconghaiso\obj\Debug\xmlconghaiso.application

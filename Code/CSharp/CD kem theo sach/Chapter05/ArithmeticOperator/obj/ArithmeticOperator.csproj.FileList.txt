@@ -1,0 +1,5 @@
+bin\Debug\ArithmeticOperator.exe
+bin\Debug\ArithmeticOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ArithmeticOperator.exe
+obj\Debug\ArithmeticOperator.pdb

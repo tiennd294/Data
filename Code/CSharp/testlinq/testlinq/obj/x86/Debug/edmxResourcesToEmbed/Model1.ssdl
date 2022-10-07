@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLTVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="QLTVModelStoreContainer">
+    <EntitySet Name="LoaiSach" EntityType="QLTVModel.Store.LoaiSach" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NhanVien" EntityType="QLTVModel.Store.NhanVien" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sach" EntityType="QLTVModel.Store.Sach" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SinhVien" EntityType="QLTVModel.Store.SinhVien" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="LoaiSach">
+    <Key>
+      <PropertyRef Name="LoaiSach_Ma" />
+    </Key>
+    <Property Name="LoaiSach_Ma" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LoaiSach_Ten" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="NV_Ma" />
+    </Key>
+    <Property Name="NV_Ma" Type="int" Nullable="false" />
+    <Property Name="NV_Ten" Type="nvarchar" MaxLength="50" />
+    <Property Name="NV_Diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="NV_Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="NV_Sodt" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="Sach_Ma" />
+    </Key>
+    <Property Name="Sach_Ma" Type="int" Nullable="false" />
+    <Property Name="Sach_Ten" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sach_Gia" Type="int" />
+    <Property Name="Sach_Soluong" Type="int" />
+    <Property Name="Loaisach_Ma" Type="int" />
+  </EntityType>
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="SV_Ma" />
+    </Key>
+    <Property Name="SV_Ma" Type="int" Nullable="false" />
+    <Property Name="SV_Ten" Type="nvarchar" MaxLength="50" />
+    <Property Name="SV_Khoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="SV_Lop" Type="nvarchar" MaxLength="50" />
+    <Property Name="SV_Tensach" Type="nvarchar" MaxLength="50" />
+    <Property Name="SV_Loaisach" Type="nvarchar" MaxLength="50" />
+    <Property Name="SV_Trangthai" Type="bit" />
+  </EntityType>
+</Schema>

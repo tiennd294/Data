@@ -1,0 +1,26 @@
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\QLNV_NGUYENTIEN.exe.config
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\QLNV_NGUYENTIEN.exe
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\QLNV_NGUYENTIEN.pdb
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.Form1.resources
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.frmNhanVien.resources
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.frmPhongBan.resources
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.Properties.Resources.resources
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.exe
+E:\VS2010\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.pdb
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\QLNV_NGUYENTIEN.exe.config
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.exe
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.pdb
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\QLNV_NGUYENTIEN.exe
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\QLNV_NGUYENTIEN.pdb
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.Form1.resources
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.frmNhanVien.resources
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.frmPhongBan.resources
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.Properties.Resources.resources
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\obj\x86\Debug\QLNV_NGUYENTIEN.frmDangNhap.resources
+C:\Documents and Settings\Admin\Desktop\QLNV_NGUYENTIEN\QLNV_NGUYENTIEN\bin\Debug\MySql.Data.Entity.EF6.dll

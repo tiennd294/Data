@@ -1,0 +1,5 @@
+E:\Bai_tap\C#\testa\bin\testa.dll
+E:\Bai_tap\C#\testa\bin\testa.pdb
+E:\Bai_tap\C#\testa\obj\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\testa\obj\Debug\testa.dll
+E:\Bai_tap\C#\testa\obj\Debug\testa.pdb

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Adds>
+  <add tonghaiso="4">
+    <so1>2</so1>
+    <so2>2</so2>
+  </add>
+  <add tonghaiso="9">
+    <so1>4</so1>
+    <so2>5</so2>
+  </add>
+  <add tonghaiso="55">
+    <so1>25</so1>
+    <so2>30</so2>
+  </add>
+  <add tonghaiso="35">
+    <so1>12</so1>
+    <so2>23</so2>
+  </add>
+</Adds>

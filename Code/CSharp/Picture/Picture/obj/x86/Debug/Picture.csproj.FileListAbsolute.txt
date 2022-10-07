@@ -1,0 +1,18 @@
+E:\Bai_tap\C#\Picture\Picture\bin\Debug\Picture.exe
+E:\Bai_tap\C#\Picture\Picture\bin\Debug\Picture.pdb
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\Picture.Form1.resources
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\Picture.Properties.Resources.resources
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\Picture.exe
+E:\Bai_tap\C#\Picture\Picture\obj\x86\Debug\Picture.pdb
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\Picture.exe
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\Picture.pdb
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\bin\Debug\Picture.exe
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\bin\Debug\Picture.pdb
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\Picture.Form1.resources
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\Picture.Properties.Resources.resources
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\NguyenTien\Desktop\Picture\Picture\obj\x86\Debug\GenerateResource.write.1.tlog

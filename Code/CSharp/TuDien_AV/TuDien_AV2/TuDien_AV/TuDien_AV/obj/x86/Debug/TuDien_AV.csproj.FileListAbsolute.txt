@@ -1,0 +1,12 @@
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\bin\Debug\TuDien_AV.exe
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\bin\Debug\TuDien_AV.pdb
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.Form1.resources
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.Properties.Resources.resources
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.exe
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.pdb
+E:\Bai_tap\C#\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.Form2.resources
+F:\IT\Book\Coding\C#\TuDien_AV\TuDien_AV2\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.exe
+F:\IT\Book\Coding\C#\TuDien_AV\TuDien_AV2\TuDien_AV\TuDien_AV\obj\x86\Debug\TuDien_AV.pdb

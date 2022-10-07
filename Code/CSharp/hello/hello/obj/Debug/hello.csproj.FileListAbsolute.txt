@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\hello\hello\bin\Debug\hello.exe
+F:\Bai_tap\C#\hello\hello\bin\Debug\hello.pdb
+F:\Bai_tap\C#\hello\hello\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\hello\hello\obj\Debug\hello.exe
+F:\Bai_tap\C#\hello\hello\obj\Debug\hello.pdb

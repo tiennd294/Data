@@ -1,0 +1,5 @@
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myClassLibrary\bin\Release\myClassLibrary.dll
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myClassLibrary\bin\Release\myClassLibrary.pdb
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myClassLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myClassLibrary\obj\Release\myClassLibrary.dll
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myClassLibrary\obj\Release\myClassLibrary.pdb

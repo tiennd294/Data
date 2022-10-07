@@ -1,0 +1,5 @@
+bin\Debug\constants.exe
+bin\Debug\constants.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\constants.exe
+obj\Debug\constants.pdb

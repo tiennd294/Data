@@ -1,0 +1,5 @@
+bin\Debug\protectecvariable.exe
+bin\Debug\protectecvariable.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\protectecvariable.exe
+obj\Debug\protectecvariable.pdb

@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\vdstack\vdstack\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\vdstack\vdstack\bin\Debug\vdstack.exe
+F:\Bai_tap\C#\vdstack\vdstack\bin\Debug\vdstack.pdb
+F:\Bai_tap\C#\vdstack\vdstack\obj\Debug\vdstack.exe
+F:\Bai_tap\C#\vdstack\vdstack\obj\Debug\vdstack.pdb

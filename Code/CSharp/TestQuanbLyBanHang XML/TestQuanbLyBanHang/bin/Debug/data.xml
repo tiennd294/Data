@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QLBH>
+  <DangNhap name="nguyentien24">
+    <Pass>25251325</Pass>
+    <TTG>dung</TTG>
+  </DangNhap>
+  <ThanhPho Thanhpho="Ha noi">
+    <TenTP>Tay Ha Ha Noi</TenTP>
+  </ThanhPho>
+  <ChiTietHD MaCTHD="01">
+    <MaHD>01</MaHD>
+    <MaSP>01</MaSP>
+    <SoLuong>2</SoLuong>
+  </ChiTietHD>
+  <SanPham MaSP="01">
+    <TenSP>Rượu Vang</TenSP>
+    <DonViTinh>Chai</DonViTinh>
+    <DonGia>156.000 đ</DonGia>
+    <Hinh>Chưa có </Hinh>
+  </SanPham>
+  <KhachHang MaKH="06">
+    <TenCTy>co phan thuong mai2</TenCTy>
+    <DiaChi>cum 2 tan lap ha noi2</DiaChi>
+    <Thanhpho>Ha noi</Thanhpho>
+    <DienThoai>0979409016</DienThoai>
+  </KhachHang>
+  <HoaDon MaHD="02">
+    <MaKH>06</MaKH>
+    <MaNV>05</MaNV>
+    <NgayLHD>10/07/1991</NgayLHD>
+    <NgayNH>21/08/2013</NgayNH>
+  </HoaDon>
+  <NhanVien MaNV="06">
+    <Ho>vu dinh</Ho>
+    <Ten>tu</Ten>
+    <GT>nam</GT>
+    <NamSinh>01/10/1993</NamSinh>
+    <DiaChi>yen bai</DiaChi>
+    <DienThoai>1900100c0</DienThoai>
+  </NhanVien>
+  <KhachHang MaKH="05">
+    <TenCTy>tap doan FPT</TenCTy>
+    <DiaChi> cau giay ha noi</DiaChi>
+    <Thanhpho>Ha noi</Thanhpho>
+    <DienThoai>0123456789</DienThoai>
+  </KhachHang>
+  <KhachHang MaKH="12">
+    <TenCTy>aaaaaaaaaa</TenCTy>
+    <DiaChi>asssssssssssssss</DiaChi>
+    <Thanhpho>Sai Gon</Thanhpho>
+    <DienThoai>23232323232323</DienThoai>
+  </KhachHang>
+  <ThanhPho Thanhpho="Sai Gon">
+    <TenTP>TP. Ho Chi Minh</TenTP>
+  </ThanhPho>
+  <KhachHang MaKH="03">
+    <TenCTy>Tap Doan Song Da</TenCTy>
+    <DiaChi>Go vap tp ho chi minh</DiaChi>
+    <Thanhpho>Sai Gon</Thanhpho>
+    <DienThoai>09784653221</DienThoai>
+  </KhachHang>
+  <HoaDon MaHD="01">
+    <MaKH>03</MaKH>
+    <MaNV>01</MaNV>
+    <NgayLHD>01/10/1987</NgayLHD>
+    <NgayNH>30/08/2013</NgayNH>
+  </HoaDon>
+  <NhanVien MaNV="01">
+    <Ho>tran thi </Ho>
+    <Ten>mai</Ten>
+    <GT>Nu</GT>
+    <NamSinh>10/07/1993</NamSinh>
+    <DiaChi>ccccccccccc</DiaChi>
+    <DienThoai>2222222222222</DienThoai>
+  </NhanVien>
+</QLBH>

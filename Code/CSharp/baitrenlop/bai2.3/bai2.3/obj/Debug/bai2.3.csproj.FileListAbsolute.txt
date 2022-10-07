@@ -1,0 +1,8 @@
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\bin\Debug\bai2.3.exe
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\bin\Debug\bai2.3.pdb
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\obj\Debug\bai2._3.Form1.resources
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\obj\Debug\bai2._3.Properties.Resources.resources
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\obj\Debug\bai2.3.csproj.GenerateResource.Cache
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\obj\Debug\bai2.3.exe
+F:\Bai_tap\C#\baitrenlop\bai2.3\bai2.3\obj\Debug\bai2.3.pdb

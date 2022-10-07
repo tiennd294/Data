@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLTVModelStoreContainer" CdmEntityContainer="QLTVEntities1">
+    <EntitySetMapping Name="LoaiSaches">
+      <EntityTypeMapping TypeName="QLTVModel.LoaiSach">
+        <MappingFragment StoreEntitySet="LoaiSach">
+          <ScalarProperty Name="LoaiSach_Ma" ColumnName="LoaiSach_Ma" />
+          <ScalarProperty Name="LoaiSach_Ten" ColumnName="LoaiSach_Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="QLTVModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="NV_Ma" ColumnName="NV_Ma" />
+          <ScalarProperty Name="NV_Ten" ColumnName="NV_Ten" />
+          <ScalarProperty Name="NV_Diachi" ColumnName="NV_Diachi" />
+          <ScalarProperty Name="NV_Email" ColumnName="NV_Email" />
+          <ScalarProperty Name="NV_Sodt" ColumnName="NV_Sodt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saches">
+      <EntityTypeMapping TypeName="QLTVModel.Sach">
+        <MappingFragment StoreEntitySet="Sach">
+          <ScalarProperty Name="Sach_Ma" ColumnName="Sach_Ma" />
+          <ScalarProperty Name="Sach_Ten" ColumnName="Sach_Ten" />
+          <ScalarProperty Name="Sach_Gia" ColumnName="Sach_Gia" />
+          <ScalarProperty Name="Sach_Soluong" ColumnName="Sach_Soluong" />
+          <ScalarProperty Name="Loaisach_Ma" ColumnName="Loaisach_Ma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="QLTVModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="SV_Ma" ColumnName="SV_Ma" />
+          <ScalarProperty Name="SV_Ten" ColumnName="SV_Ten" />
+          <ScalarProperty Name="SV_Khoa" ColumnName="SV_Khoa" />
+          <ScalarProperty Name="SV_Lop" ColumnName="SV_Lop" />
+          <ScalarProperty Name="SV_Tensach" ColumnName="SV_Tensach" />
+          <ScalarProperty Name="SV_Loaisach" ColumnName="SV_Loaisach" />
+          <ScalarProperty Name="SV_Trangthai" ColumnName="SV_Trangthai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

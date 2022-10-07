@@ -1,0 +1,5 @@
+bin\Debug\DoProject.exe
+bin\Debug\DoProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DoProject.exe
+obj\Debug\DoProject.pdb

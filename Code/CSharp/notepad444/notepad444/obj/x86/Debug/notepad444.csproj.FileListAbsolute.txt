@@ -1,0 +1,9 @@
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\notepad444.Form1.resources
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Bai_tap\C#\notepad444\notepad444\bin\Debug\notepad.exe
+F:\Bai_tap\C#\notepad444\notepad444\bin\Debug\notepad.pdb
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\notepad.Properties.Resources.resources
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\notepad.exe
+F:\Bai_tap\C#\notepad444\notepad444\obj\x86\Debug\notepad.pdb

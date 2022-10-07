@@ -1,0 +1,5 @@
+bin\Debug\AssigmentOperator.exe
+bin\Debug\AssigmentOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AssigmentOperator.exe
+obj\Debug\AssigmentOperator.pdb

@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\Alias.exe
+bin\Debug\Alias.pdb
+obj\Debug\Alias.exe
+obj\Debug\Alias.pdb

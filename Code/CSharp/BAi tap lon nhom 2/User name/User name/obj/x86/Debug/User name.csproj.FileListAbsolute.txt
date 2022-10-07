@@ -1,0 +1,18 @@
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\bin\Debug\User name.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\bin\Debug\User name.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\User_name.Form1.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\User_name.Properties.Resources.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\User name.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\User name\User name\obj\x86\Debug\User name.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\User name.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\User name.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\bin\Debug\User name.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\bin\Debug\User name.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\User_name.Form1.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\User_name.Properties.Resources.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\User name\User name\obj\x86\Debug\GenerateResource.write.1.tlog

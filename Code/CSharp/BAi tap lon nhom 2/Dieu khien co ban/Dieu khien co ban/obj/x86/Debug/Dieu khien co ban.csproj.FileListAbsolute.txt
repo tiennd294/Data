@@ -1,0 +1,18 @@
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu_khien_co_ban.Form1.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu_khien_co_ban.Properties.Resources.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\bin\Debug\Dieu khien co ban.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\bin\Debug\Dieu khien co ban.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu khien co ban.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu khien co ban.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu khien co ban.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu khien co ban.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\bin\Debug\Dieu khien co ban.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\bin\Debug\Dieu khien co ban.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu_khien_co_ban.Form1.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\Dieu_khien_co_ban.Properties.Resources.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\Dieu khien co ban\Dieu khien co ban\obj\x86\Debug\GenerateResource.write.1.tlog

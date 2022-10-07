@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QLBH>
+  <DangNhap name="nguyentien">
+    <Pass>25251325</Pass>
+    <TTG>sai</TTG>
+  </DangNhap>
+  <ThanhPho ThanhPho="Hanoi">
+    <TenTP></TenTP>
+  </ThanhPho>
+  <KhachHang MaKH="">
+    <TenCTy></TenCTy>
+	<DiaChi></DiaChi>
+	<ThanhPho></ThanhPho>
+	<DienThoai></DienThoai>
+  </KhachHang>
+  <HoaDon MaHD="">
+	<MaKH></MaKH>
+	<MaNV></MaNV>
+	<NgayLHD></NgayLHD>
+	<NgayNH></NgayNH>
+  </HoaDon>
+  <NhanVien MaNV="">
+	<Ho></Ho>
+	<Ten></Ten>
+	<GT></GT>
+	<NamSinh></NamSinh>
+	<DiaChi></DiaChi>
+	<DienThoai></DienThoai>
+	<Hinh></Hinh>
+  </NhanVien>
+  <ChiTietHD MaCTHD="">
+	<MaHD></MaHD>
+	<MaSP></MaSP>
+	<SoLuong></SoLuong>
+  </ChiTietHD>
+  <SanPham MaSP="">
+	<TenSP></TenSP>
+	<DonViTinh></DonViTinh>
+	<DonGia></DonGia>
+	<Hinh></Hinh>
+  </SanPham>
+</QLBH>

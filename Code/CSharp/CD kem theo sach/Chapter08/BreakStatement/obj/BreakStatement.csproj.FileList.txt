@@ -1,0 +1,5 @@
+bin\Debug\BreakStatement.exe
+bin\Debug\BreakStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BreakStatement.exe
+obj\Debug\BreakStatement.pdb

@@ -1,0 +1,5 @@
+bin\Debug\staticclass.exe
+bin\Debug\staticclass.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\staticclass.exe
+obj\Debug\staticclass.pdb

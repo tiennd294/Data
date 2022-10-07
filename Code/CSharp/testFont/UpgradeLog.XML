@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="testFont">
+</Property><Property Name="Solution File" Value="F:\Bai_tap\C#\testFont\testFont.sln">
+</Property><Property Name="User Options File" Value="F:\Bai_tap\C#\testFont\testFont.suo">
+</Property><Property Name="Date" Value="Monday, November 19, 2012">
+</Property><Property Name="Time" Value="22:58 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="testFont.sln" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont.sln">
+</Event><Event ErrorLevel="0" Project="" Source="testFont.suo" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont.suo">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\testFont.csproj" Description="Project file successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\testFont.csproj">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Form1.cs" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Form1.cs">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Form1.Designer.cs" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Program.cs" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Program.cs">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Properties\Resources.Designer.cs" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Properties\Settings.Designer.cs" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Properties\Settings.settings" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Resources\Firefox2006.png" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Resources\Firefox2006.png">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Resources\firefox_02.png" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Resources\firefox_02.png">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Resources\firefox_02_01.png" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Resources\firefox_02_01.png">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Resources\firefox__02_00.png" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Resources\firefox__02_00.png">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Form1.resx" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Form1.resx">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\Properties\Resources.resx" Description="File successfully backed up as F:\Bai_tap\C#\testFont\Backup\testFont\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\testFont.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="testFont" Source="testFont\testFont.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="testFont.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="testFont.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="testFont" Source="testFont\testFont.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

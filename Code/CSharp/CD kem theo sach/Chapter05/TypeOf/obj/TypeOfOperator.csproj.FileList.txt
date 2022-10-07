@@ -1,0 +1,5 @@
+bin\Debug\TypeOf.exe
+bin\Debug\TypeOf.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TypeOf.exe
+obj\Debug\TypeOf.pdb

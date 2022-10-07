@@ -1,0 +1,5 @@
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsControlLibrary\bin\Release\myWindowsControlLibrary.dll
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsControlLibrary\bin\Release\myWindowsControlLibrary.pdb
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsControlLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsControlLibrary\obj\Release\myWindowsControlLibrary.dll
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsControlLibrary\obj\Release\myWindowsControlLibrary.pdb

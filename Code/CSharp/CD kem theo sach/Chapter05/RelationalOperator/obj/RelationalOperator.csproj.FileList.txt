@@ -1,0 +1,5 @@
+bin\Debug\RelationalOperator.exe
+bin\Debug\RelationalOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\RelationalOperator.exe
+obj\Debug\RelationalOperator.pdb

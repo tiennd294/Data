@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IfStatement.Form1.resources
+obj\Debug\IfStatement.Properties.Resources.resources
+obj\Debug\IfStatement.csproj.GenerateResource.Cache
+bin\Debug\IfStatement.exe
+bin\Debug\IfStatement.pdb
+obj\Debug\IfStatement.exe
+obj\Debug\IfStatement.pdb

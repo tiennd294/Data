@@ -1,0 +1,5 @@
+bin\Debug\WhileStatement.exe
+bin\Debug\WhileStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WhileStatement.exe
+obj\Debug\WhileStatement.pdb

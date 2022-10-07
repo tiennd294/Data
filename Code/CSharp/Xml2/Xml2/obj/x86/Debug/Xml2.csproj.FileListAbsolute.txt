@@ -1,0 +1,6 @@
+E:\Bai_tap\C#\Xml2\Xml2\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\Xml2\Xml2\obj\x86\Debug\Xml2.Form1.resources
+E:\Bai_tap\C#\Xml2\Xml2\obj\x86\Debug\Xml2.Properties.Resources.resources
+E:\Bai_tap\C#\Xml2\Xml2\obj\x86\Debug\Xml2.TH_PHANSO.resources
+E:\Bai_tap\C#\Xml2\Xml2\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\Xml2\Xml2\obj\x86\Debug\GenerateResource.write.1.tlog

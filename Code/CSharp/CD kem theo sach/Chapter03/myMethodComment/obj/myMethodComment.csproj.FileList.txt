@@ -1,0 +1,5 @@
+bin\Debug\myMethodComment.exe
+bin\Debug\myMethodComment.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\myMethodComment.exe
+obj\Debug\myMethodComment.pdb

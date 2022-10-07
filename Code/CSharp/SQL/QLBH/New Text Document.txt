@@ -1,0 +1,13 @@
+CREATE PROC spud_LayVattu
+AS
+	Select * From Vattu
+Go
+CREATE PROC spud_ThemVattu
+	@mavtu char(4),
+	@tenvtu varchar(100),
+	@dvtinh varchar(10),
+	@phantram int
+AS
+	INSERT INTO VATTU(Mavtu,TenVTu,Dvtinh,Phantram)	
+		VALUES (@mavtu ,@tenvtu,@dvtinh,@phantram)
+	

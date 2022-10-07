@@ -1,0 +1,11 @@
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\testCSDL.Form1.resources
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\testCSDL.Properties.Resources.resources
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Bai_tap\C#\testCSDL\testCSDL\bin\Debug\testCSDL.exe
+F:\Bai_tap\C#\testCSDL\testCSDL\bin\Debug\testCSDL.pdb
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\testCSDL.exe
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\testCSDL.pdb
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\testCSDL.Panel.resources
+F:\Bai_tap\C#\testCSDL\testCSDL\obj\x86\Debug\testCSDL.Synhvien.resources

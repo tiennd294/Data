@@ -1,0 +1,47 @@
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\bin\Debug\Co_Caro.exe
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\bin\Debug\Co_Caro.pdb
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.Properties.Resources.resources
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.exe
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.pdb
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.exe
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.pdb
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\bin\Debug\Co_Caro.exe
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\bin\Debug\Co_Caro.pdb
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.Properties.Resources.resources
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sv\Desktop\New Folder on f71-22\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.Caro.resources
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmAbout.resources
+F:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmCaro.resources
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.exe
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.pdb
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\bin\Debug\Co_Caro.exe
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\bin\Debug\Co_Caro.pdb
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmAbout.resources
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmCaro.resources
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.Properties.Resources.resources
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\DoAn\LapTrinhWin\Co_Caro\Co_Caro\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.exe
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.pdb
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\bin\Debug\Co_Caro.exe
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\bin\Debug\Co_Caro.pdb
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmAbout.resources
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmCaro.resources
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.Properties.Resources.resources
+D:\MyClass\C# Caro\Share\Project\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.csproj.GenerateResource.Cache
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.exe
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.pdb
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\bin\Debug\Co_Caro.exe
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\bin\Debug\Co_Caro.pdb
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmAbout.resources
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.frmCaro.resources
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.Properties.Resources.resources
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.csproj.GenerateResource.Cache
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\bin\Debug\Co_Caro.exe.config
+F:\Code\Source-Caro\Project\Co_Caro\Co_Caro\Co_Caro\obj\x86\Debug\Co_Caro.csprojResolveAssemblyReference.cache

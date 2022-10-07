@@ -1,0 +1,3 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Release\DemoPhuongThucContainer.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Release\DemoPhuongThucContainer.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Release\DemoPhuongThucContainer.csproj.GenerateResource.Cache

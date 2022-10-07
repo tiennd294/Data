@@ -1,0 +1,4 @@
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myCrystalReportsApplication\obj\Release\ResolveAssemblyReference.cache
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myCrystalReportsApplication\obj\Release\myCrystalReportsApplication.Properties.Resources.resources
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myCrystalReportsApplication\obj\Release\GenerateResource.read.1.tlog
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myCrystalReportsApplication\obj\Release\GenerateResource.write.1.tlog

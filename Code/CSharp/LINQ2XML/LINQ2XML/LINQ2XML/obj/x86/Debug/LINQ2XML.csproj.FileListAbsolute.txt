@@ -1,0 +1,20 @@
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\bin\Debug\LINQ2XML.exe
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\bin\Debug\LINQ2XML.pdb
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.Form1.resources
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.Properties.Resources.resources
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.exe
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.pdb
+C:\Users\SERIVN\Documents\Visual Studio 2010\Projects\LINQ2XML\LINQ2XML\bin\Debug\data.xml
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.exe
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.pdb
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\bin\Debug\data.xml
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\bin\Debug\LINQ2XML.exe
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\bin\Debug\LINQ2XML.pdb
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.Form1.resources
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\LINQ2XML.Properties.Resources.resources
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\LINQ2XML\LINQ2XML\LINQ2XML\obj\x86\Debug\GenerateResource.write.1.tlog

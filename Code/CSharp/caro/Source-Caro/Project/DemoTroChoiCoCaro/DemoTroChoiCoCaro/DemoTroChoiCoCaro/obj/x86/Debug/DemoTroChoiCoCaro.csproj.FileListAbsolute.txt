@@ -1,0 +1,23 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\bin\Debug\DemoTroChoiCoCaro.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\bin\Debug\DemoTroChoiCoCaro.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.pdb
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.exe
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.pdb
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\bin\Debug\DemoTroChoiCoCaro.exe
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\bin\Debug\DemoTroChoiCoCaro.pdb
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.Properties.Resources.resources
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.csproj.GenerateResource.Cache
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.frmCoCaro.resources
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.csprojResolveAssemblyReference.cache
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.exe
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.pdb
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\bin\Debug\DemoTroChoiCoCaro.exe
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\bin\Debug\DemoTroChoiCoCaro.pdb
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.csprojResolveAssemblyReference.cache
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.frmCoCaro.resources
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.Properties.Resources.resources
+F:\Code\Source-Caro\Project\DemoTroChoiCoCaro\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Debug\DemoTroChoiCoCaro.csproj.GenerateResource.Cache

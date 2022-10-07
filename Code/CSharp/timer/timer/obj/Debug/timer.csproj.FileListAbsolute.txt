@@ -1,0 +1,8 @@
+F:\Bai_tap\C#\timer\timer\bin\Debug\timer.exe
+F:\Bai_tap\C#\timer\timer\bin\Debug\timer.pdb
+F:\Bai_tap\C#\timer\timer\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\timer\timer\obj\Debug\timer.Properties.Resources.resources
+F:\Bai_tap\C#\timer\timer\obj\Debug\timer.csproj.GenerateResource.Cache
+F:\Bai_tap\C#\timer\timer\obj\Debug\timer.exe
+F:\Bai_tap\C#\timer\timer\obj\Debug\timer.pdb
+F:\Bai_tap\C#\timer\timer\obj\Debug\timer.Form1.resources

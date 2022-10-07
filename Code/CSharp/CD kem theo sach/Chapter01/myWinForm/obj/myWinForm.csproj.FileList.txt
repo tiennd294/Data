@@ -1,0 +1,15 @@
+bin\Debug\myWinForm.exe
+bin\Debug\myWinForm.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\myWinForm.Properties.Resources.resources
+obj\Debug\myWinForm.csproj.GenerateResource.Cache
+obj\Debug\myWinForm.exe
+obj\Debug\myWinForm.pdb
+bin\Release\myWinForm.exe
+bin\Release\myWinForm.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\myWinForm.Properties.Resources.resources
+obj\Release\myWinForm.csproj.GenerateResource.Cache
+obj\Release\myWinForm.exe
+obj\Release\myWinForm.pdb
+bin\Release\myWinForm.exe.config

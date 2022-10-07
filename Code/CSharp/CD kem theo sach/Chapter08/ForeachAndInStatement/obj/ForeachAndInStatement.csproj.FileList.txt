@@ -1,0 +1,8 @@
+bin\Debug\ForeachAndInStatement.exe
+bin\Debug\ForeachAndInStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ForeachAndInStatement.Form1.resources
+obj\Debug\ForeachAndInStatement.Properties.Resources.resources
+obj\Debug\ForeachAndInStatement.csproj.GenerateResource.Cache
+obj\Debug\ForeachAndInStatement.exe
+obj\Debug\ForeachAndInStatement.pdb

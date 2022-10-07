@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Adds>
+  <add>
+  </add>
+  <cong tonghaiso="7">
+    <so1>2</so1>
+    <so2>5</so2>
+  </cong>
+  <cong tonghaiso="66">
+    <so1>23</so1>
+    <so2>43</so2>
+  </cong>
+  <cong tonghaiso="66">
+    <so1>23</so1>
+    <so2>43</so2>
+  </cong>
+  <cong tonghaiso="59">
+    <so1>14</so1>
+    <so2>45</so2>
+  </cong>
+  <add tonghaiso="35">
+    <so1>12</so1>
+    <so2>23</so2>
+  </add>
+  <add tonghaiso="17">
+    <so1>8</so1>
+    <so2>9</so2>
+  </add>
+  <add>
+  </add>
+  <add tonghaiso="77">
+    <so1>43</so1>
+    <so2>34</so2>
+  </add>
+  <add tonghaiso="77">
+    <so1>43</so1>
+    <so2>34</so2>
+  </add>
+  <add tonghaiso="65">
+    <so1>42</so1>
+    <so2>23</so2>
+  </add>
+  <add tonghaiso="3477">
+    <so1>3434</so1>
+    <so2>43</so2>
+  </add>
+  <add tonghaiso="444">
+    <so1>122</so1>
+    <so2>322</so2>
+  </add>
+  <add tonghaiso="2388">
+    <so1>2345</so1>
+    <so2>43</so2>
+  </add>
+</Adds>

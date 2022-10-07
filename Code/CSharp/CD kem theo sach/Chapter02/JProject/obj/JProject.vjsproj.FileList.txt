@@ -1,0 +1,5 @@
+bin\Release\JProject.exe
+bin\Release\JProject.pdb
+obj\x86\Release\ResolveAssemblyReference.cache
+obj\x86\Release\JProject.exe
+obj\x86\Release\JProject.pdb

@@ -1,0 +1,5 @@
+bin\Debug\ForStatement.exe
+bin\Debug\ForStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ForStatement.exe
+obj\Debug\ForStatement.pdb

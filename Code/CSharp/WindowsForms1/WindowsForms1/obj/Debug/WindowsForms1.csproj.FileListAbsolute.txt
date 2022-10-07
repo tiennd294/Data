@@ -1,0 +1,8 @@
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\bin\Debug\WindowsForms1.exe
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\bin\Debug\WindowsForms1.pdb
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\obj\Debug\WindowsForms1.Form1.resources
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\obj\Debug\WindowsForms1.Properties.Resources.resources
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\obj\Debug\WindowsForms1.csproj.GenerateResource.Cache
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\obj\Debug\WindowsForms1.exe
+F:\Bai_tap\C#\WindowsForms1\WindowsForms1\obj\Debug\WindowsForms1.pdb

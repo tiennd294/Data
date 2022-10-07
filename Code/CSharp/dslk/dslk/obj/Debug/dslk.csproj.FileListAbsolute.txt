@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\dslk\dslk\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\dslk\dslk\bin\Debug\dslk.exe
+F:\Bai_tap\C#\dslk\dslk\bin\Debug\dslk.pdb
+F:\Bai_tap\C#\dslk\dslk\obj\Debug\dslk.exe
+F:\Bai_tap\C#\dslk\dslk\obj\Debug\dslk.pdb

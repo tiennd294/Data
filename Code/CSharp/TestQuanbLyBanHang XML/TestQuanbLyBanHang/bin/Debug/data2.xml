@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QLBH>
+  <DangNhap name="nguyentien24">
+    <Pass>25251325</Pass>
+    <TTG>dung</TTG>
+  </DangNhap>
+  <ThanhPho ThanhPho="dsadasd">
+    <TenTP>sadsad</TenTP>
+  </ThanhPho>
+  <ThanhPho ThanhPho="aaaaaaaa">
+    <TenTP>sssssssss</TenTP>
+  </ThanhPho>
+  <KhachHang MaKH="05">
+    <TenCTy>co phan thuong mai</TenCTy>
+    <DiaChi>cun 2 tan lap ha noi</DiaChi>
+    <ThanhPho>ha noi</ThanhPho>
+    <DienThoai>0979409016</DienThoai>
+  </KhachHang>
+  <HoaDon MaHD="01">
+    <MaKH>01</MaKH>
+    <MaNV>01</MaNV>
+    <NgayLHD></NgayLHD>
+    <NgayNH></NgayNH>
+  </HoaDon>
+  <NhanVien MaNV="05">
+    <Ho>vu dinh</Ho>
+    <Ten>tu</Ten>
+    <GT>nam</GT>
+    <NamSinh>1993</NamSinh>
+    <DiaChi>yen bai</DiaChi>
+    <DienThoai>1900100c0</DienThoai>
+    <Hinh>con mèo</Hinh>
+  </NhanVien>
+  <ChiTietHD MaCTHD="01">
+    <MaHD>01</MaHD>
+    <MaSP>01</MaSP>
+    <SoLuong>2</SoLuong>
+  </ChiTietHD>
+  <SanPham MaSP="01">
+    <TenSP>Rượu Vang</TenSP>
+    <DonViTinh>Chai</DonViTinh>
+    <DonGia>156.000 đ</DonGia>
+    <Hinh>Chưa có </Hinh>
+  </SanPham>
+</QLBH>

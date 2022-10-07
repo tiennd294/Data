@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\truyenthamso\truyenthamso\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\truyenthamso\truyenthamso\bin\Debug\truyenthamso.exe
+F:\Bai_tap\C#\truyenthamso\truyenthamso\bin\Debug\truyenthamso.pdb
+F:\Bai_tap\C#\truyenthamso\truyenthamso\obj\Debug\truyenthamso.exe
+F:\Bai_tap\C#\truyenthamso\truyenthamso\obj\Debug\truyenthamso.pdb

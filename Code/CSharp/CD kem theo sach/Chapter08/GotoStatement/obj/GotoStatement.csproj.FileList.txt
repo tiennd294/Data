@@ -1,0 +1,5 @@
+bin\Debug\GotoStatement.exe
+bin\Debug\GotoStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\GotoStatement.exe
+obj\Debug\GotoStatement.pdb

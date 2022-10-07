@@ -1,0 +1,6 @@
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsService\bin\Release\myWindowsService.exe.config
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsService\bin\Release\myWindowsService.exe
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsService\bin\Release\myWindowsService.pdb
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsService\obj\Release\ResolveAssemblyReference.cache
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsService\obj\Release\myWindowsService.exe
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myWindowsService\obj\Release\myWindowsService.pdb

@@ -1,0 +1,9 @@
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\bin\Debug\bai2.2.exe
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\bin\Debug\bai2.2.pdb
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\bai2._2.Properties.Resources.resources
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\bai2.2.exe
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\bai2.2.pdb
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\bai2._2.Form1.resources
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\Bai_tap\C#\baitrenlop\bai2.2\bai2.2\obj\Debug\GenerateResource-ResGen.write.1.tlog

@@ -1,0 +1,7 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\bin\Release\DemoSuKienContainer.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\bin\Release\DemoSuKienContainer.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\obj\x86\Release\DemoSuKienContainer.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\obj\x86\Release\DemoSuKienContainer.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\obj\x86\Release\DemoSuKienContainer.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\obj\x86\Release\DemoSuKienContainer.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoSuKienContainer\obj\x86\Release\DemoSuKienContainer.pdb

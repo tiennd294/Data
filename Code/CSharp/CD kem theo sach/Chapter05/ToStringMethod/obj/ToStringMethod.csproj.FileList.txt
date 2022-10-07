@@ -1,0 +1,5 @@
+bin\Debug\ToStringMethod.exe
+bin\Debug\ToStringMethod.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ToStringMethod.exe
+obj\Debug\ToStringMethod.pdb

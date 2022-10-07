@@ -1,0 +1,9 @@
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\Testnotepad.Form1.resources
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\Testnotepad.Properties.Resources.resources
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Bai_tap\C#\Testnotepad\Testnotepad\bin\Debug\Testnotepad.exe
+F:\Bai_tap\C#\Testnotepad\Testnotepad\bin\Debug\Testnotepad.pdb
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\Testnotepad.exe
+F:\Bai_tap\C#\Testnotepad\Testnotepad\obj\x86\Debug\Testnotepad.pdb

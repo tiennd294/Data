@@ -1,0 +1,5 @@
+bin\Debug\SizeOfOperator.exe
+bin\Debug\SizeOfOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SizeOfOperator.exe
+obj\Debug\SizeOfOperator.pdb

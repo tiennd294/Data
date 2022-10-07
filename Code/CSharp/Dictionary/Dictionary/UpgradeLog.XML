@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Dictionary">
+</Property><Property Name="Solution File" Value="D:\C#\Dictionary\Dictionary.sln">
+</Property><Property Name="User Options File" Value="D:\C#\Dictionary\Dictionary.suo">
+</Property><Property Name="Date" Value="Monday, October 19, 2009">
+</Property><Property Name="Time" Value="21:05 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Dictionary.sln" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Dictionary.suo" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary.suo">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Dictionary.csproj" Description="Project file successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Dictionary.csproj">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\AboutBox1.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\AboutBox1.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\AboutBox1.Designer.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\AboutBox1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Config.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Config.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Config.Designer.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Config.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Form1.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Form1.Designer.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Program.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Program.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Sosanh.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Sosanh.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\xml.cs" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\xml.cs">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Properties\Settings.settings" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Resources\Sound.jpg" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Resources\Sound.jpg">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Resources\Error.png" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Resources\Error.png">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\AboutBox1.resx" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\AboutBox1.resx">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Config.resx" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Config.resx">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Form1.resx" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Properties\Resources.resx" Description="File successfully backed up as D:\C#\Dictionary\Backup\Dictionary\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Dictionary.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Dictionary" Source="Dictionary\Dictionary.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Dictionary.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Dictionary.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Dictionary" Source="Dictionary\Dictionary.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

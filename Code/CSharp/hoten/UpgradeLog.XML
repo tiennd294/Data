@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="hoten">
+</Property><Property Name="Solution File" Value="F:\Bai_tap\C#\hoten\hoten.sln">
+</Property><Property Name="User Options File" Value="F:\Bai_tap\C#\hoten\hoten.suo">
+</Property><Property Name="Date" Value="Sunday, January 06, 2013">
+</Property><Property Name="Time" Value="22:59 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="hoten.sln" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten.sln">
+</Event><Event ErrorLevel="0" Project="" Source="hoten.suo" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten.suo">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\hoten.csproj" Description="Project file successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\hoten.csproj">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Form1.cs" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Form1.cs">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Form1.Designer.cs" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Program.cs" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Program.cs">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Properties\Resources.Designer.cs" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Properties\Settings.Designer.cs" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Properties\Settings.settings" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Form1.resx" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Form1.resx">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\Properties\Resources.resx" Description="File successfully backed up as F:\Bai_tap\C#\hoten\Backup\hoten\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\hoten.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="hoten" Source="hoten\hoten.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="hoten.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="hoten.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="hoten" Source="hoten\hoten.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

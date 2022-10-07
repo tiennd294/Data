@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\queuetest\queuetest\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\queuetest\queuetest\bin\Debug\queuetest.exe
+F:\Bai_tap\C#\queuetest\queuetest\bin\Debug\queuetest.pdb
+F:\Bai_tap\C#\queuetest\queuetest\obj\Debug\queuetest.exe
+F:\Bai_tap\C#\queuetest\queuetest\obj\Debug\queuetest.pdb

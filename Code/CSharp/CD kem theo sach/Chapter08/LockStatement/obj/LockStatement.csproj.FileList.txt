@@ -1,0 +1,5 @@
+bin\Debug\LockStatement.exe
+bin\Debug\LockStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LockStatement.exe
+obj\Debug\LockStatement.pdb

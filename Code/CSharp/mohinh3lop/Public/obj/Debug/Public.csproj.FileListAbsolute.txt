@@ -1,0 +1,10 @@
+E:\Bai_tap\C#\mohinh3lop\Public\bin\Debug\Public.dll
+E:\Bai_tap\C#\mohinh3lop\Public\bin\Debug\Public.pdb
+E:\Bai_tap\C#\mohinh3lop\Public\obj\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\mohinh3lop\Public\obj\Debug\Public.dll
+E:\Bai_tap\C#\mohinh3lop\Public\obj\Debug\Public.pdb
+F:\IT\Book\Coding\C#\mohinh3lop\Public\bin\Debug\Public.dll
+F:\IT\Book\Coding\C#\mohinh3lop\Public\bin\Debug\Public.pdb
+F:\IT\Book\Coding\C#\mohinh3lop\Public\obj\Debug\Public.csprojResolveAssemblyReference.cache
+F:\IT\Book\Coding\C#\mohinh3lop\Public\obj\Debug\Public.dll
+F:\IT\Book\Coding\C#\mohinh3lop\Public\obj\Debug\Public.pdb

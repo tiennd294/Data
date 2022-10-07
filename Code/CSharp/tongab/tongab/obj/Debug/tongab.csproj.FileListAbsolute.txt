@@ -1,0 +1,9 @@
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\tongab.Form1.resources
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\tongab.Properties.Resources.resources
+F:\Bai_tap\C#\tongab\tongab\bin\Debug\tongab.exe
+F:\Bai_tap\C#\tongab\tongab\bin\Debug\tongab.pdb
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\tongab.exe
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\tongab.pdb
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\Bai_tap\C#\tongab\tongab\obj\Debug\GenerateResource-ResGen.write.1.tlog

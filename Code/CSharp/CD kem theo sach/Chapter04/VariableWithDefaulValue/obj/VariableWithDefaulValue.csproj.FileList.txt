@@ -1,0 +1,5 @@
+bin\Debug\VariableWithDefaulValue.exe
+bin\Debug\VariableWithDefaulValue.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\VariableWithDefaulValue.exe
+obj\Debug\VariableWithDefaulValue.pdb

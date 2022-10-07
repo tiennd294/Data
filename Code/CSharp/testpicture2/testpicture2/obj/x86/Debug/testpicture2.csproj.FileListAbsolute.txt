@@ -1,0 +1,9 @@
+E:\Bai_tap\C#\testpicture2\testpicture2\bin\Debug\testpicture2.exe
+E:\Bai_tap\C#\testpicture2\testpicture2\bin\Debug\testpicture2.pdb
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\LOADSAVEIMAGE.Form1.resources
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\testpicture2.Properties.Resources.resources
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\testpicture2.exe
+E:\Bai_tap\C#\testpicture2\testpicture2\obj\x86\Debug\testpicture2.pdb

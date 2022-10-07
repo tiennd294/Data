@@ -1,0 +1,9 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\bin\Release\DemoUserControl.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\bin\Release\DemoUserControl.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.Form2.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoUserControl\obj\x86\Release\DemoUserControl.UserControl1.resources

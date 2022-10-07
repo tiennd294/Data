@@ -1,0 +1,7 @@
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Release\DemoTroChoiCoCaro.frmCoCaro.resources
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Release\DemoTroChoiCoCaro.Properties.Resources.resources
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Release\DemoTroChoiCoCaro.csproj.GenerateResource.Cache
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\bin\Release\DemoTroChoiCoCaro.exe
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\bin\Release\DemoTroChoiCoCaro.pdb
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Release\DemoTroChoiCoCaro.exe
+D:\MyClass\C# Caro\Project\Other\DemoTroChoiCoCaro\DemoTroChoiCoCaro\obj\x86\Release\DemoTroChoiCoCaro.pdb

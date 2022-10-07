@@ -1,0 +1,195 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01548F6B-98D9-4352-8EC4-2FA86AB3D8BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UNGDUNG</RootNamespace>
+    <AssemblyName>UNGDUNG</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="clsFile.cs" />
+    <Compile Include="clsItem.cs" />
+    <Compile Include="frmAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccess.Designer.cs">
+      <DependentUpon>frmAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppend.Designer.cs">
+      <DependentUpon>frmAppend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisks.Designer.cs">
+      <DependentUpon>frmDisks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiles.Designer.cs">
+      <DependentUpon>frmFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFolders.Designer.cs">
+      <DependentUpon>frmFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInput.Designer.cs">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRead.Designer.cs">
+      <DependentUpon>frmRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServices.Designer.cs">
+      <DependentUpon>frmServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQLServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQLServer.Designer.cs">
+      <DependentUpon>frmSQLServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWatcher.Designer.cs">
+      <DependentUpon>frmWatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWrite.Designer.cs">
+      <DependentUpon>frmWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myArray.cs" />
+    <Compile Include="myConst.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAccess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppend.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAppend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDisks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolders.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRead.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServices.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLServer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSQLServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWatcher.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWrite.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

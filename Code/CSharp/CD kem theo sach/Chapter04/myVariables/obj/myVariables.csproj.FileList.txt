@@ -1,0 +1,5 @@
+bin\Debug\myVariables.exe
+bin\Debug\myVariables.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\myVariables.exe
+obj\Debug\myVariables.pdb

@@ -1,0 +1,5 @@
+bin\Debug\IncrementAnddecrementOperator.exe
+bin\Debug\IncrementAnddecrementOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IncrementAnddecrementOperator.exe
+obj\Debug\IncrementAnddecrementOperator.pdb

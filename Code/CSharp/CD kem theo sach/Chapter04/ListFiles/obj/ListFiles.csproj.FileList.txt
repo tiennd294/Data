@@ -1,0 +1,5 @@
+bin\Debug\ListFiles.exe
+bin\Debug\ListFiles.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ListFiles.exe
+obj\Debug\ListFiles.pdb

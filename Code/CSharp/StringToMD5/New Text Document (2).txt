@@ -1,0 +1,20 @@
+Public Shared Function encryptData(data As String) As Byte()
+    Dim md5Hasher As New System.Security.Cryptography.MD5CryptoServiceProvider()
+    Dim hashedBytes As Byte()
+    Dim encoder As New System.Text.UTF8Encoding()
+    hashedBytes = md5Hasher.ComputeHash(encoder.GetBytes(data))
+    Return hashedBytes
+End Function
+
+Public Shared Function md5(data As String) As String
+    Return  BitConverter.ToString(encryptData(data)).Replace("-","").ToLower();
+End Function
+public static string MaHoaMD5(this string str)
+        {
+          Byte[] dauvao = ASCIIEncoding.Default.GetBytes(str);
+          using (MD5 md5 = new MD5CryptoServiceProvider())
+              {
+                     var daura = md5.ComputeHash(dauvao);
+                     return BitConverter.ToString(daura);
+              }
+        }

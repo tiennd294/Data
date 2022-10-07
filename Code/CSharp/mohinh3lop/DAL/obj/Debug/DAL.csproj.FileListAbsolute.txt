@@ -1,0 +1,14 @@
+E:\Bai_tap\C#\mohinh3lop\DAL\bin\Debug\DAL.dll
+E:\Bai_tap\C#\mohinh3lop\DAL\bin\Debug\DAL.pdb
+E:\Bai_tap\C#\mohinh3lop\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\mohinh3lop\DAL\obj\Debug\DAL.dll
+E:\Bai_tap\C#\mohinh3lop\DAL\obj\Debug\DAL.pdb
+E:\Bai_tap\C#\mohinh3lop\DAL\bin\Debug\Public.dll
+E:\Bai_tap\C#\mohinh3lop\DAL\bin\Debug\Public.pdb
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\obj\Debug\DAL.dll
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\obj\Debug\DAL.pdb
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\bin\Debug\DAL.dll
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\bin\Debug\DAL.pdb
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\bin\Debug\Public.dll
+F:\IT\Book\Coding\C#\mohinh3lop\DAL\bin\Debug\Public.pdb

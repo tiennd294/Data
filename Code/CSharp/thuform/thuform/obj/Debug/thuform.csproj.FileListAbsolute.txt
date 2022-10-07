@@ -1,0 +1,13 @@
+F:\Bai_tap\C#\thuform\thuform\bin\Debug\thuform.exe
+F:\Bai_tap\C#\thuform\thuform\bin\Debug\thuform.pdb
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\thuform.Form1.resources
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\thuform.Properties.Resources.resources
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\thuform.csproj.GenerateResource.Cache
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\thuform.exe
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\thuform.pdb
+F:\Bai_tap\C#\thuform\thuform\bin\Debug\Interop.WMPLib.dll
+F:\Bai_tap\C#\thuform\thuform\bin\Debug\AxInterop.WMPLib.dll
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\Interop.WMPLib.dll
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\AxInterop.WMPLib.dll
+F:\Bai_tap\C#\thuform\thuform\obj\Debug\thuform.csproj.ResolveComReference.cache

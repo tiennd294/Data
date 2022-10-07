@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\lienket\lienket\bin\Debug\lienket.exe
+F:\Bai_tap\C#\lienket\lienket\bin\Debug\lienket.pdb
+F:\Bai_tap\C#\lienket\lienket\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\lienket\lienket\obj\Debug\lienket.exe
+F:\Bai_tap\C#\lienket\lienket\obj\Debug\lienket.pdb

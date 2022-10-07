@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\ThrowProject.exe
+bin\Debug\ThrowProject.pdb
+obj\Debug\ThrowProject.exe
+obj\Debug\ThrowProject.pdb
+bin\Release\ThrowProject.exe
+bin\Release\ThrowProject.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ThrowProject.exe
+obj\Release\ThrowProject.pdb

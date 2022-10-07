@@ -1,0 +1,14 @@
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\bin\Debug\AutomaticCode.exe.config
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\bin\Debug\AutomaticCode.exe
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\bin\Debug\AutomaticCode.pdb
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.csprojResolveAssemblyReference.cache
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.Properties.Resources.resources
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.csproj.GenerateResource.Cache
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.exe
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.pdb
+c:\users\nguyen_tien\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.Login.resources
+C:\Users\NGUYEN_TIEN\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\bin\Debug\MySql.Data.dll
+C:\Users\NGUYEN_TIEN\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\bin\Debug\AutomaticCode.exe.manifest
+C:\Users\NGUYEN_TIEN\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\bin\Debug\AutomaticCode.application
+C:\Users\NGUYEN_TIEN\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.exe.manifest
+C:\Users\NGUYEN_TIEN\documents\visual studio 2012\Projects\AutomaticCode\AutomaticCode\obj\Debug\AutomaticCode.application

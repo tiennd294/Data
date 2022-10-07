@@ -1,0 +1,5 @@
+F:\Bai_tap\C#\Lop_va_doi_tuong\Lop_va_doi_tuong\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\Lop_va_doi_tuong\Lop_va_doi_tuong\bin\Debug\Lop_va_doi_tuong.exe
+F:\Bai_tap\C#\Lop_va_doi_tuong\Lop_va_doi_tuong\bin\Debug\Lop_va_doi_tuong.pdb
+F:\Bai_tap\C#\Lop_va_doi_tuong\Lop_va_doi_tuong\obj\Debug\Lop_va_doi_tuong.exe
+F:\Bai_tap\C#\Lop_va_doi_tuong\Lop_va_doi_tuong\obj\Debug\Lop_va_doi_tuong.pdb

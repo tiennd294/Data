@@ -1,0 +1,5 @@
+bin\Debug\AsOperator.exe
+bin\Debug\AsOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AsOperator.exe
+obj\Debug\AsOperator.pdb

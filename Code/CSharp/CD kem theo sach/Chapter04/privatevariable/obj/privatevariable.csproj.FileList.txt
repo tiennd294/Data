@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\privatevariable.exe
+bin\Debug\privatevariable.pdb
+obj\Debug\privatevariable.exe
+obj\Debug\privatevariable.pdb

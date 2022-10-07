@@ -1,0 +1,9 @@
+F:\Code\test_caro\test_caro\bin\Debug\test_caro.exe.config
+F:\Code\test_caro\test_caro\bin\Debug\test_caro.exe
+F:\Code\test_caro\test_caro\bin\Debug\test_caro.pdb
+F:\Code\test_caro\test_caro\obj\Debug\test_caro.csprojResolveAssemblyReference.cache
+F:\Code\test_caro\test_caro\obj\Debug\test_caro.Properties.Resources.resources
+F:\Code\test_caro\test_caro\obj\Debug\test_caro.csproj.GenerateResource.Cache
+F:\Code\test_caro\test_caro\obj\Debug\test_caro.exe
+F:\Code\test_caro\test_caro\obj\Debug\test_caro.pdb
+F:\Code\test_caro\test_caro\obj\Debug\test_caro.Frm_main.resources

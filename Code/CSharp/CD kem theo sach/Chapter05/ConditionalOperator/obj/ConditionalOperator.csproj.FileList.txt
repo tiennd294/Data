@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\ConditionalOperator.exe
+bin\Debug\ConditionalOperator.pdb
+obj\Debug\ConditionalOperator.exe
+obj\Debug\ConditionalOperator.pdb

@@ -1,0 +1,9 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\bin\Debug\DemoLapTrinhSuKien.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\bin\Debug\DemoLapTrinhSuKien.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.pdb
+D:\MyClass\C# Caro\Project\1.2.3\DemoLapTrinhSuKien\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.exe
+D:\MyClass\C# Caro\Project\1.2.3\DemoLapTrinhSuKien\DemoLapTrinhSuKien\obj\x86\Debug\DemoLapTrinhSuKien.pdb

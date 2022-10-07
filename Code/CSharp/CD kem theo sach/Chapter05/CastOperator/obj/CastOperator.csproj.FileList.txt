@@ -1,0 +1,5 @@
+bin\Debug\CastOperator.exe
+bin\Debug\CastOperator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CastOperator.exe
+obj\Debug\CastOperator.pdb

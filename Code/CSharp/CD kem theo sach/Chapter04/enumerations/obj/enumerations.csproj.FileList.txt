@@ -1,0 +1,5 @@
+bin\Debug\enumerations.exe
+bin\Debug\enumerations.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\enumerations.exe
+obj\Debug\enumerations.pdb

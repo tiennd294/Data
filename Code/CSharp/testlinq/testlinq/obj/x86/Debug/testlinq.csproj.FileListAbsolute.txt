@@ -1,0 +1,11 @@
+E:\Bai_tap\C#\testlinq\testlinq\bin\Debug\testlinq.exe
+E:\Bai_tap\C#\testlinq\testlinq\bin\Debug\testlinq.pdb
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\testlinq.Form1.resources
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\testlinq.Properties.Resources.resources
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\testlinq.exe
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\testlinq.pdb
+E:\Bai_tap\C#\testlinq\testlinq\obj\x86\Debug\testlinq.Form2.resources
+E:\Bai_tap\C#\testlinq\testlinq\bin\Debug\testlinq.exe.config

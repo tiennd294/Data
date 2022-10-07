@@ -1,0 +1,9 @@
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\bin\Debug\Test_Picture_for_XML.exe
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\bin\Debug\Test_Picture_for_XML.pdb
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\BMP2XML.Form1.resources
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\Test_Picture_for_XML.Properties.Resources.resources
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\Test_Picture_for_XML.exe
+E:\Bai_tap\C#\Test_Picture_for_XML\Test_Picture_for_XML\obj\x86\Debug\Test_Picture_for_XML.pdb

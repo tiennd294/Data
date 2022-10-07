@@ -1,0 +1,10 @@
+bin\Debug\TryCatchProject.exe
+bin\Debug\TryCatchProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TryCatchProject.exe
+obj\Debug\TryCatchProject.pdb
+bin\Release\TryCatchProject.exe
+bin\Release\TryCatchProject.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\TryCatchProject.exe
+obj\Release\TryCatchProject.pdb

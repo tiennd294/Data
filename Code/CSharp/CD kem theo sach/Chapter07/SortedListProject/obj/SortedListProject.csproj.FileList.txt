@@ -1,0 +1,5 @@
+bin\Debug\SortedListProject.exe
+bin\Debug\SortedListProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SortedListProject.exe
+obj\Debug\SortedListProject.pdb

@@ -1,0 +1,6 @@
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myConsoleApplication\bin\Release\myConsoleApplication.exe.config
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myConsoleApplication\bin\Release\myConsoleApplication.exe
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myConsoleApplication\bin\Release\myConsoleApplication.pdb
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myConsoleApplication\obj\Release\ResolveAssemblyReference.cache
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myConsoleApplication\obj\Release\myConsoleApplication.exe
+F:\E-Book\C#\C#\C#\CD kem theo sach\Chapter01\myConsoleApplication\obj\Release\myConsoleApplication.pdb

@@ -1,0 +1,13 @@
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Interop.SpeechLib.dll
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.ResolveComReference.cache
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.exe
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
+D:\C#\Dictionary\Dictionary\Dictionary\bin\Debug\Dictionary.exe
+D:\C#\Dictionary\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
+D:\C#\Dictionary\Dictionary\Dictionary\bin\Debug\Interop.SpeechLib.dll
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\ResolveAssemblyReference.cache
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.AboutBox1.resources
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.Config.resources
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.Form1.resources
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.Properties.Resources.resources
+D:\C#\Dictionary\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.GenerateResource.Cache

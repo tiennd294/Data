@@ -1,0 +1,12 @@
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\bin\Debug\BaitapQLSV.exe
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\bin\Debug\BaitapQLSV.pdb
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.Form1.resources
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.Properties.Resources.resources
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.exe
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.pdb
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.Add_information.resources
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.Login.resources
+F:\Bai_tap\C#\BaitapQLSV\BaitapQLSV\obj\x86\Debug\BaitapQLSV.Findwhat.resources

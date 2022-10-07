@@ -1,0 +1,9 @@
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\ResolveAssemblyReference.cache
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\DuongDanAnh.Form1.resources
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\DuongDanAnh.Properties.Resources.resources
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\DuongDanAnh.csproj.GenerateResource.Cache
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\bin\Debug\DuongDanAnh.exe
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\bin\Debug\DuongDanAnh.pdb
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\DuongDanAnh.exe
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\DuongDanAnh.pdb
+D:\Test Csharp\Level_8_Picture\DuongDanAnh\DuongDanAnh\obj\Debug\DuongDanAnh.FrmPathImage.resources

@@ -1,0 +1,18 @@
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\bin\Debug\student detail.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\bin\Debug\student detail.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\student_detail.Properties.Resources.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\student detail.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\student detail.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon\student detail\student detail\obj\x86\Debug\student_detail.frmStudent.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\student detail.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\student detail.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\bin\Debug\student detail.exe
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\bin\Debug\student detail.pdb
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\student_detail.frmStudent.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\student_detail.Properties.Resources.resources
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nguyen_Tien\Desktop\BAi tap lon nhom 2\student detail\student detail\obj\x86\Debug\GenerateResource.write.1.tlog

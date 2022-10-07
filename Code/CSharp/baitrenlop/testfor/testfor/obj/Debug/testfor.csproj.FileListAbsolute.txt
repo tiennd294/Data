@@ -1,0 +1,8 @@
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\bin\Debug\testfor.exe
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\bin\Debug\testfor.pdb
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\obj\Debug\testfor.Properties.Resources.resources
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\obj\Debug\testfor.csproj.GenerateResource.Cache
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\obj\Debug\testfor.exe
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\obj\Debug\testfor.pdb
+F:\Bai_tap\C#\baitrenlop\testfor\testfor\obj\Debug\testfor.Form1.resources

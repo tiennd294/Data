@@ -1,0 +1,5 @@
+bin\Debug\SpecialCharacter.exe
+bin\Debug\SpecialCharacter.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SpecialCharacter.exe
+obj\Debug\SpecialCharacter.pdb

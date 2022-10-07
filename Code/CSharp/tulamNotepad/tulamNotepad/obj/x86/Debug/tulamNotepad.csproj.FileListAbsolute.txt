@@ -1,0 +1,9 @@
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\tulamNotepad.Form1.resources
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\tulamNotepad.Properties.Resources.resources
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\bin\Debug\tulamNotepad.exe
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\bin\Debug\tulamNotepad.pdb
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\tulamNotepad.exe
+F:\Bai_tap\C#\tulamNotepad\tulamNotepad\obj\x86\Debug\tulamNotepad.pdb

@@ -1,0 +1,8 @@
+F:\Bai_tap\C#\testmenu\testmenu\bin\Debug\testmenu.exe
+F:\Bai_tap\C#\testmenu\testmenu\bin\Debug\testmenu.pdb
+F:\Bai_tap\C#\testmenu\testmenu\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\testmenu\testmenu\obj\Debug\testmenu.Form1.resources
+F:\Bai_tap\C#\testmenu\testmenu\obj\Debug\testmenu.Properties.Resources.resources
+F:\Bai_tap\C#\testmenu\testmenu\obj\Debug\testmenu.csproj.GenerateResource.Cache
+F:\Bai_tap\C#\testmenu\testmenu\obj\Debug\testmenu.exe
+F:\Bai_tap\C#\testmenu\testmenu\obj\Debug\testmenu.pdb

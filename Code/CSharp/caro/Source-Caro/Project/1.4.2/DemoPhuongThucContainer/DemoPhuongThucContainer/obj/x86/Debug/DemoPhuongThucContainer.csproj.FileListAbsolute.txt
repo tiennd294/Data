@@ -1,0 +1,7 @@
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\bin\Debug\DemoPhuongThucContainer.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\bin\Debug\DemoPhuongThucContainer.pdb
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Debug\DemoPhuongThucContainer.Form1.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Debug\DemoPhuongThucContainer.Properties.Resources.resources
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Debug\DemoPhuongThucContainer.csproj.GenerateResource.Cache
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Debug\DemoPhuongThucContainer.exe
+C:\Users\HUY\AppData\Local\Temporary Projects\DemoPhuongThucContainer\obj\x86\Debug\DemoPhuongThucContainer.pdb

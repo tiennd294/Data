@@ -1,0 +1,5 @@
+bin\Debug\ListProject.exe
+bin\Debug\ListProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ListProject.exe
+obj\Debug\ListProject.pdb

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Adds>
+  <addaa tonghaiso="77">
+    <so1>22</so1>
+    <so2>55</so2>
+  </addaa>
+  <add tonghaiso="77">
+    <so1>34</so1>
+    <so2>43</so2>
+  </add>
+  <add tonghaiso="78">
+    <so1>23</so1>
+    <so2>55</so2>
+  </add>
+  <addaa tonghaiso="77">
+    <so1>22</so1>
+    <so2>55</so2>
+  </addaa>
+  <add tonghaiso="589">
+    <so1>33</so1>
+    <so2>556</so2>
+  </add>
+  <DangNhap name="nguyentien24">
+    <Pass>25251325</Pass>
+    <TTG>dung</TTG>
+  </DangNhap>
+  <ThanhPho ThanhPho="dsadasd">
+    <TenTP>sadsad</TenTP>
+  </ThanhPho>
+  <ThanhPho ThanhPho="aaaaaaaa">
+    <TenTP>sssssssss</TenTP>
+  </ThanhPho>
+  <KhachHang MaKH="05">
+    <TenCTy>co phan thuong mai</TenCTy>
+    <DiaChi>cun 2 tan lap ha noi</DiaChi>
+    <ThanhPho>ha noi</ThanhPho>
+    <DienThoai>0979409016</DienThoai>
+  </KhachHang>
+  <HoaDon MaHD="01">
+    <MaKH>01</MaKH>
+    <MaNV>01</MaNV>
+    <NgayLHD>
+    </NgayLHD>
+    <NgayNH>
+    </NgayNH>
+  </HoaDon>
+  <add tonghaiso="7777">
+    <so1>4343</so1>
+    <so2>3434</so2>
+  </add>
+</Adds>

@@ -1,0 +1,5 @@
+bin\Debug\EqualsMethod.exe
+bin\Debug\EqualsMethod.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\EqualsMethod.exe
+obj\Debug\EqualsMethod.pdb

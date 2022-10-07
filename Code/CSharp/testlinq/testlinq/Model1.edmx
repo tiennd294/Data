@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QLTVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="QLTVModelStoreContainer">
+          <EntitySet Name="LoaiSach" EntityType="QLTVModel.Store.LoaiSach" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NhanVien" EntityType="QLTVModel.Store.NhanVien" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sach" EntityType="QLTVModel.Store.Sach" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SinhVien" EntityType="QLTVModel.Store.SinhVien" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="LoaiSach">
+          <Key>
+            <PropertyRef Name="LoaiSach_Ma" />
+          </Key>
+          <Property Name="LoaiSach_Ma" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoaiSach_Ten" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NhanVien">
+          <Key>
+            <PropertyRef Name="NV_Ma" />
+          </Key>
+          <Property Name="NV_Ma" Type="int" Nullable="false" />
+          <Property Name="NV_Ten" Type="nvarchar" MaxLength="50" />
+          <Property Name="NV_Diachi" Type="nvarchar" MaxLength="50" />
+          <Property Name="NV_Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="NV_Sodt" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="Sach_Ma" />
+          </Key>
+          <Property Name="Sach_Ma" Type="int" Nullable="false" />
+          <Property Name="Sach_Ten" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sach_Gia" Type="int" />
+          <Property Name="Sach_Soluong" Type="int" />
+          <Property Name="Loaisach_Ma" Type="int" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="SV_Ma" />
+          </Key>
+          <Property Name="SV_Ma" Type="int" Nullable="false" />
+          <Property Name="SV_Ten" Type="nvarchar" MaxLength="50" />
+          <Property Name="SV_Khoa" Type="nvarchar" MaxLength="50" />
+          <Property Name="SV_Lop" Type="nvarchar" MaxLength="50" />
+          <Property Name="SV_Tensach" Type="nvarchar" MaxLength="50" />
+          <Property Name="SV_Loaisach" Type="nvarchar" MaxLength="50" />
+          <Property Name="SV_Trangthai" Type="bit" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLTVModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="QLTVEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LoaiSaches" EntityType="QLTVModel.LoaiSach" />
+          <EntitySet Name="NhanViens" EntityType="QLTVModel.NhanVien" />
+          <EntitySet Name="Saches" EntityType="QLTVModel.Sach" />
+          <EntitySet Name="SinhViens" EntityType="QLTVModel.SinhVien" />
+        </EntityContainer>
+        <EntityType Name="LoaiSach">
+          <Key>
+            <PropertyRef Name="LoaiSach_Ma" />
+          </Key>
+          <Property Name="LoaiSach_Ma" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LoaiSach_Ten" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="NhanVien">
+          <Key>
+            <PropertyRef Name="NV_Ma" />
+          </Key>
+          <Property Name="NV_Ma" Type="Int32" Nullable="false" />
+          <Property Name="NV_Ten" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NV_Diachi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NV_Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NV_Sodt" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="Sach_Ma" />
+          </Key>
+          <Property Name="Sach_Ma" Type="Int32" Nullable="false" />
+          <Property Name="Sach_Ten" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sach_Gia" Type="Int32" />
+          <Property Name="Sach_Soluong" Type="Int32" />
+          <Property Name="Loaisach_Ma" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="SV_Ma" />
+          </Key>
+          <Property Name="SV_Ma" Type="Int32" Nullable="false" />
+          <Property Name="SV_Ten" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SV_Khoa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SV_Lop" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SV_Tensach" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SV_Loaisach" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SV_Trangthai" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLTVModelStoreContainer" CdmEntityContainer="QLTVEntities1">
+          <EntitySetMapping Name="LoaiSaches"><EntityTypeMapping TypeName="QLTVModel.LoaiSach"><MappingFragment StoreEntitySet="LoaiSach">
+            <ScalarProperty Name="LoaiSach_Ma" ColumnName="LoaiSach_Ma" />
+            <ScalarProperty Name="LoaiSach_Ten" ColumnName="LoaiSach_Ten" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="NhanViens"><EntityTypeMapping TypeName="QLTVModel.NhanVien"><MappingFragment StoreEntitySet="NhanVien">
+            <ScalarProperty Name="NV_Ma" ColumnName="NV_Ma" />
+            <ScalarProperty Name="NV_Ten" ColumnName="NV_Ten" />
+            <ScalarProperty Name="NV_Diachi" ColumnName="NV_Diachi" />
+            <ScalarProperty Name="NV_Email" ColumnName="NV_Email" />
+            <ScalarProperty Name="NV_Sodt" ColumnName="NV_Sodt" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Saches"><EntityTypeMapping TypeName="QLTVModel.Sach"><MappingFragment StoreEntitySet="Sach">
+            <ScalarProperty Name="Sach_Ma" ColumnName="Sach_Ma" />
+            <ScalarProperty Name="Sach_Ten" ColumnName="Sach_Ten" />
+            <ScalarProperty Name="Sach_Gia" ColumnName="Sach_Gia" />
+            <ScalarProperty Name="Sach_Soluong" ColumnName="Sach_Soluong" />
+            <ScalarProperty Name="Loaisach_Ma" ColumnName="Loaisach_Ma" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SinhViens"><EntityTypeMapping TypeName="QLTVModel.SinhVien"><MappingFragment StoreEntitySet="SinhVien">
+            <ScalarProperty Name="SV_Ma" ColumnName="SV_Ma" />
+            <ScalarProperty Name="SV_Ten" ColumnName="SV_Ten" />
+            <ScalarProperty Name="SV_Khoa" ColumnName="SV_Khoa" />
+            <ScalarProperty Name="SV_Lop" ColumnName="SV_Lop" />
+            <ScalarProperty Name="SV_Tensach" ColumnName="SV_Tensach" />
+            <ScalarProperty Name="SV_Loaisach" ColumnName="SV_Loaisach" />
+            <ScalarProperty Name="SV_Trangthai" ColumnName="SV_Trangthai" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="QLTVModel.LoaiSach" Width="1.5" PointX="0.75" PointY="0.75" Height="1.2636116536458335" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTVModel.NhanVien" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7566536458333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTVModel.Sach" Width="1.5" PointX="0.75" PointY="3.75" Height="1.7566536458333322" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTVModel.SinhVien" Width="1.5" PointX="2.75" PointY="3.75" Height="2.0853483072916656" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,5 @@
+bin\Debug\myComments.exe
+bin\Debug\myComments.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\myComments.exe
+obj\Debug\myComments.pdb

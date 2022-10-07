@@ -1,0 +1,6 @@
+F:\Bai_tap\C#\bai1\bai1\bin\Debug\bai1.exe
+F:\Bai_tap\C#\bai1\bai1\bin\Debug\bai1.pdb
+F:\Bai_tap\C#\bai1\bai1\obj\Debug\ResolveAssemblyReference.cache
+F:\Bai_tap\C#\bai1\bai1\obj\Debug\bai1.exe
+F:\Bai_tap\C#\bai1\bai1\obj\Debug\bai1.pdb
+F:\Bai_tap\C#\bai1\bai1\bin\Debug\bai1.exe.config

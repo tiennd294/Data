@@ -1,0 +1,5 @@
+bin\Debug\CheckandUncheckStatement.exe
+bin\Debug\CheckandUncheckStatement.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CheckandUncheckStatement.exe
+obj\Debug\CheckandUncheckStatement.pdb

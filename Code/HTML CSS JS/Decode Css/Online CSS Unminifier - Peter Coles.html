@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://mrcoles.com/blog/css-unminify/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- cchd Sat, 8 Oct 2016 05:05:10 -0400 -->
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+<link rel="canonical" href="http://mrcoles.com/blog/css-unminify/">
+<meta name="description" content="A simple tool to unminify CSS. It’s useful if you want to look at a site’s CSS, but you can only get your hands on the minified version. It is very simple and also lets you specify tab with. The idea is partly inspired by existing javascript beautifiers and unminifiers.">
+
+	<meta name="author" content="Peter Coles">
+	<title>Online CSS Unminifier - Peter Coles</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="./Online CSS Unminifier - Peter Coles_files/screen.css">
+	
+	<link rel="SHORTCUT ICON" href="http://mrcoles.com/media/img/favicon.ico">
+
+    <!-- start Mixpanel --><script type="text/javascript" async="" src="./Online CSS Unminifier - Peter Coles_files/ga.js"></script><script type="text/javascript" async="" src="./Online CSS Unminifier - Peter Coles_files/mixpanel-2.2.min.js"></script><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("ea3eaa7cb3103da36d6cba3105ce1722");</script><!-- end Mixpanel -->
+</head>
+<body class="blog post_detail">
+<div id="wrapper">
+	<div id="header"><s></s><div id="header-inner">
+		<h2 id="logo"><a href="http://mrcoles.com/">Mr Coles</a> <span id="sub-logo">Peter Coles’ blog</span></h2>
+
+        <button id="nav-toggle" type="button" class="btn btn-navbar" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+		<ul id="nav">
+			<li><a id="search-link" href="http://mrcoles.com/search/">Search</a></li>
+			<li><a href="http://mrcoles.com/archive/">Archive</a></li>
+			<li><a href="http://shop.mrcoles.com/">Shop</a></li>
+			<li class="last"><a href="http://mrcoles.com/peter-coles/">About</a></li>
+		</ul>
+	</div></div>
+	<div id="content"><div id="content-inner">
+
+<div id="alpha">
+	<div class="post" id="post-24">
+		<div class="header">
+			<p class="date">10 April 2010</p>
+			<h1>Online CSS Unminifier</h1>
+		</div>
+		<div class="content prose"><p>You may be aware of js unminifiers or beautifiers (such as <a href="http://jsbeautifier.org/">jsbeautifier</a>). I found myself wanting something similar for making minified CSS legible, so I built a simple tool using javascript to unminify CSS. It uses several regular expressions (and sometimes a split followed by a join) to generate the clean code and it also lets you specify tab width. I included a minified sample in case you want to give it a try.</p>
+<div>
+  <textarea id="minified-css-orig" style="height:180px;width:584px;">p{font:normal 14px/20px helvetica,arial,sans-serif;color:#333;}.woot{font-weight:bold}</textarea>
+  <div class="clr" style="width:600px;padding:9px 0;">
+    <div class="left" style="height:40px;line-height:40px;">
+      <button id="minified-css-button" style="vertical-align:middle;">Unminify</button>&nbsp;
+    </div>
+    <div class="right small" style="color:#999;">
+      tab width: &nbsp; <input id="minified-css-tab" class="text" type="text" value="4" style="width:20px;vertical-align:middle;text-align:center;color:#999;">
+    </div>
+  </div>
+  <textarea id="minified-css-new" style="height: 180px; width: 584px; display: block;"></textarea><br>
+  <script type="text/javascript" src="./Online CSS Unminifier - Peter Coles_files/unminify-css2.js"></script>
+  <noscript>&lt;p&gt;*The css unminifier requires javascript to work.*&lt;/p&gt;</noscript>
+</div>
+
+<p>Note: the easiest way to look a site’s CSS is to use a tool like firebug on firefox, but sometimes you still might want to view the full source to see any browser-specific hacks that won’t appear in firebug or to just take a peak at how someone may organize his or her code.</p>
+<p><strong>Update:</strong> June 2011—It’s now all the rage to drop the semicolon from the last declaration in a CSS rule (right before the closing brace), so I updated the unminifier to handle this case and put an example in the sample CSS.</p>
+<p><strong>Update2:</strong> September 2011—the CSS Unminifier now exists as a <a href="http://mrcoles.com/blog/command-line-css-unminifier-utility/">standalone script</a> that you can run on your computer. I converted it to a node project, which you can install with npm (Node Package Manager) using <code>npm install cssunminifier</code> and you can see the code on <a href="https://github.com/mrcoles/cssunminifier">the github page</a>.</p></div>
+	</div>
+
+	<div class="pagination">
+		
+		<a class="left" href="http://mrcoles.com/blog/google-site-speed-since-when/" title="Google uses site speed in rankings (since exactly when?)">← Google uses site speed in rankings (since exactly when?)</a>
+		
+		
+		<a class="right" href="http://mrcoles.com/blog/scroll-sneak-maintain-position-between-page-loads/" title="Scroll Sneak: maintaining scroll position between page loads">Scroll Sneak: maintaining scroll position between page loads →</a>
+		
+	</div>
+
+    
+	
+	
+	<div id="comments" class="widget">
+		<div class="header">
+			<a name="comments"></a>
+			<h3 class="comments_title">Comments (49)</h3>
+		</div>
+		<div class="content">
+		
+		
+			<div class="comment odd" id="c76">
+				<h5 class="name">
+					<strong>1. Renato Silva</strong> wrote:
+				</h5>
+                <p> Great tool, thanks a lot! </p>
+				<p class="date">
+					Posted on 1 June 2010 at 4:06 PM &nbsp;|&nbsp;
+					<a name="c76" href="http://mrcoles.com/blog/css-unminify/#c76" title="Permalink to Renato Silva&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c77">
+				<h5 class="name">
+					<strong>2. peter</strong> wrote:
+				</h5>
+                <p> I’m glad you found it useful! </p>
+				<p class="date">
+					Posted on 1 June 2010 at 10:06 PM &nbsp;|&nbsp;
+					<a name="c77" href="http://mrcoles.com/blog/css-unminify/#c77" title="Permalink to peter&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c85">
+				<h5 class="name">
+					<strong>3. Janet</strong> wrote:
+				</h5>
+                <p> Thank you so much. Just helped me diff a file that had been minified. Saved me hours.  </p>
+				<p class="date">
+					Posted on 7 July 2010 at 5:07 PM &nbsp;|&nbsp;
+					<a name="c85" href="http://mrcoles.com/blog/css-unminify/#c85" title="Permalink to Janet&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c86">
+				<h5 class="name">
+					<strong>4. Erik</strong> wrote:
+				</h5>
+                <p> This is incredibly useful. Thanks! </p>
+				<p class="date">
+					Posted on 15 July 2010 at 1:07 AM &nbsp;|&nbsp;
+					<a name="c86" href="http://mrcoles.com/blog/css-unminify/#c86" title="Permalink to Erik&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c87">
+				<h5 class="name">
+					<strong>5. Andy</strong> wrote:
+				</h5>
+                <p> You rock! </p>
+				<p class="date">
+					Posted on 23 July 2010 at 6:07 PM &nbsp;|&nbsp;
+					<a name="c87" href="http://mrcoles.com/blog/css-unminify/#c87" title="Permalink to Andy&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c90">
+				<h5 class="name">
+					<strong>6. Dave</strong> wrote:
+				</h5>
+                <p> Saved me from a failed merge, awesome. </p>
+				<p class="date">
+					Posted on 6 August 2010 at 4:08 PM &nbsp;|&nbsp;
+					<a name="c90" href="http://mrcoles.com/blog/css-unminify/#c90" title="Permalink to Dave&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c91">
+				<h5 class="name">
+					<strong>7. <a rel="nofollow" href="http://headset.no/" title="http://headset.no/">Kyle Sevenoaks</a></strong> wrote:
+				</h5>
+                <p> This is f*cking fantastic!! GREAT job!! Saved me about twenty hours!!  </p>
+				<p class="date">
+					Posted on 19 August 2010 at 9:08 AM &nbsp;|&nbsp;
+					<a name="c91" href="http://mrcoles.com/blog/css-unminify/#c91" title="Permalink to Kyle Sevenoaks&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c102">
+				<h5 class="name">
+					<strong>8. Omegakenshin</strong> wrote:
+				</h5>
+                <p> Great tool, you are awesome, thanks alot for sharing ^^ </p>
+				<p class="date">
+					Posted on 10 December 2010 at 10:12 AM &nbsp;|&nbsp;
+					<a name="c102" href="http://mrcoles.com/blog/css-unminify/#c102" title="Permalink to Omegakenshin&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c109">
+				<h5 class="name">
+					<strong>9. <a rel="nofollow" href="http://www.itsadam.co.uk/" title="http://www.itsadam.co.uk/">Adam</a></strong> wrote:
+				</h5>
+                <p> Absolutely AWESOME, Thank you so much, just saved me like 20minutes of headache ridden css cleaning! </p>
+				<p class="date">
+					Posted on 14 January 2011 at 5:01 AM &nbsp;|&nbsp;
+					<a name="c109" href="http://mrcoles.com/blog/css-unminify/#c109" title="Permalink to Adam&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c112">
+				<h5 class="name">
+					<strong>10. DJBoca</strong> wrote:
+				</h5>
+                <p> Awesome and quick! Thanks! </p>
+				<p class="date">
+					Posted on 4 February 2011 at 10:02 AM &nbsp;|&nbsp;
+					<a name="c112" href="http://mrcoles.com/blog/css-unminify/#c112" title="Permalink to DJBoca&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c113">
+				<h5 class="name">
+					<strong>11. Mick</strong> wrote:
+				</h5>
+                <p> Excellent! Thank you SO much. </p>
+				<p class="date">
+					Posted on 12 February 2011 at 2:02 PM &nbsp;|&nbsp;
+					<a name="c113" href="http://mrcoles.com/blog/css-unminify/#c113" title="Permalink to Mick&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c114">
+				<h5 class="name">
+					<strong>12. Will</strong> wrote:
+				</h5>
+                <p> Saved My LIFE! Thank you so much. </p>
+				<p class="date">
+					Posted on 16 February 2011 at 10:02 PM &nbsp;|&nbsp;
+					<a name="c114" href="http://mrcoles.com/blog/css-unminify/#c114" title="Permalink to Will&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c115">
+				<h5 class="name">
+					<strong>13. Richard</strong> wrote:
+				</h5>
+                <p> Saved me a rake of time!  </p>
+				<p class="date">
+					Posted on 17 February 2011 at 10:02 AM &nbsp;|&nbsp;
+					<a name="c115" href="http://mrcoles.com/blog/css-unminify/#c115" title="Permalink to Richard&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c128">
+				<h5 class="name">
+					<strong>14. Aasim</strong> wrote:
+				</h5>
+                <p> Thanks a lot! </p>
+				<p class="date">
+					Posted on 21 March 2011 at 9:03 PM &nbsp;|&nbsp;
+					<a name="c128" href="http://mrcoles.com/blog/css-unminify/#c128" title="Permalink to Aasim&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c144">
+				<h5 class="name">
+					<strong>15. <a rel="nofollow" href="http://www.badandgood.cz.cc/" title="http://www.badandgood.cz.cc/">Bad and Good</a></strong> wrote:
+				</h5>
+                <p> Wow! Amazing tool! </p>
+				<p class="date">
+					Posted on 6 April 2011 at 2:04 AM &nbsp;|&nbsp;
+					<a name="c144" href="http://mrcoles.com/blog/css-unminify/#c144" title="Permalink to Bad and Good&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c159">
+				<h5 class="name">
+					<strong>16. Artyom</strong> wrote:
+				</h5>
+                <p> Very useful!!! Thank you guys for this awesome tool! Always use when coding) </p>
+				<p class="date">
+					Posted on 16 May 2011 at 11:05 AM &nbsp;|&nbsp;
+					<a name="c159" href="http://mrcoles.com/blog/css-unminify/#c159" title="Permalink to Artyom&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c177">
+				<h5 class="name">
+					<strong>17. Peter</strong> wrote:
+				</h5>
+                <p> This is so very useful. Sometimes you just want to read through a CSS file you got from someone else. </p>
+				<p class="date">
+					Posted on 9 June 2011 at 2:06 AM &nbsp;|&nbsp;
+					<a name="c177" href="http://mrcoles.com/blog/css-unminify/#c177" title="Permalink to Peter&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c184">
+				<h5 class="name">
+					<strong>18. <a rel="nofollow" href="http://www.positivesignal.net/" title="http://www.positivesignal.net/">Kevin McDougall</a></strong> wrote:
+				</h5>
+                <p> A fantastic tool! Many thanks Peter. </p>
+				<p class="date">
+					Posted on 2 July 2011 at 8:07 PM &nbsp;|&nbsp;
+					<a name="c184" href="http://mrcoles.com/blog/css-unminify/#c184" title="Permalink to Kevin McDougall&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c189">
+				<h5 class="name">
+					<strong>19. dade</strong> wrote:
+				</h5>
+                <p> Let me just pile on and say well done sir. Bookmarked, and I couldn't do my job without this handy tool. </p>
+				<p class="date">
+					Posted on 20 July 2011 at 10:07 AM &nbsp;|&nbsp;
+					<a name="c189" href="http://mrcoles.com/blog/css-unminify/#c189" title="Permalink to dade&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c191">
+				<h5 class="name">
+					<strong>20. <a rel="nofollow" href="http://www.trand.co.uk/" title="http://www.trand.co.uk/">Jason</a></strong> wrote:
+				</h5>
+                <p> You absolute God send! <em> Busily FTP's CSS files </em> </p>
+				<p class="date">
+					Posted on 18 August 2011 at 5:08 PM &nbsp;|&nbsp;
+					<a name="c191" href="http://mrcoles.com/blog/css-unminify/#c191" title="Permalink to Jason&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c194">
+				<h5 class="name">
+					<strong>21. Mikael</strong> wrote:
+				</h5>
+                <p> Awesome tool - Thank you!!!!! <br> 
+ </p>
+				<p class="date">
+					Posted on 25 August 2011 at 4:08 PM &nbsp;|&nbsp;
+					<a name="c194" href="http://mrcoles.com/blog/css-unminify/#c194" title="Permalink to Mikael&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c203">
+				<h5 class="name">
+					<strong>22. Andre</strong> wrote:
+				</h5>
+                <p> This just helped me fix a completely random CSS problem I couldn't find... Certain browsers had problems  while others didn't. Anyway, when I write it, I place an extra line after each closing bracket, so while spacing out the unminified CSS, I found a few places where the } hadn't even made it to the next line. </p>
+<p> Bottom line, you can never underestimate the value of the simplest tools... So thanks! I hope you never find cause to delete this page. :D </p>
+				<p class="date">
+					Posted on 15 September 2011 at 5:09 PM &nbsp;|&nbsp;
+					<a name="c203" href="http://mrcoles.com/blog/css-unminify/#c203" title="Permalink to Andre&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c205">
+				<h5 class="name">
+					<strong>23. <a rel="nofollow" href="http://stefan-cross.com/" title="http://stefan-cross.com/">Stefan</a></strong> wrote:
+				</h5>
+                <p> Ace, nice lil tool! </p>
+				<p class="date">
+					Posted on 19 September 2011 at 7:09 AM &nbsp;|&nbsp;
+					<a name="c205" href="http://mrcoles.com/blog/css-unminify/#c205" title="Permalink to Stefan&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c216">
+				<h5 class="name">
+					<strong>24. Shannon Greene</strong> wrote:
+				</h5>
+                <p> THANKS! </p>
+				<p class="date">
+					Posted on 16 October 2011 at 2:10 PM &nbsp;|&nbsp;
+					<a name="c216" href="http://mrcoles.com/blog/css-unminify/#c216" title="Permalink to Shannon Greene&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c217">
+				<h5 class="name">
+					<strong>25. Roger</strong> wrote:
+				</h5>
+                <p> It does not seem to support @foo{a{b:c}}, which I expect to be:
+@foo {
+[tab]a {
+[tab][tab]b: c;
+[tab]}
+} </p>
+<p> And in my opinion it should NOT modify comments. </p>
+<p> Apart from those two things, it's excellent. </p>
+				<p class="date">
+					Posted on 22 October 2011 at 9:10 AM &nbsp;|&nbsp;
+					<a name="c217" href="http://mrcoles.com/blog/css-unminify/#c217" title="Permalink to Roger&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c218">
+				<h5 class="name">
+					<strong>26. Roger</strong> wrote:
+				</h5>
+                <p> All new line characters disappeared in the code I wrote above. Here is what I meant (using [newline] instead of the new line character):
+@foo {[newline][tab]a {[newline][tab][tab]b: c;[newline][tab]}[newline]} </p>
+				<p class="date">
+					Posted on 22 October 2011 at 9:10 AM &nbsp;|&nbsp;
+					<a name="c218" href="http://mrcoles.com/blog/css-unminify/#c218" title="Permalink to Roger&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c219">
+				<h5 class="name">
+					<strong>27. peter</strong> wrote:
+				</h5>
+                <p> Thanks roger, I’ll look into it! </p>
+				<p class="date">
+					Posted on 22 October 2011 at 12:10 PM &nbsp;|&nbsp;
+					<a name="c219" href="http://mrcoles.com/blog/css-unminify/#c219" title="Permalink to peter&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c220">
+				<h5 class="name">
+					<strong>28. Roger</strong> wrote:
+				</h5>
+                <p> Hmm, perhaps
+a[style="font:normal 14px/20px helvetica,arial,sans-serif;color:#333;"]
+should be left untouched as well, since otherwise the selector won't match.
+Perhaps one could say: Text between brackets should be left untouched?
+Another example: a::after{content:"Some sentence with a ; in it."} </p>
+<p> And about not touching comments ... that's true as long as they are COMMENTS (and perhaps very short code snippets), but sometimes they're used to comment out code ... don't no what's the best anymore ... </p>
+				<p class="date">
+					Posted on 24 October 2011 at 3:10 PM &nbsp;|&nbsp;
+					<a name="c220" href="http://mrcoles.com/blog/css-unminify/#c220" title="Permalink to Roger&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c228">
+				<h5 class="name">
+					<strong>29. <a rel="nofollow" href="http://stefan-cross.com/" title="http://stefan-cross.com/">Stefan</a></strong> wrote:
+				</h5>
+                <p> Great tool, cheers! </p>
+				<p class="date">
+					Posted on 15 November 2011 at 10:11 AM &nbsp;|&nbsp;
+					<a name="c228" href="http://mrcoles.com/blog/css-unminify/#c228" title="Permalink to Stefan&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c230">
+				<h5 class="name">
+					<strong>30. Eduardo</strong> wrote:
+				</h5>
+                <p> I have an idea to improve this: put a new line after a class, like: </p>
+<p> .some-class {
+[spaces]color: black;
+} </p>
+<p> .another-class {
+[spaces]color: white;
+} </p>
+				<p class="date">
+					Posted on 24 November 2011 at 2:11 PM &nbsp;|&nbsp;
+					<a name="c230" href="http://mrcoles.com/blog/css-unminify/#c230" title="Permalink to Eduardo&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c232">
+				<h5 class="name">
+					<strong>31. <a rel="nofollow" href="http://texh.net/" title="http://texh.net/">Jarrod</a></strong> wrote:
+				</h5>
+                <p> Hey there, LOVE this tool. I can't applaud you enough. </p>
+<p> However, I have found one tiny gotcha. I unminifed a file that had some images embedded as base64 encoded mumbo-jumbo. The unminifier added a newline after the first semicolon in
+    data:image/png; base64, &lt;base-64-encoded-image&gt;;
+which you would thing a browser could handle, but Chrome (and perhaps others?) didn't seem to like this. </p>
+<p> Just letting you know though, it's definitely not a complaint. </p>
+<p> Thanks so much for this incredible tool :) </p>
+				<p class="date">
+					Posted on 4 December 2011 at 7:12 AM &nbsp;|&nbsp;
+					<a name="c232" href="http://mrcoles.com/blog/css-unminify/#c232" title="Permalink to Jarrod&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c243">
+				<h5 class="name">
+					<strong>32. <a rel="nofollow" href="http://oppih.me/" title="http://oppih.me/">oppih</a></strong> wrote:
+				</h5>
+                <p> I've just encountered a problem with this script and submited an issue on your github page.
+Please check it if you have time ? </p>
+<p> BTW, anyone here find it is not compatible with node.js 0.6.x ? </p>
+				<p class="date">
+					Posted on 15 January 2012 at 12:01 AM &nbsp;|&nbsp;
+					<a name="c243" href="http://mrcoles.com/blog/css-unminify/#c243" title="Permalink to oppih&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c246">
+				<h5 class="name">
+					<strong>33. peter</strong> wrote:
+				</h5>
+                <p> Thanks for the heads up @oppih. I just updated the github project - <a href="https://github.com/mrcoles/cssunminifier" rel="nofollow">https://github.com/mrcoles/cssunminifier</a> </p>
+				<p class="date">
+					Posted on 20 January 2012 at 11:01 PM &nbsp;|&nbsp;
+					<a name="c246" href="http://mrcoles.com/blog/css-unminify/#c246" title="Permalink to peter&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c248">
+				<h5 class="name">
+					<strong>34. <a rel="nofollow" href="http://trevorgreenfield.com/" title="http://trevorgreenfield.com/">Trevor Greenfield</a></strong> wrote:
+				</h5>
+                <p> Just what I was looking for.  I think this was built into some editor I used long ago, but I can't find it in notepad++ if its there.  Thanks! </p>
+				<p class="date">
+					Posted on 22 January 2012 at 11:01 PM &nbsp;|&nbsp;
+					<a name="c248" href="http://mrcoles.com/blog/css-unminify/#c248" title="Permalink to Trevor Greenfield&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c250">
+				<h5 class="name">
+					<strong>35. John Brooks</strong> wrote:
+				</h5>
+                <p> Thanks! </p>
+				<p class="date">
+					Posted on 27 January 2012 at 1:01 AM &nbsp;|&nbsp;
+					<a name="c250" href="http://mrcoles.com/blog/css-unminify/#c250" title="Permalink to John Brooks&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c255">
+				<h5 class="name">
+					<strong>36. Rocco</strong> wrote:
+				</h5>
+                <p> Sir, you are remarkable :) Just save me a bunch of time. </p>
+				<p class="date">
+					Posted on 9 February 2012 at 3:02 PM &nbsp;|&nbsp;
+					<a name="c255" href="http://mrcoles.com/blog/css-unminify/#c255" title="Permalink to Rocco&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c262">
+				<h5 class="name">
+					<strong>37. HoldMeCloserTnyDanza</strong> wrote:
+				</h5>
+                <p> Thank you so so so so so much! </p>
+				<p class="date">
+					Posted on 18 March 2012 at 11:03 AM &nbsp;|&nbsp;
+					<a name="c262" href="http://mrcoles.com/blog/css-unminify/#c262" title="Permalink to HoldMeCloserTnyDanza&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c263">
+				<h5 class="name">
+					<strong>38. Oleg</strong> wrote:
+				</h5>
+                <p> Great job man. Thanks a lot. </p>
+				<p class="date">
+					Posted on 21 March 2012 at 6:03 AM &nbsp;|&nbsp;
+					<a name="c263" href="http://mrcoles.com/blog/css-unminify/#c263" title="Permalink to Oleg&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c268">
+				<h5 class="name">
+					<strong>39. Jonathan </strong> wrote:
+				</h5>
+                <p> Saved me from tedium.  Thank you.  This actually did a decent job un-minifying .less! </p>
+				<p class="date">
+					Posted on 1 April 2012 at 7:04 PM &nbsp;|&nbsp;
+					<a name="c268" href="http://mrcoles.com/blog/css-unminify/#c268" title="Permalink to Jonathan &#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c269">
+				<h5 class="name">
+					<strong>40. Abhi Andhariya</strong> wrote:
+				</h5>
+                <p> awesome...! keep it up... </p>
+				<p class="date">
+					Posted on 10 April 2012 at 8:04 AM &nbsp;|&nbsp;
+					<a name="c269" href="http://mrcoles.com/blog/css-unminify/#c269" title="Permalink to Abhi Andhariya&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c278">
+				<h5 class="name">
+					<strong>41. Pascal</strong> wrote:
+				</h5>
+                <p> Thanks a lot for this awesome tool! </p>
+				<p class="date">
+					Posted on 16 May 2012 at 8:05 AM &nbsp;|&nbsp;
+					<a name="c278" href="http://mrcoles.com/blog/css-unminify/#c278" title="Permalink to Pascal&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c287">
+				<h5 class="name">
+					<strong>42. <a rel="nofollow" href="http://larryhynes.com/" title="http://larryhynes.com/">Larry Hynes</a></strong> wrote:
+				</h5>
+                <p> Thanks for this, nice work. </p>
+				<p class="date">
+					Posted on 27 May 2012 at 2:05 PM &nbsp;|&nbsp;
+					<a name="c287" href="http://mrcoles.com/blog/css-unminify/#c287" title="Permalink to Larry Hynes&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c288">
+				<h5 class="name">
+					<strong>43. Soham</strong> wrote:
+				</h5>
+                <p> Worked perfectly for me. Thanks. Nice work. </p>
+				<p class="date">
+					Posted on 31 May 2012 at 9:05 AM &nbsp;|&nbsp;
+					<a name="c288" href="http://mrcoles.com/blog/css-unminify/#c288" title="Permalink to Soham&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c392">
+				<h5 class="name">
+					<strong>44. Mike</strong> wrote:
+				</h5>
+                <p> Thanks man!!! </p>
+				<p class="date">
+					Posted on 16 July 2012 at 10:07 AM &nbsp;|&nbsp;
+					<a name="c392" href="http://mrcoles.com/blog/css-unminify/#c392" title="Permalink to Mike&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c414">
+				<h5 class="name">
+					<strong>45. Pumuky</strong> wrote:
+				</h5>
+                <p> Great! </p>
+				<p class="date">
+					Posted on 17 July 2012 at 12:07 PM &nbsp;|&nbsp;
+					<a name="c414" href="http://mrcoles.com/blog/css-unminify/#c414" title="Permalink to Pumuky&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c505">
+				<h5 class="name">
+					<strong>46. Hu Yue</strong> wrote:
+				</h5>
+                <p> Nice One! Very helpful!Thanks! </p>
+				<p class="date">
+					Posted on 22 July 2012 at 4:07 AM &nbsp;|&nbsp;
+					<a name="c505" href="http://mrcoles.com/blog/css-unminify/#c505" title="Permalink to Hu Yue&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c739">
+				<h5 class="name">
+					<strong>47. <a rel="nofollow" href="http://jamesabbottdd.com/" title="http://jamesabbottdd.com/">James Abbott</a></strong> wrote:
+				</h5>
+                <p> Thanks - this is a great tool! </p>
+				<p class="date">
+					Posted on 9 August 2012 at 9:08 AM &nbsp;|&nbsp;
+					<a name="c739" href="http://mrcoles.com/blog/css-unminify/#c739" title="Permalink to James Abbott&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment even" id="c752">
+				<h5 class="name">
+					<strong>48. Gijs</strong> wrote:
+				</h5>
+                <p> The bees knees! Thanks! </p>
+				<p class="date">
+					Posted on 18 August 2012 at 6:08 AM &nbsp;|&nbsp;
+					<a name="c752" href="http://mrcoles.com/blog/css-unminify/#c752" title="Permalink to Gijs&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		
+			<div class="comment odd" id="c794">
+				<h5 class="name">
+					<strong>49. Snaders</strong> wrote:
+				</h5>
+                <p> VERY useful! Thanks!! </p>
+				<p class="date">
+					Posted on 4 September 2012 at 10:09 AM &nbsp;|&nbsp;
+					<a name="c794" href="http://mrcoles.com/blog/css-unminify/#c794" title="Permalink to Snaders&#39;s comment" class="count">permalink</a>
+				</p>
+			</div>
+		
+		
+		</div>
+	</div>
+	
+
+    
+
+    
+    <div id="disqus_thread"></div>
+    
+
+
+</div>
+
+
+
+
+<div id="beta">
+	<div class="widget">
+		<p class="profile-img"><img src="./Online CSS Unminifier - Peter Coles_files/peter-coles.png" alt="Peter Coles" title="Peter Coles"></p>
+		<div class="pad-bot about-text">
+			<h2>Peter Coles</h2>
+			<p>is a software engineer who lives in NYC, works at <a href="https://ringly.com/">Ringly</a>, and blogs here.<br> <a href="http://mrcoles.com/peter-coles/">More about Peter »</a></p>
+		</div>
+		<p>
+		  <a href="https://github.com/mrcoles">github</a> ·
+		  <a href="https://soundcloud.com/mrcoles">soundcloud</a> ·
+		  <a href="https://twitter.com/lethys">@lethys</a> ·
+
+		  
+		  
+		  <a href="http://mrcoles.com/feeds/latest/">rss</a>
+		  
+		  <script>document.write(' &middot; <a href="'+'mai'+'l_to:pet_er_@mrc_oles.c_om'.split('_').join('')+'">contact</a>')</script> · <a href="mailto:peter@mrcoles.com">contact</a>
+		</p>
+	</div>
+
+	
+
+	<div class="widget">
+		<p class="strong">Popular Posts:</p>
+		<ul class="activities">
+			<li><a href="http://mrcoles.com/demo/markdown-css/">Markdown CSS</a></li>
+			<li><a href="http://mrcoles.com/blog/css-unminify/">A CSS Unminifier</a></li>
+			<li><a href="http://mrcoles.com/bookmarklet/">Bookmarklet Creator</a></li>
+			<li><a href="http://mrcoles.com/blog/html5ify-your-existing-code-base/">HTML5ify your existing code base</a></li>
+			<li><a href="http://mrcoles.com/facebook-graph-api-explorer/">Facebook Graph API Explorer</a></li>
+
+		</ul>
+
+		<br>
+		<p class="strong">Fun:</p>
+		<ul class="activities">
+			<li><a href="http://picdinner.com/">PicDinner</a></li>
+			<li><a href="http://mrcoles.com/piano/">JavaScript Piano</a></li>
+			<li><a href="http://mrcoles.com/dragondrop/">Dragon Drop <small style="font-size:11px;vertical-align:top">(Drag &amp; Drop)</small></a></li>
+			<li><a href="http://mrcoles.com/tetris/">HTML5 Tetris</a></li>
+			<li><a href="http://mrcoles.com/low-res-paint/">Low Res Paint</a></li>
+			<li><a href="http://mrcoles.com/favicon-creator/">Favicon Creator</a></li>
+		</ul>
+
+	</div>
+
+
+	<div class="widget flush last">
+		<a href="https://mayday.us/"><img src="./Online CSS Unminifier - Peter Coles_files/mayday-genericshare.jpg" alt="It’s time to get big money out of politics. Join the kick-started campaign to put government back in the hands of the people. Pledge mayday.us now"></a>
+	</div>
+
+</div>
+
+<div style="clear:both;"><!-- --></div><form id="search-drop" action="http://mrcoles.com/search/"><div><input class="text border-box" type="text" name="q"><button class="border-box" type="submit">Search</button></div></form></div></div>
+</div>
+	<div id="footer"><div id="footer-inner"><p>mrcoles.com © 2014</p></div></div>
+
+
+<script>
+    (function() {
+        var startTime = (new Date).getTime();
+        mixpanel.track('View Page', {
+            'Page title': document.title
+        });
+        mixpanel.track_links('.shop-ad a', 'Click Shop Ad', function() {
+            var isSideBar = (window.innerWidth > 850);
+            return {
+                'time on page': (new Date).getTime() - startTime,
+                'in side bar': isSideBar
+            };
+        });
+    })();
+</script>
+
+
+
+    <script src="./Online CSS Unminifier - Peter Coles_files/main.js"></script>
+
+<script>
+var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-4202460-2']); _gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = 'http://www.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script>(function(d,g) {
+    var s = d[g]('search-link');
+    if (s) {
+        s.onclick = function() {
+
+            var f = d[g]('search-drop'), n = f.className;
+            if (n=='show') {
+                f.className = '';
+            } else {
+                f.className = 'show';
+                f.getElementsByTagName('input')[0].focus();
+            }
+
+            return false;
+        }
+    }
+})(document,'getElementById')</script>
+<!-- cchd Sat, 8 Oct 2016 05:05:10 -0400 -->
+
+
+<div class="corom-element" style="position: absolute; top: 0px; left: 0px; right: 0px; height: 0px; margin: 0px; text-align: left; z-index: 2147483647; pointer-events: none; border: none;"></div></body></html>

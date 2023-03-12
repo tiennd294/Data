@@ -1,0 +1,11 @@
+G:\CSharp\MyLanChat\MyLanChat\bin\Debug\MyLanChat.exe.config
+G:\CSharp\MyLanChat\MyLanChat\bin\Debug\MyLanChat.exe
+G:\CSharp\MyLanChat\MyLanChat\bin\Debug\MyLanChat.pdb
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.csprojResolveAssemblyReference.cache
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.Frm_Main.resources
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.Properties.Resources.resources
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.csproj.GenerateResource.Cache
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.exe
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.pdb
+G:\CSharp\MyLanChat\MyLanChat\bin\Debug\FontAwesome.Sharp.dll
+G:\CSharp\MyLanChat\MyLanChat\obj\Debug\MyLanChat.Lan.resources
